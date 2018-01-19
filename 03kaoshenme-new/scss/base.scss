@@ -1,0 +1,19 @@
+$globalColors: (
+  default:#6492ff,
+  defaulttwo:#C9D9FF,
+  red:#FF9999,
+  blue:#069,
+  white:white,
+  date:#000000,
+  gray:#cccccc
+);
+@function colors($color){
+    $names: map-keys($globalColors);
+    @if index($names, $color){
+        @return map-get($globalColors, $color);
+    }
+};
+@function s($px) {
+    @return($px/64)*1rem;
+}
+
