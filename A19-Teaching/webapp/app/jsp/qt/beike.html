@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>备课</title>
+	</head>
+	<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+	<link href="../../../ui/qt/css/sjcq.css" rel="stylesheet" /> <!--随机答-->
+	<link rel="stylesheet" href="../../../ui/common/components/wow/css/animate.css" /><!--动画库-->	
+	<script src="../../../ui/common/js/common.js"></script>
+	<script src="../../../ui/common/js/jquery-1.10.2.min.js"></script>
+	<script src="../../../ui/common/js/msghandler.js"></script>
+	<script src="../../../ui/common/js/storejson2.min.js"></script>	
+	<script src="js/beike.js"></script>
+	<style>
+		body{ overflow: hidden;}
+	</style>
+<body>
+<div class="home_top clear">
+	<!--换肤-->
+	<div class="change_clothe">
+		<div class="clothe">
+			<span>
+					<img src="../../../ui/common/images/changeone.png"/>
+					宁静山谷
+				</span>
+			<span>
+					<img src="../../../ui/common/images/changetwo.png"/>
+					花丛蝴蝶
+				</span>
+			<span>
+					<img src="../../../ui/common/images/changethree.png"/>
+					愤怒的小鸟					
+				</span>
+		</div>
+		<div class="chose">
+			<span class="sure">确定</span>
+			<span class="nosure">取消</span>
+		</div>
+	</div>
+	<div class="logo"> <img src="../../../ui/common/images/logo .png" width="175" /></div>
+	<div class="home_user">
+		<ul>
+			<li class="usename">李丽娟</li>
+			<li class="back_home "onclick="Returnhome()">
+				<div style="padding-left: 10px;" > <img src="../../../ui/common/images/backhome.png" width="24"></div>
+				返回首页</li>
+			<li class="change">
+				<span class="change_"></span> 换肤
+			</li>
+			<li onclick="SystemMinimization()">
+				<span class="min_"></span> 最小化
+			</li>
+			<li onclick="SignOut()">
+				<span class="out_"></span> 退出
+			</li>
+
+		</ul>
+	</div>
+</div>
+	<!--//主页内容-->
+<div class="beike clear">
+	<!--左侧【课程目录】-->
+	<div class="left">
+		<div style=" margin-bottom: 15px;">
+			<div class="main_selected">
+				<div id="jiaocai_mulu">
+					教材目录选择
+				</div>
+				<ul id="jiaocai_selected">
+				</ul>
+			</div>
+			<span class="beike_add"></span>
+			<span class="beike_clear"></span>
+		</div>
+		<div class="count_out">
+			<div class="count Material_count" id="menu">
+				<div class="one_crile">
+					<div class="crile">
+						<div>
+							<span>
+								<i>+</i>
+							</span>
+						</div>
+						请先选择教材
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--右侧【课程内容】-->
+<div class="right">
+	<div class="count">
+		<div class="title clear">
+			<ul>
+				<li class="beike_all_choise"><span></span><i>全部</i></li>
+				<li onclick="MoveTo()"><span><img src="../../../ui/qt/images/beike_footer_11.png"></span>移动至</li>
+				<li onclick="Export()"><span><img src="../../../ui/qt/images/beike_footer_12.png"></span>导出课件包</li>
+				<li onclick="SendTo()"><span><img src="../../../ui/qt/images/beike_footer_13.png"></span>发送给学生</li>
+				<li class="fr" style="position: absolute; right: 10px;" onclick="reload_html()"><span><img src="../../../ui/qt/images/beike_footer_14.png"></span>刷新</li>
+			</ul>
+		</div>
+		<div class="neirong">
+			<ul>				
+				<div style=" text-align: center; margin-top: 60px;">
+				<img src="../../../ui/qt/images/beike_u30.png" width="200"/>
+				<p style=" color:#999999; font-size: 16px; margin-top: 40px;">还没有备课呢~现在去备课吧！</p>
+				</div>			
+				<!--<li class="clear">
+						<span class="fl one_choise"></span>
+						<img src="../../../ui/common/images/back_bground.png"  class="fl"/>
+						<div class="fl">
+							<h1>标题</h1>
+							<div class="bottom_tipes">
+								上传时间：<span>2017年7月7日</span>
+								文件大小：<span>20m</span>
+								<p>
+									<span class="beike_bottom_bianj"><img src="../../../ui/qt/images/beike_footer_15.png"></span>编辑
+									<span class="beike_bottom_shanchu"><img src="../../../ui/qt/images/beike_footer_16.png"></span>删除
+								</p>
+							</div>
+						</div>
+					</li>-->
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--底部导航	-->
+<div class="footer">
+	<div class="btm_nav clear">
+		<div class="left_bg_img"></div>
+		<div class="munu">
+			<div class=" beike_footer_mulu clear">
+				<ul>
+					<li class="pingtai"><span> <img src="../../../ui/qt/images/beike_footer_01.png"></span>平台资源</li>
+					<li class="quyu"><span><img src="../../../ui/qt/images/beike_footer_02.png"></span>区域资源</li>
+					<li class="xiaoben"><span><img src="../../../ui/qt/images/beike_footer_03.png"></span>校本资源</li>
+					<li class="bendi"><span><img src="../../../ui/qt/images/beike_footer_04.png"></span>本地上传</li>
+					<li class="xinjiang"><span><img src="../../../ui/qt/images/beike_footer_05.png"></span>新建课件</li>
+					<li class="kecheng"><span><img src="../../../ui/qt/images/beike_footer_06.png"></span>课程制作</li>
+				</ul>
+			</div>
+		</div>
+		<div class="right_bg_img"></div>
+	</div>
+</div>
+
+
+
+<!--课件选择目录-->
+<div class="beikechose">
+	<div class="beike_tipes">
+		<div class="beike_close">
+			<span>选择教材</span>
+			<i><img src="../../../ui/common/images/u20.png"/></i>
+		</div>
+		<div class=" clear count">
+			<div class="fl munu dis_munu">
+				<h3>学科</h3>
+				<ul class="jiaocai_mulu Subject">
+				</ul>
+			</div>
+			<div class="fl munu">
+				<h3>版本</h3>
+				<ul class=" Edition">
+				</ul>
+			</div>
+			<div class="fl munu">
+				<h3>年级</h3>
+				<ul class="Grade">
+				</ul>
+			</div>
+			<div class="fl munu">
+				<h3>教材</h3>
+				<ul class="Material">
+				</ul>
+			</div>
+			<div class="beike_Determine"><span class="beike_sure">确定</span></div>
+		</div>
+	</div>
+	<div style=" background:rgba(0,0,0,0.5); position: absolute; top: 0px; width: 100vw; height: 100vh; z-index: 999;"></div>
+</div>
+
+</body>
+	<script type="text/javascript" src="../../../ui/qt/js/jquery.nicescroll.js" ></script><!--滚动条--> 
+	<script type="text/javascript" src="../../../ui/common/js/animo.js" ></script><!--流程动画-->	
+	<script type="text/javascript" src="../../../ui/qt/js/beike_Choice.js"></script><!--备课选择-->
+	<script type="text/javascript">	
+//全选课件
+//课件选择并移送至
+$("body").on("click",".one_choise",function(){
+	$(this).toggleClass('active');
+})
+var beike_num=1;
+$(".beike_all_choise").on("click",function(){
+	$(this).toggleClass('active');
+	if(beike_num==1){
+			$(".one_choise").addClass('active');
+		beike_num=2;
+	} else if(beike_num==2){
+		$(".one_choise").removeClass('active')
+		beike_num=1
+	}
+})
+		
+		
+//选择教材打开
+//one_crile打开
+		$('body').on("click",".one_crile",function(){
+			$(".beikechose").show()
+		})
+//选择教材添加按钮		
+		$(".beike_add").on("click",function(){
+			$(".beikechose").show()
+		})
+//选择教材关闭
+$(".beike_close i").on("click",function(){
+	$(".beikechose").hide();	
+})
+$(".beike_sure").on("click",function(){
+	$(".beikechose").hide();	
+})
+//选择教材删除按钮
+$(".beike_clear").on("click",function(){
+	var jiaocai_class=$("#jiaocai_mulu").attr('class')
+	$("#jiaocai_mulu").html("请选择教材目录")
+	$('.'+jiaocai_class).eq(1).remove();//删除相应目录导航
+	if($("#jiaocai_selected li").length==0){				
+		　var u_html='<div class="one_crile">'+
+					'<div class="crile">'+
+					'<div><span><i>+</i></span></div>'+
+					"请先选择教材"+
+					'</div></div>'
+		$("#menu").html(u_html)
+		alert("已经清空了，请重新选择目录")
+	}
+})
+
+		
+//.home_top .change_clothe
+			//换肤
+		//打开换肤框
+		$(".change").on("click",function(){
+			$('.change_clothe').show(100)
+		$('.change_clothe').animo({ animation: "bounceIn", duration:1, keep:false })
+		});		
+		//确定换肤并关闭换肤框
+		$(".sure").on("click",function(){
+			$('.change_clothe').hide(100)
+		$('.change_clothe').animo({ animation: "bounceOut", duration:1, keep:false })
+		});	
+		//取消换肤并关闭换肤框
+		$(".nosure").on("click",function(){
+			$('.change_clothe').hide(100)
+		    
+		});		
+        //选择皮肤
+        $(".clothe span").on("click",function(){
+        	var bg_img=$(this).find('img').attr('src');       
+           $('body').css("background","url(" + bg_img + ")")
+           $('body').css("background-size","cover")
+        })
+		
+//<!--滚动条美化  -->		
+$(".neirong ul").niceScroll({  
+cursorcolor:"#888",  
+cursoropacitymax:1,  
+touchbehavior:true,  
+cursorwidth:"5px",  
+cursorborder:"0",  
+cursorborderradius:"5px"  
+});		
+		
+
+
+	</script>
+	
+	
+</html>
+

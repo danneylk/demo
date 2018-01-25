@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		
+		<script></script>
+		<title>login</title>
+		<script src="../../../ui/common/js/common.js"></script>
+		<script src="../../../ui/common/js/jquery-1.10.2.min.js"></script>
+		<script src="../../../ui/common/js/msghandler.js"></script>
+		<script src="../../../ui/common/js/storejson2.min.js"></script>		
+		<script src="js/login.js"></script>
+		
+	</head>
+	<style>
+		body,
+		ul,
+		dl,
+		dd,
+		dt,
+		ol,
+		li,
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		textarea,
+		form,
+		select,
+		fieldset,
+		table,
+		td,
+		div,
+		input {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			vertical-align: middle;
+			list-style-type: none;
+			font-weight: normal;
+			-webkit-text-size-adjust: none;
+			font-family: 'Microsoft YaHei';
+			font-size: .2rem;
+		}
+		
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			vertical-align: middle;
+			list-style-type: none;
+			font-weight: normal;
+		}
+		
+		a {
+			outline-style: none;
+			color: #535353;
+			text-decoration: none;
+			display: inline-block;
+		}
+		
+		html,
+		body {
+			height: 100%;
+			overflow: hidden;
+		}
+		
+		img,
+		input {
+			border: 0;
+			outline: none;
+		}
+		
+		img {
+			max-width: 100%;
+		}
+		
+		em {
+			font-style: normal;
+		}
+		
+		i {
+			font-style: normal;
+		}
+		
+		body {
+			background: url(../../../ui/common/images/bg.png) top center no-repeat;
+			background-size: cover;
+		}
+		
+		.sect_one {
+			width: 590px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		
+		.sect_one article:nth-child(1) {
+			margin-top: 80px;
+		}
+		
+		.sect_one article:nth-child(1) img {
+			width: 348px;
+		}
+		
+		.mgt100 {
+			margin-top: 200px;
+		}
+		
+		.sect_one .inp {
+			margin-bottom: 20px;
+			width: 586px;
+			height: 60px;
+			background: rgba(255, 255, 255, 0.3);
+			border: 1px solid white;
+			border-radius: 30px;
+			position: relative;
+		}
+		
+		.sect_one .inp input {
+			height: 60px;
+			width: 450px;
+			background: none;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: white;
+		}
+		
+		a{color: white;}
+		
+		.sect_one i {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 30px;
+			top: 15px;
+		}
+		
+		.close {
+			position: absolute;
+			right: 100px;
+			top: 30px;
+		}
+		
+		.close i {
+			cursor: pointer;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 30px;
+			top: 15px;
+			-webkit-transition: -webkit-transform .5s ease-out;
+			-moz-transition: -moz-transform .5s ease-out;
+			-o-transition: -o-transform .5s ease-out;
+			-ms-transition: -ms-transform .5s ease-out;
+		}
+		
+		.close i:hover {
+			-webkit-transform: rotateZ(90deg);
+			-moz-transform: rotateZ(90deg);
+			-o-transform: rotateZ(90deg);
+			-ms-transform: rotateZ(90deg);
+			transform: rotateZ(90deg);
+		}
+		
+		.sect_one .inp input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+			color: white;
+		}
+		
+		.rem_password {
+			position: relative;
+			height: 40px;
+			line-height: 40px;
+			text-align: right;
+			margin-top: 15px;
+			margin-bottom: 25px;
+			padding-right: 15px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: white;
+		}
+		
+		.rem_password div {
+			cursor: pointer;
+			float: right
+		}
+		
+		.rem_password p {
+			display: inline-block;
+			height: 40px;
+			line-height: 45px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: white;
+		}
+		.sect_one .red_border{ border: 2px solid red;}
+		.rem_password span {
+			cursor: pointer;
+			display: inline-block;
+			margin-top: 10px;
+			vertical-align: middle;
+		}
+		
+		.ml15 {
+			margin-left: 10px;
+		}
+		
+		.res span {
+			cursor: pointer;
+			width: 25px;
+			height: 25px;
+			background: url(../../../ui/common/images/radio_u17_res.png) top center;
+			background-size: cover;
+		}
+		
+		.selected span {
+			width: 25px;
+			height: 25px;
+			background: url(../../../ui/common/images/radio_u17_selected.png) top center;
+			background-size: cover;
+			transition: all 0.3s ease 0s;
+		}
+		
+		.denglu {
+			cursor: pointer;
+			width: 590px;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 30px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: white;
+		}
+		
+		.denglu:hover {
+			box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.34);
+			-webkit-box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.34);
+			-moz-box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.34);
+			transition: all 0.3s ease 0s;
+		}
+		
+		.toRight {
+			background-image: -webkit-linear-gradient(to right, #0099FF, #99CCFF);
+			background-image: linear-gradient(to right, #0099FF, #99CCFF);
+		}
+		
+		.toRight:hover {
+			background-image: -webkit-linear-gradient(to right, #0099FF, #0099FF);
+			background-image: linear-gradient(to right, #0099FF, #0099FF);
+		}
+	</style>
+
+	<body>
+		<section class="sect_one">
+			<form>
+				<article><img src="../../../ui/common/images/logo .png" /></article>
+				<article class="inp mgt100"><i><img src="../../../ui/common/images/u7.png"/></i><input type="text" placeholder="请输入账号"></article>
+				<article class="inp"><i><img src="../../../ui/common/images/u11.png"/></i><input type="password" placeholder="请输入密码"></article>
+				<article class="rem_password" onclick="Rememberpassword()">
+					<div class="res">
+						<span></span>
+						<p class="ml15">记住密码</p>
+					</div>
+				</article>
+				<article class="denglu toRight" onclick="Login();">
+					<a>
+					登 入</a>
+				</article>
+			</form>
+		</section>
+		<section class="close" onclick="Close();">
+			<i><img src="../../../ui/common/images/u20.png"/></i>
+		</section>
+	</body>
+	<script type="text/javascript" src="../../../ui/common/js/jquery-1.10.2.js"></script>
+	<script>
+		$(function() {
+			$(".rem_password div").on("click", function() {
+				if($(this).hasClass('res')) {
+					$(this).removeClass('res').addClass("selected")
+				} else if($(this).hasClass('selected')) {
+					$(this).removeClass('selected').addClass("res")
+				}
+			})
+
+		})
+	</script>
+	
+	<script>
+		
+		
+		
+	</script>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>开始授课</title>
+	</head>
+	<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+	<link href="../../../ui/qt/css/sjcq.css" rel="stylesheet" /> <!--随机答-->
+	<link rel="stylesheet" href="../../../ui/qt/css/adminite.css" /> <!--css动画库-->
+	<link href="../../../ui/qt/css/timer.css" rel="stylesheet" /> <!--随机答-->
+	<script src="../../../ui/common/js/common.js"></script>
+	<script src="../../../ui/common/js/jquery-1.10.2.min.js"></script>
+	<script src="../../../ui/common/js/msghandler.js"></script>
+	<script src="../../../ui/common/js/storejson2.min.js"></script>
+	<script src="js/shouke.js"></script><!--获取使用课件目录-->
+   
+	
+<body>
+<!--教学视频-->
+<div class="class_video">
+	<div class="cont" id="demo_ckplay">
+		
+	</div>
+</div>
+<!--底部导航	-->
+<div class="footer">
+<div class="btm_nav clear">
+	<!--课件选择-->
+	<div class="box">
+		<div class="title">
+			<span></span>
+			从百草园到三味书屋			
+		</div>
+		<div class="cont_scroll CoursewareList">
+		<ul>
+		</ul>
+		</div>
+	</div>
+	<div class="left_bg_img"></div>
+	<div class="munu">			
+		<div class="nav_ul clear">
+			<ul>
+				<li> <div class="Course_selection">
+					<p>从百草园到三味书屋</p>
+					<i></i>
+				</div> </li>
+				<li class="projection" onclick="Physicalprojection()"> <span></span> 实物投影 </li>
+				<li class="Randomanswer"> <span></span> 随机答 </li>
+				<li class="qr-code" onclick="QrCode()"> <span></span> 二维码 </li>
+				<li class="Demonstration" onclick="SubjectDemonstration()"> <span></span> 学科演示工具 </li>
+				<li class="versioninversion"> <span></span> 板中板 </li>
+				<li class="timer"> <span></span> 计时器 </li>
+				<li class="zuixiaohua" onclick="SystemMinimization()"> <span></span> 最小化 </li>
+				<li class="out" onclick="SignOut()"> <span></span> 退出 </li>
+			</ul>
+		</div>	
+	</div>
+	<div class="right_bg_img"></div>
+</div>
+</div>
+
+
+<!--随机答-->
+<div class="hp-content random-content hp-wrap clear" style=" display: none;">
+	<div class="left-con fl">
+		<h2>一年级一班</h2>
+		<div class="clear" id="students"></div>
+	</div>
+	<div class="right-con fr">
+		<a class="switch-class">
+			<p>切换班级</p>
+		</a>
+		<a id="start" onclick='beginRndNum()'>开始</a>
+		<a class="stop" onclick='stopRndNum()'>停止</a>
+		<a class="close"></a>
+	</div>
+</div>
+<!--tipes随机答班级选择-->
+<div class="tipes" style="display: none;">
+	<div class="content">
+		<i></i>
+		<h3>请选择</h3>
+		<div class="check">
+			<div class="left"> 年级
+				<ul class="grade"> </ul>
+			</div>
+			<div class="right"> 班级
+				<ul class="grade_class"> </ul>
+			</div>
+		</div>
+		<div><span class="cclose">确定</span> </div>
+	</div>
+	<div class="tanchu_bg"></div>
+</div>
+<!--随机答-->
+
+	
+<!--//html5画板-->
+<div class="allcan" style="display: none;">
+	<canvas width="800" height="500"></canvas>
+	<div class="container">
+		<div class="row">
+			<ul name="" class="type">
+				<li class="line typeactive" data="line"> <span></span> 直 线</li>
+				<li class="circle" data="circle"> <span></span> 圆 圈</li>
+				<li class="rect" data="rect"> <span></span> 矩 形</li>
+				<li class="pen" data="pen"> <span></span> 铅 笔</li>
+				<li class="eraser" data="eraser"> <span></span> 橡 皮</li>
+			</ul>
+			<div class="back shezhi"> <span></span> 撤 销</div>
+			<div class="clear shezhi_cla"> <span></span> 清 空</div>
+			<div class="box"> <input type="color" name="color" value="#ffffff"> <span>颜色</span> </div>
+			<div class="shouqi"> <span></span> 收 起 </div>
+		</div>
+	</div>
+</div>
+<!--//html5画板-->
+
+
+
+<!--计时器-->
+<div class="clock_wrapper">
+<div class="wrapper">
+		<div class="container timer ">		
+			<div class="clock inactive z-depth-1 waves-effect font1">0:00</div>	
+			<div class="chose_clock">
+				<span class="one_clock">1分钟</span>
+				<span class="three_clock">3分钟</span>
+				<span class="five_clock">5分钟</span>
+				<span class="ten_clock">10分钟</span>
+				<span class="fif_clock">15分钟</span>
+				<span class="twen_clock">20分钟</span>
+			</div>			
+		<form>
+			<div style="position: relative;">
+				<div class="control input-field">
+					<input id="timer-input" type="number">
+					<label for="timer-input">分钟</label>
+				</div>
+				<a class="timer-btn start waves-effect">
+					<img src="../../../ui/common/images/timer_ok.png" width="29px" />
+					<i class="mdi-av-play-arrow"></i></a>
+				<a class="timer-btn pause waves-effect">
+					<img src="../../../ui/common/images/timer_stop.png"  width="36px"/>
+					<i class="mdi-av-pause"></i></a>
+				<a class="timer-btn reset waves-effect">
+					<img src="../../../ui/qt/images/timer_back.png"  width="32px"/>
+					<i class="mdi-av-replay"></i></a>				
+				<div class="control checkbox">
+					<input type="checkbox" id="timer-sounds" />
+					<label for="timer-sounds">声音</label>
+				</div>	
+				
+				<div style="position: absolute; right: 0px; top:15px; right: 23px;" class="timer_close">
+					<img src="../../../ui/qt/images/timer_out.png" width="32px" />
+					<p style="margin-top: 0px;">退出</p>
+
+				</div>
+				</div>
+			</form>	
+			
+		</div>
+<div id="times-up-modal" class="modal">
+		<div class="modal-content">
+			<h3>时间到了!</h3>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="dismiss-alarm-sounds modal-action waves-effect waves-red btn-flat">关闭闹钟</a>
+		</div>
+	</div>
+</div>
+</div>
+<!--计时器-->
+</body>
+    <script src="js/sjcq.js"></script>
+	<script type="text/javascript" src="../../../ui/qt/js/animo.js" ></script><!--//流程动画控制插件-->
+    <script src="../../../ui/common/js/Random_answe.js"></script><!--随机回答Random_answer插件-->
+    <script type="text/javascript" src="../../../ui/common/js/html5drawing.js" ></script><!--html5绘画插件-->
+    <script type="text/javascript" src="../../../ui/qt/js/jquery.nicescroll.js" ></script><!--滚动条--> 
+    <script type="text/javascript" src="../../../ui/qt/js/timer.js" ></script><!--计时器-->
+     
+<!-- 课程选择滚动条美化  -->
+<script>
+console.log(location.hash)
+$(".cont_scroll").niceScroll({  
+cursorcolor:"#002a3b",  
+cursoropacitymax:1,  
+touchbehavior:true,  
+cursorwidth:"5px",  
+cursorborder:"0",  
+cursorborderradius:"5px"  
+}); 
+    </script>
+    <script>
+    	$(function(){   		
+    		//随机答开启
+    		$(".Randomanswer").on("click",function(){
+    			$('.random-content').show()
+    			$('.random-content').animo({
+					            animation: "zoomIn",
+					            duration:0.3,//持续时间
+					            keep:true //只执行一次
+					       })     		
+
+    		})
+    		//随机答开启关闭
+    		$(".close").on("click",function(){
+    			$('.random-content').show()
+    			$('.random-content').animo({
+					            animation: "zoomOutDown",
+					            duration:0.3,//持续时间
+					            keep:true //只执行一次
+					      }) 
+    		})			
+    //画板开启
+    $(".versioninversion").on("click",function(){
+    	$('.allcan').show();
+    	$('.allcan').animo({ animation: "zoomIn", duration:0.3, keep:true })
+    })   	       
+    //画板关闭
+     $(".shouqi").on("click",function(){  	
+    	$('.allcan').animo({ animation: "zoomOutDown", duration:0.3, keep:true })})		
+    	})  	
+//课程选择面板开关
+$(function() {
+	var Numberh = 1;
+	$(".Course_selection").on("click", function() {
+		if(Numberh == 1) {
+			$('.box').show();
+			$('.box').animo({ animation: "zoomInDown", duration: 0.3, keep: true })
+			Numberh = 2;
+		} else if(Numberh == 2) {		
+			$('.box').animo({ animation: "zoomOutDown", duration: 0.3, keep: true
+})
+Numberh = 1
+}
+})
+})
+$(".timer").on("click", function() {
+	$('.clock_wrapper').show()
+	$('.container').animo({ animation: "zoomInDown", duration: 0.3, keep: true })
+})
+$("body").on("click", ".timer_close", function() {
+	$('.clock_wrapper').hide(100)
+})</script>
+	
+	
+</html>
+

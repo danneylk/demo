@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>授课</title>
+	</head>
+	<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+	<link href="../../../ui/qt/css/sjcq.css" rel="stylesheet" /> <!--随机答-->
+	<link rel="stylesheet" href="../../../ui/common/components/wow/css/animate.css" /><!--动画库-->
+	
+	<script src="../../../ui/common/js/common.js"></script>
+	<script src="../../../ui/common/js/jquery-1.10.2.min.js"></script>
+	<script src="../../../ui/common/js/msghandler.js"></script>
+	<script src="../../../ui/common/js/storejson2.min.js"></script>	
+	<script src="js/home.js"></script>
+<body>
+	
+	<div class="home_top clear">		
+					<!--换肤-->
+		<div class="change_clothe"> 
+			<div class="clothe">
+				<span>
+					<img src="../../../ui/common/images/changeone.png"/>
+					宁静山谷
+				</span>
+				<span>
+					<img src="../../../ui/common/images/changetwo.png"/>
+					花丛蝴蝶
+				</span>
+				<span>
+					<img src="../../../ui/common/images/changethree.png"/>
+					愤怒的小鸟					
+				</span>
+			</div>
+			<div class="chose">
+				<span class="sure">确定</span>
+				<span class="nosure">取消</span>
+			</div>
+		</div>	
+		<div class="logo"> <img src="../../../ui/common/images/logo .png" width="175"/></div>
+		<div class="home_user">
+			<ul>
+				<li class="usename">李丽娟</li>
+				<li class="change">
+					<span class="change_"></span>
+					换肤
+				</li>
+				<li onclick="SystemMinimization()">
+					<span class="min_"></span>
+					最小化
+				</li>
+				<li onclick="SignOut()">
+					<span class="out_"></span>
+					退出
+				</li>
+			
+			</ul>
+		</div>
+	</div>
+	<div class="home_count clear">
+		<ul>
+			<li class="one_icon">
+				<a href="beike.html">
+				<span class="mgt200"><img src="../../../ui/qt/images/home_u37.png" width="87"/> </span>
+				<h1 onclick="Lesson()">备课</h1>
+				</a>
+			</li>
+			<li class="two_icon">
+				<a href="shouke.html">
+				<span class="mgt210"><img src="../../../ui/qt/images/home_u31.png" width="80" /> </span>
+				<h1 >授课</h1>
+				</a>
+			</li>
+			<li >
+				<div class="kehouzuoye three_icon">
+					<span class="pt_70_pb_30"> <img src="../../../ui/qt/images/home_u29.png" width="70"/></span>
+					<h2 onclick="Homework()">课后作业</h2>
+				</div>
+				<div class="xueqingfenxi four_icon">
+					<span class="pt_70_pb_30"> <img src="../../../ui/qt/images/home_u27.png" width="60"/></span>
+					<h2 onclick="Learning()">学情分析<h2/>				
+				</div>
+			</li>
+			<li >
+				<div class="banjiguanli five_icon">
+					<span class="pt30"> <img src="../../../ui/qt/images/home_u23 (2).png" width="60"/></span>
+					<h2 onclick="ClassManagement()">班级管理<h2/>
+				</div>
+				<div class="kaoshiceping six_icon">
+					<span class="pt30"> <img src="../../../ui/qt/images/home_u23 (1).png" width="60"/></span>
+					<h2 onclick="ExaminationEvaluation()">考试测评<h2/>
+				</div>
+				<div class="xitongshezhi seven_icon">
+					<span class="pt30"> <img src="../../../ui/qt/images/home_u61.png" width="60"/></span>
+					<h2 onclick="SystemSetting()">系统设置<h2/>
+				</div>
+			</li>
+		</ul>	
+	</div>
+
+
+
+
+</body>
+	
+	<script type="text/javascript" src="../../../ui/common/js/animo.js" ></script><!--流程动画-->	
+	<script type="text/javascript">
+		$(function(){
+			$(".one_icon").on("mouseover",function(){  	
+    	$('.one_icon img').animo({ animation: "wobble", duration:1, keep:false })
+   }) 	
+					$(".two_icon").on("mouseover",function(){  	
+    	$('.two_icon img').animo({ animation: "wobble", duration:1, keep:false })
+    }) 	
+					$(".three_icon").on("mouseover",function(){  	
+    	$('.three_icon img').animo({ animation: "wobble", duration:1, keep:false })
+    }) 		
+					$(".four_icon").on("mouseover",function(){  	
+    	$('.four_icon img').animo({ animation: "rotateIn", duration:1, keep:false })
+    }) 		
+					$(".five_icon").on("mouseover",function(){  	
+    	$('.five_icon img').animo({ animation: "wobble", duration:1, keep:false })
+    }) 
+			
+					$(".six_icon").on("mouseover",function(){  	
+    	$('.six_icon img').animo({ animation: "wobble", duration:1, keep:false })
+    }) 
+			
+					$(".seven_icon").on("mouseover",function(){  	
+    	$('.seven_icon img').animo({ animation: "rotateIn", duration:1, keep:false })
+    }) 
+			
+			
+			
+//			.home_top .change_clothe
+			
+			
+			//换肤
+		//打开换肤框
+		$(".change").on("click",function(){
+			$('.change_clothe').show(100)
+		$('.change_clothe').animo({ animation: "bounceIn", duration:1, keep:false })
+		});		
+		//确定换肤并关闭换肤框
+		$(".sure").on("click",function(){
+			$('.change_clothe').hide(100)
+		$('.change_clothe').animo({ animation: "bounceOut", duration:1, keep:false })
+		});	
+		//取消换肤并关闭换肤框
+		$(".nosure").on("click",function(){
+			$('.change_clothe').hide(100)
+		    
+		});		
+        //选择皮肤
+        $(".clothe span").on("click",function(){
+        	var bg_img=$(this).find('img').attr('src');       
+           $('body').css("background","url(" + bg_img + ")")
+           $('body').css("background-size","cover")
+        })
+		})
+		
+		
+	</script>
+	
+	
+</html>
+

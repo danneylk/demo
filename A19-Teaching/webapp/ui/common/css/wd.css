@@ -1,0 +1,313 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 14px/1.5;
+	/*overflow-x: hidden;*/
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+span,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+	padding: 0;
+	margin: 0;
+}
+
+img,
+select,
+input,
+button {
+	vertical-align: middle;
+}
+
+a,
+input {
+	outline: none;
+}
+
+a {
+	text-decoration: none !important;
+	outline-style: none !important;
+	-moz-outline-style: none !important;
+	color: #5C5E5D;
+}
+
+a:hover {
+	color: #FF6600;
+}
+
+ul,
+ul li,
+ol {
+	list-style: none;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+textarea {
+	border: 1px solid #CCC;
+	resize: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	resize: none;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+img {
+	border: 0;
+}
+
+
+/**********清除浮动样式******************/
+
+._clear:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+.text-ellips{
+	overflow: hidden;
+	word-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/**
+ *	平行四边形菜单 
+ */
+
+.hp-nav ul {
+	height: 60px;
+	width: 100%;
+}
+
+.hp-nav ul li {
+	float: left;
+	width: auto;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+	background: transparent;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	transform: skew(-20deg);
+}
+
+.hp-nav ul li a {
+	display: block;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg);
+}
+
+.hp-nav ul li:hover,
+.hp-nav ul li.selected {
+	background: #7BC1D1;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	transform: skew(-20deg);
+}
+
+.hp-nav ul li:hover a,
+.hp-nav ul li.selected a {
+	color: #fff;
+}
+
+
+/***********************************/
+
+.wd-content .wd-checkbox-check {
+	width: 20px;
+	height: 20px;
+	background: url(../images/wd-checkbox.png) no-repeat center center;
+	cursor: pointer;
+	float: left;
+}
+
+.wd-content .wd-checkbox-readonly {
+	width: 20px;
+	height: 20px;
+	background: url(../images/readonlycheck.png) no-repeat center center;
+	cursor: pointer;
+	float: left;
+}
+
+.wd-content .wd-checkbox-check-active {
+	width: 20px;
+	height: 20px;
+	background: url(../images/wd-checkbox-active.png) no-repeat center center;
+	cursor: pointer;
+	float: left;
+}
+
+.wd-content .wd-radio-check {
+	width: 20px;
+	height: 20px;
+	background: url(../images/wd-radio.png) no-repeat center center;
+	cursor: pointer;
+	float: left;
+}
+
+.wd-content .wd-radio-check-active {
+	width: 20px;
+	height: 20px;
+	background: url(../images/wd-checkbox-active.png) no-repeat center center;
+	cursor: pointer;
+	float: left;
+}
+
+.wd-content .wd-checkbox-lable {
+	padding-left: 4px;
+	cursor: pointer;
+	float: left;
+	margin:0 20px 4px 0;
+	line-height: 22px;
+}
+.wd-content .wd-radio-lable {
+	padding-left: 4px;
+	cursor: pointer;
+	float: left;
+	margin:0 20px 4px 0;
+	line-height: 22px;
+}
+
+.wd-content .wd-img-cutbox {
+	overflow: hidden;
+}
+
+.wd-content .wd-img-zoombox {
+	text-align: center;
+}
+
+.wd-content .wd-img-enlarge {
+	-moz-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+	transition: all 1s ease 0s;
+}
+
+.wd-content .wd-img-enlargebox {
+	float: left;
+	overflow: hidden;
+}
+
+.wd-content .wd-img-enlargebox:hover .wd-img-enlarge {
+	transform: scale(1.2);
+}
+
+.wdAjaxWaitDiv {
+	z-index: 9999;
+	width: 220px;
+	height: 200px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -100px;
+	margin-left: -110px;
+}
+
+.wdAjaxWaitDiv .wdWaitImg {
+	width: 130px;
+	height: 90px;
+	position: absolute;
+	left: 50%;
+	margin-top: 0px;
+	margin-left: -65px;
+}
+
+.wdAjaxWaitDiv .wdWaitMsg {
+	position: absolute;
+	margin-top: 80px;
+	width: 100%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #c7c7c7;
+}
+
+.wdAjaxWaitDiv .wdWaitClose {
+	cursor: pointer;
+	position: absolute;
+	margin-top: 120px;
+	color: #84affd;
+	right: 54px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+
+.wdAjaxWaitDiv .wdWaitAgain{
+	cursor: pointer;
+	position: absolute;
+	margin-top: 120px;
+	color: #84affd;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	left:54px;
+}
+.wd-autothumbnaildisplay{
+	overflow-y: hidden;
+}
+.wd-autothumbnaildisplay p{
+	word-break: break-all;
+}
+.wd-vaildateTip{
+	position: absolute;
+	padding: 2px 4px;
+	border: 1px solid #666;
+	background-color: #ffc;
+	text-align: left;
+	color: #222;
+	font-size: 12px;
+	width: auto;
+	display: none;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>授课</title>
+	</head>
+	<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+	<link href="../../../ui/qt/css/sjcq.css" rel="stylesheet" /> <!--随机答-->
+	<link rel="stylesheet" href="../../../ui/common/components/wow/css/animate.css" /><!--动画库-->
+	<link rel="stylesheet" href="../../../ui/common/css/swiper.min.css" /> <!-- 课件内容Swiper -->
+	<script src="../../../ui/common/js/common.js"></script>
+	<script src="../../../ui/common/js/jquery-1.10.2.min.js"></script>
+	<script src="../../../ui/common/js/msghandler.js"></script>
+	<script src="../../../ui/common/js/storejson2.min.js"></script>
+	<script src="js/shouke.js"></script>
+<body>
+	 <!-- 课件内容Swiper -->
+ <div class="swiper-container">
+        <div class="swiper-wrapper"> </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  </div>	
+<!--底部导航	-->
+<div class="footer">
+<div class="btm_nav clear">
+	<div class="left_bg_img"></div>
+	<div class="munu">		
+		<!--换肤-->
+		<div class="change_clothe"> 
+			<div class="clothe">
+				<span>
+					<img src="../../../ui/common/images/changeone.png"/>
+					宁静山谷
+				</span>
+				<span>
+					<img src="../../../ui/common/images/changetwo.png"/>
+					花丛蝴蝶
+				</span>
+				<span>
+					<img src="../../../ui/common/images/changethree.png"/>
+					愤怒的小鸟					
+				</span>
+			</div>
+			<div class="chose">
+				<span class="sure">确定</span>
+				<span class="nosure">取消</span>
+			</div>
+		</div>
+		<div class="nav_ul clear">
+			<ul class="clear">
+				<li><p style="font-size:16px;" class="usename">李丽娟</p> </li>
+				<li class="backhome" onclick="Returnhome()"><span></span> 返回首页 </li>			
+				<li class="change"> <span></span> 换肤</li>
+				<li class="zuixiaohua" onclick="SystemMinimization()"> <span></span> 最小化 </li>	
+				<li class="mnu_tipes">请选择教材目录</li>
+			</ul>
+		</div>	
+	</div>	
+	<div class="right_bg_img_icon"><span></span></div>
+	<div class="shiwu_icon">
+		<span style=" margin-top: 30px;" onclick="Physicalprojection()"></span>
+		<p  onclick="Physicalprojection()">实物投影</p>
+		<span style="background-position: 0px -97px;  text-align: center; margin-left: 28px;" onclick="Intelligentclassroom()"></span>
+		<p onclick="Intelligentclassroom()">智慧课堂</p>
+	</div>
+</div>
+</div>
+<!--课件选择目录-->
+<div class="kejianchose">
+	<div class="kejian_tipes">	
+		<div class="kejian_close">
+			<i><img src="../../../ui/common/images/u20.png"/></i>
+		</div>
+		<h1>请选择章节目录</h1>
+		<div class=" clear count">
+			<div class="fl munu dis_munu">
+				<h3>教材</h3>
+				<ul class="jiaocai_mulu">			
+				</ul>
+			</div>
+			<div class="fl mulu">				
+						<h3>目录</h3>
+						<span class="mnuitem"></span>
+				<div class="mulu_menu">					 	
+						 	<div class="kejianmulu">
+								<div class="wrap-menu" id="menu">	
+								</div>	
+							</div>					
+				</div>
+				<div class="kejian_Determine"><span>确定</span></div>
+			</div>
+		</div>
+	</div>
+	<div style=" background:rgba(0,0,0,0.5); position: absolute; top: 0px; width: 100vw; height: 100vh; z-index: 999;"></div>
+</div>
+
+<!--窗口切换-->
+<div class="window_switch">
+	<div class="count">
+		<div>
+			<span class="w20"><img src="../../../ui/common/images/shouke_u261.png"></span>
+			<span class="content">第一个资称asdasd.ppt</span>
+			<i class="close_btn"><img src="../../../ui/common/images/u20.png"/></i>
+		</div>		
+		<img src="../../../ui/common/images/back_bground.png" />
+	</div>
+	
+	<div class="count">
+		<div>
+			<span class="w20"><img src="../../../ui/common/images/shouke_u283.png"></span>
+			<span class="content">第一个资称asdasd.ppt</span>
+			<i class="close_btn"><img src="../../../ui/common/images/u20.png"/></i>
+		</div>		
+		<img src="../../../ui/common/images/back_bground.png" />
+	</div>
+	
+	<div class="count">
+		<div>
+			<span class="w20"><img src="../../../ui/common/images/shouke_u285.png"></span>
+			<span class="content">第一个资称asdasd.ppt</span>
+			<i class="close_btn"><img src="../../../ui/common/images/u20.png"/></i>
+		</div>		
+		<img src="../../../ui/common/images/back_bground.png" />
+	</div>
+	
+	
+</div>
+
+
+</body>	
+
+  <!--<script src="../../../ui/qt/js/textMenu_json.js">--><!--</script>--><!--选择目录[json数据][书籍目录]-->
+  <!--<script type="text/javascript" src="../../../ui/qt/js/Courseware_content_json.js"></script>--><!--课件内容Courseware_content【json数据】【课程内容】-->
+	<script type="text/javascript" src="../../../ui/common/js/animo.js" ></script><!--流程动画-->
+	<script type="text/javascript" src="../../../ui/qt/js/jquery.nicescroll.js" ></script><!--滚动条--> 
+	<script type="text/javascript" src="../../../ui/qt/js/swiper.min.js" ></script><!--滑动插件-->
+	<script src="../../../ui/qt/js/textMenu.js"></script><!--选择目录[目录创建]-->
+	<script type="text/javascript" src="../../../ui/qt/js/textMenu-sliding.js" ></script><!--选择目录[目录折叠切换效果]-->	
+	<script type="text/javascript" src="../../../ui/qt/js/Courseware_content.js"></script><!--课件内容Courseware.JS-->
+	<script src="js/shouke_Transferparameters.js"></script><!--传递参数-->
+	
+<!--教材目录结构重写-->
+<script>
+//传递muluid
+$("body").on("click",".sliding-menu-wrapper li",function(){
+	if($(this).attr('id')!=undefined){
+		$(".swiper-container li").attr('data-mulu',$(this).attr('id'))
+	}else {
+		return false;
+	}
+})
+
+
+window.onload=function(){
+	 GetUserName()//获取用户名
+}
+	//【1】重写教材目录	
+	//jiaocai  name:名称  mulujson：对应textMenu_json.js json名称
+ var  jiaocai=TeachingSelection()
+$.each(jiaocai,function(index,item){
+	var _html="";
+	for (var i=0;i<item.munu.length;i++) {
+		console.log(item.munu[eval(i)].name)	
+		_html+=	'<a onclick="Catalog('+item.munu[eval(i)].mulujson+')"><li>'+item.munu[eval(i)].name+ '</li></a>'	
+	$(".jiaocai_mulu").html(_html)	
+	}
+})
+//【2】生成目录结构//目录结构收缩效果
+function  Catalog(mulu){
+	     GetTextMenu(mulu)
+		if($(".wrap-menu").hasClass('sliding-menu')){
+		$(".wrap-menu").removeClass('sliding-menu')
+		}
+		new AccordionMenu({menuArrs:mulu});//创建目录结构/textMenu.js
+		                $('#menu').menu();//目录结构滑动///textMenu-sliding.js
+	}
+Catalog("testMenu")
+////////目录选择样式添加
+$(".munu ul li ").on("click",function(){
+	$(this).addClass('active').parent().siblings().find('li').removeClass('active')
+})
+
+//【3】课件内容Courseware content
+//Courseware_content_json.js 数据
+//textMenu.js  //添加到版面
+//Courseware_cont(kejian1);//默认Courseware_content[kejian1]      
+//内容滚动切换插件
+//[4]目录层级重写
+$('.jiaocai_mulu li').on('click',function(){
+	var _html='<span class="itemmulu">'+$(this).html()+'/'+'<span>'
+	$(".mnuitem").html( _html)
+	
+})
+
+//【5】[想选择教材目录]
+$(".kejian_Determine span").on('click',function(){
+	var mnuitem_html=$(".mnuitem").html()
+	$(".mnu_tipes").html(mnuitem_html)
+	
+})
+//内容动画设置
+$(".swiper-button-next").on('click', function() {
+	$(".shouke_count").find('li').animo({ animation: "bounceIn", duration: 1, keep: false })
+})
+$(".swiper-button-prev").on('click', function() {
+	$(".shouke_count").find('li').animo({ animation: "bounceIn", duration: 1, keep: false })
+})
+$(".swiper-pagination").on('click', function() {
+	$(".shouke_count").find('li').animo({ animation: "bounceIn", duration: 1, keep: false })
+})
+///////////////
+//<!-- 课程选择滚动条美化  -->
+$(".munu ul").niceScroll({  
+cursorcolor:"#00CCFF",  
+cursoropacitymax:1,  
+touchbehavior:false,  
+cursorwidth:"5px",  
+cursorborder:"0",  
+cursorborderradius:"5px"  
+}); 
+$(".mulu_menu").niceScroll({  
+cursorcolor:"#00CCFF",  
+cursoropacitymax:1,  
+touchbehavior:false,  
+cursorwidth:"5px",  
+cursorborder:"0",  
+cursorborderradius:"5px"  
+});
+	$(function(){
+		//换肤
+		//打开换肤框
+		$(".change").on("click",function(){
+			$('.change_clothe').show(100)
+		$('.change_clothe').animo({ animation: "bounceIn", duration:1, keep:false })
+		});		
+		//确定换肤并关闭换肤框
+		$(".sure").on("click",function(){
+			$('.change_clothe').hide(100)
+		$('.change_clothe').animo({ animation: "bounceOut", duration:1, keep:false })
+		});	
+		//取消换肤并关闭换肤框
+		$(".nosure").on("click",function(){
+			$('.change_clothe').hide(100)
+		    
+		});		
+        //选择皮肤
+        $(".clothe span").on("click",function(){
+        	var bg_img=$(this).find('img').attr('src');       
+           $('body').css("background","url(" + bg_img + ")")
+           $('body').css("background-size","cover")
+        })
+        //////////////章节目录选择
+//		$(".dis_munu").hide()
+		         //打开章节目录选择框
+         $(".mnu_tipes").on("click",function(){
+         	$(".kejianchose").css("visibility","visible")        		
+         	$(".dis_munu").show()       	
+        })
+        //关闭章节目录选择框
+        $(".kejian_close").on("click",function(){
+        	$(".kejianchose").css("visibility","hidden")
+        	$(".dis_munu").hide()
+        })
+        $(".kejian_Determine").on("click",function(){
+        	$(".kejianchose").css("visibility","hidden")
+        	$(".dis_munu").hide()
+        })
+        
+        //实物投影
+        var shiwunum=1;
+        $(".right_bg_img_icon span").on('click',function(){
+        	
+        	if(shiwunum==1){
+        		$('.shiwu_icon').show();
+        		$('.shiwu_icon').animo({ animation: "bounceIn", duration:0.8, keep:false })
+        		shiwunum=2
+        	}else if(shiwunum==2){
+        	$('.shiwu_icon').hide()	
+        		shiwunum=1
+        	}
+        	
+        })
+        
+        //窗口切换
+        var closeBtn=$(".close_btn");
+     	closeBtn.on("click",function(){   
+        $(this).parent().parent().hide()
+   })
+ 
+        
+	})
+</script>
+</html>
