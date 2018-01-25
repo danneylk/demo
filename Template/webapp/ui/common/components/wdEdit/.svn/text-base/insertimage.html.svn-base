@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>多图上传</title>
+		<link href="wdEdit.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<p id="showbtn"><a href="javascript: void(0);">显示遮罩层</a></p>
+		<div id="wd_editBg" class="wd-editBg"></div>
+		<div id="wd_editChosenWrap" class="wd-editChosenWrap">
+			<div class="wd-editChosenTop">
+				<span class="wd-editChosenTit">多图上传</span>
+				<span class="wd-editChosenClose" onclick="insertImageClose()"></span>
+			</div>
+			<div class="wd-editChosenCont">
+				<div id="wd_editChosen" class="wd-editChosen">
+					<div class="wd-editUploadWrap">
+						<div class="wd-editUploadImage"></div>
+						<a class="wd-editChosenPic">点击选择图片
+							<input id="fileAdd_select" type="file" class="wd-file" multiple="multiple" onchange="fileSelect(this)"/>
+						</a>
+					</div>
+				</div>
+				<div id="wd_editFileWrap" class="wd-editFileWrap">
+					<div class="wd-editFileTop">
+						<div class="wd-editFileDesc">
+							<div id="edit_descSc">
+								选中<span id="wd_editFileSum">0</span>张图片，共<span id="wd_editFileSize">0</span>。
+							</div>
+							<div id="edit_descWsc" class="wd-editDescWsc">
+								还有<span id="wd_editFileSum_wsc">0</span>个未上传文件
+							</div>
+						</div>
+						<div class="wd-editFileOpt">
+							<a class="wd-editFileBtn wd-editAdd">继续添加
+								<input id="fileAdd_continue" type="file" class="wd-file" multiple="multiple" accept="image/*" onchange="fileSelect(this)"/>
+							</a>
+							<input type="button" class="wd-editFileBtn wd-editUpload" value="开始上传" onclick="_SaveAs()" />
+						</div>
+					</div>
+					<ul class="wd-editFileList">
+						<div id="wd_editFiles" class="wd-editFiles">
+							
+						</div>
+						<li id="wd_editFileAddBox" class="wd-editFileAddBox">
+							<input id="fileAdd_box" type="file" class="wd-file" multiple="multiple" onchange="fileSelect(this)" />
+						</li>
+					</ul>
+				</div>
+				<div class="wd-editChosenBottom">
+					<input type="button" class="wd-editChosenBtn" value="确定" onclick="getInsertImages()" />
+					<input type="button" class="wd-editChosenBtn" value="取消" onclick="insertImageClose()" />
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="../../js/jquery-1.10.2.js"></script>
+<script src="../../js/requestAddressList.js"></script>
+<script src="../../js/common.js"></script>
+<script type="text/javascript">
+	var map_Files = {};
+	var addFiles = [];
+	var totalSize = 0;
+	$(function() {
+		$("#showbtn").click(function() {
+			$("#wd_editBg").css({
+				display: "block",
+				height: $(document).height()
+			});
+			$("#wd_editChosenWrap").show();
+		});
+	});
+
+	function insertImageClose() {
+		$("#wd_editBg").hide();
+		$("#wd_editChosenWrap").hide();
+		totalSize = 0;
+		addFiles = [];
+		map_Files = {};
+		$("#wd_editFileSum").html(0);
+		$("#wd_editFileSize").html("0KB");
+		$("#wd_editFileWrap").hide();
+		$("#wd_editFiles").html("");
+		$("#wd_editChosen").show();
+	}
+
+	function getInsertImages() {
+		var sum = getImageSum();
+		if (parseInt(sum) > 0) {
+			$("#wd_editFileSum_wsc").html(sum);
+			$("#edit_descSc").hide();
+			$("#edit_descWsc").show();
+		} else {
+			insertImageClose();
+		}
+	}
+
+	function getImageSum() {
+		var sum = 0;
+		for (var key in map_Files) {
+			if (map_Files[key]) {
+				sum += 1;
+			}
+		}
+		return sum;
+	}
+
+	function fileSelect(sender) {
+		$("#wd_editChosen").hide();
+		$("#wd_editFileWrap").show();
+		$("#edit_descWsc").hide();
+		$("#edit_descSc").show();
+		if (sender.files) {
+			var _src = "";
+			var size = 0;
+			var files = sender.files;
+			for (i = 0; i < files.length; i++) {
+				//				/* 判断文件大小是否超出限制 */
+				//				if (file.size > maxSize) {
+				//					return;
+				//				}
+				//				/* 判断文件格式是否超出允许 */
+				//				var fileext = file.name ? file.name.substr(file.name.lastIndexOf('.')) : '';
+				//				if ((fileext && filetype != 'image') || (allowFiles && (allowFiles.join('') + '.').indexOf(fileext.toLowerCase() + '.') == -1)) {
+				//					return;
+				//				}
+				var id = newGuid();
+				map_Files[id] = files[i];
+				// Firefox 因安全性问题已无法直接通过 input[file].value 获取完整的文件路径
+				//_src = sender.files[0].getAsDataURL();
+				_src = window.URL.createObjectURL(files[i]);
+				size = files[i].size;
+				var _li = document.createElement("li");
+				_li.id = id;
+				var _size = document.createElement("input");
+				_size.className = "fileSize";
+				_size.type = "hidden";
+				_size.value = size;
+				_li.appendChild(_size);
+				var _opt = document.createElement("div");
+				_opt.className = "wd-editFileSingleOpt";
+				var _del = document.createElement("div");
+				_del.className = "wd-editFileDel";
+				$(_del).bind("click", function() {
+					var delId = $(this).parent().parent("li")[0].id;
+					for (var key in map_Files) {
+						if (delId == key) {
+							delete map_Files[key];
+							break;
+						}
+					}
+					
+					var totalSum = $("#wd_editFileSum").html();
+					$("#wd_editFileSum").html(parseInt(totalSum) - 1);
+					var fileSize = $(this).parent().parent("li").find(".fileSize").val();
+					totalSize = parseFloat(totalSize) - parseFloat(fileSize);
+					var _totalSize = 0;
+					if (totalSize >= 1024) {
+						_totalSize = Math.ceil(totalSize / 1024).toFixed(2);
+						if (_totalSize >= 1024) {
+							_totalSize = Math.ceil(totalSize / 1024).toFixed(2);
+							_totalSize += "M";
+						} else {
+							_totalSize += "K";
+						}
+					}
+					$("#wd_editFileSize").html(_totalSize);
+					if ((parseInt(totalSum) - 1) == 0) {
+						$(".wd-editFileDesc").hide();
+					}
+					$(this).parent().parent("li").remove();
+				})
+				_opt.appendChild(_del);
+				_li.appendChild(_opt);
+				$(_li).bind("mouseenter", function() {
+					$(this).find(".wd-editFileSingleOpt").stop().slideDown("100");
+				});
+				$(_li).bind("mouseleave", function() {
+					$(this).find(".wd-editFileSingleOpt").stop().slideUp("100");
+				});
+				var _img = document.createElement("img");
+				_img.src = _src;
+				_li.appendChild(_img);
+				var _success = document.createElement("span");
+				_success.className = "wd_editFileSuccess";
+				_li.appendChild(_success);
+				$("#wd_editFiles")[0].appendChild(_li);
+				// 上传文件描述
+				var totalSum = $("#wd_editFileSum").html();
+				$(".wd-editFileDesc").show();
+				$("#wd_editFileSum").html(parseInt(totalSum) + 1);
+				totalSize = parseFloat(totalSize) + parseFloat(size);
+				var _totalSize = 0;
+				if (totalSize >= 1024) {
+					_totalSize = (totalSize / 1024).toFixed(2);
+					if (_totalSize >= 1024) {
+						_totalSize = (totalSize / 1024).toFixed(2);
+						_totalSize += "M";
+					} else {
+						_totalSize += "K";
+					}
+				}
+				$("#wd_editFileSize").html(_totalSize);
+			}
+			var file1 = document.getElementById("fileAdd_select");
+			file1.value = "";
+			var file2 = document.getElementById("fileAdd_continue");
+			file2.value = "";
+			var file3 = document.getElementById("fileAdd_box");
+			file3.value = "";
+		}
+	}
+
+	function _SaveAs() {
+		//objs.uploadOptions.script
+		//objs.uploadOptions.showUrl
+		for (var key in map_Files) {
+			var xhr = new XMLHttpRequest();
+			if (map_Files[key]) {
+				xhr.open("POST", "http://192.168.6.100/ptwjfw/rest/fileWS/upload", false);
+				var formData = new FormData();
+				formData.append("files", map_Files[key]);
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						// 从服务器的response获得数据
+						var obj = $.parseJSON(xhr.response);
+						var _files = obj.msgObj;
+						for (var i = 0; i < _files.length; i++) {
+							if (obj.successFlg == true) {
+								addFiles.push("http://192.168.6.100:8082/" + _files[i].fileId);
+								$("#" + key).find(".wd-editFileSingleOpt").remove();
+								$("#" + key).find(".wd_editFileSuccess").show();
+								map_Files[key] = "";
+							}
+						}
+					}
+				}
+				xhr.send(formData);
+			}
+		}
+	}
+</script>

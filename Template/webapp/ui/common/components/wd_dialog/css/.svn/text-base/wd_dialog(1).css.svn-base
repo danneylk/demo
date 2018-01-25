@@ -1,0 +1,177 @@
+.wd-prompt {
+	position: fixed;
+	/*left: 50%;*/
+	background: #fff;
+	border-radius: 4px;
+	display: none;
+}
+
+.wd-prompt-shield {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.wd-prompt .wd-prompt-close,
+.wd-prompt .wd-prompt-max {
+	cursor: pointer;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-close {
+	width: 22px;
+	height: 22px;
+	background: url(../images/frameWork/dialog/dialog-close1.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-max {
+	width: 22px;
+	height: 22px;
+	background: url(../images/frameWork/dialog/dialog-max2.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-min {
+	width: 22px;
+	height: 22px;
+	background: url(../images/frameWork/dialog/dialog-min1.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-old-min {
+	width: 22px;
+	height: 22px;
+	background: url(../images/frameWork/dialog/dialog-min2.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-old {
+	width: 22px;
+	height: 22px;
+	background: url(../images/frameWork/dialog/dialog-max1.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea {
+	border-radius: 4px 4px 0 0;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #F6F6F6;
+	font-family: 'Microsoft YaHei';
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-title {
+	float: left;
+	color: #333333;
+	font-size: 18px;
+	padding-left: 8px;
+	width: 360px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.wd-prompt .wd-prompt-footer {
+	border-radius: 0 0 4px 4px;
+}
+
+.wd-prompt .wd-prompt-textarea {
+	height: 100%;
+	background-color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	background-repeat: no-repeat;
+	margin-top: 40px;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-alert {
+	background: url(../images/frameWork/dialog/alert-alert.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-error {
+	background: url(../images/frameWork/dialog/alert-error.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-success {
+	background: url(../images/frameWork/dialog/alert-success.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-confirm {
+	background: url(../images/frameWork/dialog/alert-confirm.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-text {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	font-size: 14px;
+	margin-left: 40px;
+	line-height: 160%;
+	font-size: 14px;
+	text-align: left;
+	width: 300px;
+	margin-top: 30px;
+	height: 100px;
+	overflow-y: auto;
+	word-wrap: break-word;
+}
+
+.wd-prompt .wd-prompt-footer {
+	height: 40px;
+	line-height: 40px;
+	background-color: #F6F6F6;
+}
+
+.wd-prompt .wd-prompt-footer .wd-prompt-footer-buttonarae {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wd-prompt .wd-prompt-footer .wd-prompt-footer-buttonarae .wd-prompt-footer-buttonarae-button {
+	height: 26px;
+	color: #666666;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	line-height: 26px;
+	border: 1px solid #E4E4E4;
+	width: 60px;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	margin-top: -4px;
+}

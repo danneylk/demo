@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>查询区扩展</title>
+		<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+		<link href="../../../../ui/common/css/wd.css" rel="stylesheet" />
+		<link href="../../../../ui/common/components/wdselecttext/wdselecttext.css" rel="stylesheet" />
+
+	</head>
+
+	<body class="wd-content">
+		<div class="clear">
+			<div class="hp-right">
+				<div class="hp-operateBox">
+					<div class="o-title">
+						<label>查询区域一</label><span>这里写注意事项</span>
+						<a class="return" onclick="history.back(-1)">返回</a>
+					</div>
+					<div class="splitBar"></div>
+					<div class="o-btnBox">
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>领域：</span>
+							<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput WDinputHiddenCode lingyu " value="" placeholder="基础教育">
+						</p>
+							<input type="button" class="btn bg-default btn-chaxun" value="搜索">
+							<a id="moreSearch">更多查询</a>
+						
+					</div>
+					<div class="o-btnBox moreSearch" >
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>工程名称：</span>
+							<input type="text" class="input-style-search  width-100" />
+						</p>
+						<p>
+							<span>领域：</span>
+							<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput WDinputHiddenCode lingyu " value="" placeholder="基础教育">
+						</p>
+					</div>
+				</div>
+
+				<div class="hp-list " id="ckLayout">
+					
+					<!--列表：按钮区 -->
+					<div class="hp-list-head">
+						<div class="hp-list-cz">
+							<input name="wdcheckall" type="checkbox" class="wd-check  wd-nolink" id="ck-all">
+							<input type="button" value="新增" class="btn bg-default btn-tianjia" />
+							<input type="button" value="新增" class="btn bg-default btn-tianjia" />
+						</div>
+						<div class="hp-list-count fr">
+							<span>共 125 条记录</span>
+							<a href="javascript:void(0)" class="hp-list-filter">筛选</a>
+							<div class="hp-filter" style="width: 420px;">
+								<input type="text" id="wjfl" class="input-style-search width-100" placeholder="问卷分类">
+								<input type="text" name="code_SHZT" id="code_SHZT" class="WDInput WDinputHiddenCode WDinputWidth-125" value="" placeholder="审核状态">
+								<input type="button" class="hp-filter-btn" id="tm-search" value="确定" />
+								<input type="button" class="hp-filter-btn-clear" id="tm-clear" value="清空" />
+							</div>
+						</div>
+					</div>
+					<!--列表：按钮区 -->
+					<div class="nodata">
+						没有数据
+					</div>
+					<!--列表：行  -->
+					<li class="hp-list-row">
+						<div class="hp-list-check"><input id="ck1" type="checkbox" name="ck-all" class="wd-check wd-nolink"></div>
+						<dl class="_clear">
+							<p>
+								<a class="mainTxt" href="javascript:void(0)">有效地调节下边框和文字下边缘的距离，实现我们最想要的的效果</a>
+							</p>
+							<p>审核中</p>
+						</dl>
+						<dl class="_clear">
+							<p>状态：<a>启用</a>
+							</p>
+							<p>是否同步：<span>同步</span></p>
+							<p>维护人：
+								<a class="mainTxt">刘洪</a>
+							</p>
+							<p>维护时间：<span>2015-07-05 22:21</span></p>
+						</dl>
+						<div class="hp-list-operate">
+							<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+							<p title="第一个按钮" class="btn-ico btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico btn-icon-shanchu">第二个按钮</p>
+						</div>
+					</li>
+					<!--列表：行 -->
+					<!--列表：行  -->
+					<li class="hp-list-row">
+						<div class="hp-list-check"><input id="ck2" type="checkbox" name="ck-all" class="wd-check wd-nolink"></div>
+						<dl class="_clear">
+							<p>
+								<a class="mainTxt text-ellips" href="javascript:void(0)">伟东云教育平台基于全球最强大的开放源码项目，采用开放独立的微服务架构，将云计算、大数据、移动互联网、人工智能、机器学习等新一代信息技术与教育业务进行高度融合</a>
+							</p>
+							<p>审核中</p>
+						</dl>
+						<dl class="_clear">
+							<p>状态：
+								<a class="mainTxt">启用</a>
+							</p>
+							<p>是否同步：<span>同步</span></p>
+							<p>维护人：<span>刘洪</span></p>
+							<p>维护时间：<span>2015-07-05 22:21</span></p>
+						</dl>
+						<div class="hp-list-operate">
+							<p title="删除" class="btn-ico btn-icon-shanchu">第一个按钮</p>
+							<p title="第一个按钮" class="btn-ico-text btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico-text btn-icon-shanchu">第二个按钮</p>
+						</div>
+					</li>
+					<!--列表：行 -->
+					<!--列表：行  -->
+					<li class="hp-list-row">
+						<div class="hp-list-check"><input id="ck4" type="checkbox" name="ck-all" class="wd-check wd-nolink"></div>
+						<dl class="_clear">
+							<p>
+								<a class="mainTxt text-ellips" href="javascript:void(0)">Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!</a>
+							</p>
+							<p>审核中</p>
+						</dl>
+						<dl class="_clear">
+							<p>状态：
+								<a class="mainTxt">启用</a>
+							</p>
+							<p>是否同步：<span>同步</span></p>
+							<p>维护人：<span>刘洪</span></p>
+							<p>维护时间：<span>2015-07-05 22:21</span></p>
+						</dl>
+						<div class="hp-list-operate">
+							<p title="删除" class="btn-ico btn-icon-shanchu">第一个按钮</p>
+							<p title="第一个按钮" class="btn-ico-text btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico-text btn-icon-shanchu">第二个按钮</p>
+						</div>
+					</li>
+					<!--列表：行 -->
+					<!--列表：行  -->
+					<li class="hp-list-row">
+						<div class="hp-list-check"><input id="ck3" type="checkbox" name="ck-all" class="wd-check wd-nolink"></div>
+						<dl class="_clear">
+							<p>
+								<a class="mainTxt text-ellips" href="javascript:void(0)">0123456789698547856985488522101234567896985478569854885221012345678969854785698548852210123456789698547856985488522101234567896985478569854885221</a>
+							</p>
+							<p>审核中</p>
+						</dl>
+						<dl class="_clear">
+							<p>状态：
+								<a class="mainTxt">启用</a>
+							</p>
+							<p>是否同步：<span>同步</span></p>
+							<p>维护人：<span>刘洪</span></p>
+							<p>维护时间：<span>2015-07-05 22:21</span></p>
+						</dl>
+						<div class="hp-list-operate">
+							<p title="删除" class="btn-ico btn-icon-shanchu">第一个按钮</p>
+							<p title="第一个按钮" class="btn-ico-text btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico btn-icon-shanchu">第二个按钮</p>
+							<p title="第一个按钮" class="btn-ico-text btn-icon-shanchu">第二个按钮</p>
+						</div>
+					</li>
+					<!--列表：行 -->
+					<!--列表：翻页 -->
+					<div class="hp-page">
+						<a href="javascript:;" class="prevPage">上一页</a>
+						<a href="javascript:;" class="tcdNumber">1</a>
+						<a href="javascript:;" class="tcdNumber">2</a>
+						<span class="current">3</span>
+						<a href="javascript:;" class="tcdNumber">4</a>
+						<a href="javascript:;" class="tcdNumber">5</a>
+						<a href="javascript:;" class="nextPage">下一页</a>
+					</div>
+					<!--列表：翻页 -->
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../ui/common/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/storejson2.min.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/components/wdselecttext/wdselecttext.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/custom.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/jquery.nicescroll.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/wd.js"></script>
+		<script>
+			$(function() {
+
+				//复选框与单选框
+				addWdCheckBox("#ckLayout");
+				addWdCheckBox("#ckLayout2");
+
+				//下拉框插件
+				function initSelectInput(key, obj) {
+					if(key) {
+						var keyArr = key.split('_');
+						var keyArr_key = keyArr[1].toUpperCase();
+					}
+					var _mbList = [];
+					if(typeof obj == "object") {
+						for(var i = 0; i < obj.length; i++) {
+							var temp = {
+								"code": obj[i].code,
+								"codedesc": obj[i].name
+							};
+							_mbList.push(temp);
+						}
+					}
+					store.set(keyArr_key, JSON.stringify(_mbList));
+					selecttextInfo();
+				}
+				initSelectInput.call(this, 'code_SFYX', [{
+					'code': 1,
+					'name': '全部'
+				}, {
+					'code': 2,
+					'name': '待提交'
+				}, {
+					'code': 3,
+					'name': '审核通过'
+				}, {
+					'code': 4,
+					'name': '审核退回'
+				}]);
+				//筛选-点击搜索
+				$(".hp-list-filter").click(function() {
+						$(".hp-filter").slideDown("fast");
+						var searchText = $("#wjfl").val() + "、" + getWDCodeDesc("code_SHZT");
+						$(".hp-list-filter").html(searchText);
+						$(".hp-list-filter").addClass("pink");
+					})
+					//筛选-点击搜索
+				$("#tm-search").click(function() {
+					$(".hp-filter").slideUp("fast");
+					var searchText = $("#wjfl").val() + "、" + getWDCodeDesc("code_SHZT");
+					$(".hp-list-filter").html(searchText);
+					$(".hp-list-filter").addClass("pink");
+				})
+			})
+		</script>
+	</body>
+
+</html>

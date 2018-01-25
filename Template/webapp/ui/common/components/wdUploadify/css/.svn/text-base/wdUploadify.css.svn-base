@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.uploadifyQueueItem {
+	display: block;
+	height: 24px;
+	background: #FFF0FF;
+	color: #333333;
+	line-height: 24px;
+	padding: 0 4px 0 0px;
+	margin-right: 14px;
+	border-radius: 2px;
+	border: none;
+	width: 350px;
+	margin-bottom: 10px;
+	padding: 0px 10px !important;
+}
+.uploadifyQueueItem:hover{
+	background: #FFF5D4;
+}
+
+.uploadifyError {
+	background-color: #FDE5DD !important;
+	border: 2px solid #FBCBBC !important;
+}
+
+.uploadifyQueueItem .wdb-cancel {
+	float: right;
+}
+.uploadifyQueue .completed {
+	background-color: #E5E5E5;
+}
+
+.uploadifyProgress {
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.uploadifyProgressBar {
+	background-color: #0099FF;
+	height: 3px;
+	width: 1px;
+}
+
+.wdb-delfile {
+	background: url(../../../images/btn-close.png);
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin: 4px 0;
+	border-radius: 50%;
+}
+.wdb-delfile:hover{
+	background: #FF6666 url(../../../images/btn-close-hover.png) no-repeat center center;
+	background-size: 14px;
+	transition: all 0.2s ease 0s;
+}
+
+.selectbtn {
+	display: none;
+}
+
+.wdb-mb {
+	margin-bottom: 16px;
+	cursor: pointer;
+}
+
+.wdb-btn-upload {
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #F2F2F2;
+	min-width: 80px;
+	padding: 6px 12px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.wdb-btn-upload:hover,
+.wdb-btn-upload:focus {
+	background: #F0F0F0;
+}
+
+.wdb-disable {
+	background: #F2F2F2;
+}
+
+.wdb-upload-queue {
+	position: relative;
+	overflow: hidden;
+}
+
+.wdb-upload-queue .wdb-queue-item {
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.wdUploadify-dis {
+	width: 80px;
+	height: 80px;
+	line-height: 78px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: left;
+	text-align: center;
+	position: relative;
+	border: 1px solid #ccc;
+}
+
+.wdUploadify-dis img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wdUploadify-disArea {
+	overflow: hidden;
+}
+
+.wdUploadify-cancel {
+	position: absolute;
+	line-height: normal !important;
+	cursor: pointer;
+	width: 100%;
+	bottom: 0;
+	display: none;
+}
+
+.wdUploadify-cancelBtn {
+	float: right;
+	margin-right: 4px;
+}
+
+.wdUploadify-File {
+	padding-left: 10px;
+	font-size: 14px;
+	line-height: 26px;
+	background: #FFF0FF;
+	margin-bottom: 10px;
+	width: 360px;
+}
+.wdUploadify-File:hover{
+	background: #FFF5D4 ;
+}
+.wdUploadify-File a {
+	text-decoration: none !important;
+	padding-right: 6px;
+}
+
+.wdUploadify-list-cancel {
+	color: #FF6600;
+	cursor: pointer;
+	float: right;
+}
+
+.wdUploadify-list-cancel:hover {
+	color: #FF3300;
+}
+
+.wdUploadify-list-down {
+	color: #0099CC;
+	cursor: pointer;
+	float: right;
+}
+
+.wdUploadify-list-down:hover {
+	color: #336699;
+}
+
+.wdUploadify-ml20 {
+	margin-left: 0;
+}

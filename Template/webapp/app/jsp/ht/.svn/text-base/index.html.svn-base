@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ng-app="test">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WUI</title>
+		<script src="../../../ui/common/components/angular/angular.min.js"></script>
+		<script src="../../../ui/common/components/angular/angular-route.min.js"></script>
+		<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+		<!--CSS3 ADMINITE 动画库-->
+		<link rel="stylesheet" href="../../../ui/common/components/wow/css/animate.css" /><!--动画库-->
+		<!--下拉框css-->
+		<link href="../../../ui/common/components/wdselecttext/wdselecttext.css" rel="stylesheet" />
+		<!--时间控件-->
+		<link href="../../../ui/common/components/wdDate/wdDate.css" rel="stylesheet" />
+		<!--单选多选必备样式-->
+		<link href="../../../ui/common/css/wd.css" rel="stylesheet" />
+		<!--富文本编辑框-->
+		<link href="../../../ui/common/components/wdEdit/wdEdit.css" rel="stylesheet" />
+		<!--进度条-->
+		<link href="../../../ui/common/components/jRange/jquery.range.css" rel="stylesheet" />
+	    <!--弹窗控件css-->
+		<link rel="stylesheet" href="../../../ui/common/components/wd_dialog/css/wd_dialog.css" />
+		<!--分页-->
+	   <link href="../../../ui/common/components/wd_table/css/wd_table.css" rel="stylesheet" />
+	</head>
+	<style>
+		.tabfix{ position: fixed; top: 0px; width: 200px; }
+		.ng-scope{ width: 100%; }
+		.w{ width: 1100px; margin: 0 auto; }
+		header{ background-color: #409EFF; }
+		.leftmunu{ width: 200px; }
+		.leftmunu  ul { height: 600px; overflow: hidden; color: #444444; cursor: pointer; font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif; }
+		.leftmunu  ul li{ margin-top: 8px;}
+	</style>
+	<!--代码块样式-->
+	<style>
+		xmp{ font-family: "微软雅黑"; font-size: 12px; line-height:10px;}
+		pre{display:block;font-family:Monaco,Menlo,Consolas,"Courier New",monospace；padding:9.5px;margin-bottom:10px;font-size:12px;line-height:10px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;color:#333}
+		.prettyprint{ margin: 10px; margin-left: 0px; margin-right: 40px; padding:8px; padding-right: 30px;  background-color:#f7f7f9;}
+		.prettyprint .com { color: #998;font-style:italic }/*注释*/
+		.prettyprint .tag{color:#007}/*标签*/
+		.prettyprint .lit { color: #195f91}
+		.prettyprint .pun,.prettyprint .opn,.prettyprint .clo { color: #93a1a1}/*等于*/
+		.prettyprint .fun { color: #dc322f}
+		.prettyprint .str,.prettyprint .atv { color: #D14}/*值*/
+		.prettyprint .kwd,.prettyprint .prettyprint .tag { color: #1e347b}
+		.prettyprint .typ,.prettyprint .atn,.prettyprint .dec,.prettyprint .var { color: teal}/*文档声明，属性*/
+		.prettyprint .pln { color: #48484c}
+		.prettyprint.linenums{box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0}
+		.pre-scrollable{max-height:340px;overflow-y:scroll}
+		pre ol.linenums{list-style:decimal outside none;margin:0 0 0 33px}
+		pre ol.linenums li{padding-left:12px;color:#bbb;line-height:12px;text-shadow:0 1px 0 #fff}
+	</style>
+<body class="wd-content" onload="prettyPrint();">
+	<header>
+		<div class="w">
+			<h2>WUI</h2>
+		</div>
+	</header>
+	<div class="w  clear" style="padding-top: 20px;">
+		<div class="fl width-200 mr-20 leftmunu dofix" style="width: 200px; overflow: hidden;">
+			<ul ng-controller="userController">
+				<li> <a href="#/anzhuang">快速开始</a> </li>
+				<li> <a href="#/grid">栅格系统</a></li>
+				<li> <a href="#/layout">常用布局</a></li>
+				<li> <a href="#/color">颜色</a> </li>
+				<li> <a href="#/paiban">排版</a> </li>
+				<li> <a href="#/biaoge">表格+分页</a> </li>
+				<li> <a href="#/button">按钮</a> </li>
+				<li> <a href="#/form">Form</a> </li>
+				<li> <a href="#/Editor">Editor富文本编辑器</a> </li>
+				<li> <a href="#/tanchuang">弹窗</a> </li>
+				<li> <a href="#/Progress">进度条</a> </li>
+				<li> <a href="#/adminite">adminite</a> </li>
+				<li> <a href="#/mobile">手机端rem适配方案</a> </li>
+				<li> <a href="#/wuitab">Tabs 标签页</a></li>
+				<li> <a href="#/footer">页脚</a></li>
+			</ul>
+		</div>
+	<div class="fr" style="width:880px;">
+	<ng-view></ng-view>
+	</div>
+	</div>
+	
+	</body>
+	<!--jquery-->
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/storejson.js"></script>
+	<script type="text/javascript" src="../../../ui/common/js/requestAddressList.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd.js"></script>
+	<script type="text/javascript" src="../../../ui/common/js/custom.js"></script>
+	<!--以上为必备js-->
+	<!--下拉框控件-->
+    <script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdselecttext/wdselecttext.js"></script>
+	<!--时间控件-->
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdDate/wdDate.js"></script>
+	<!--富文本编辑框-->
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdEdit/wdEditStarter.js"></script>
+	<!--滚动条-->
+	<script type="text/javascript" src="../../../ui/common/components/nicescroll/js/jquery.nicescroll.js" ></script>
+    <!--代码片段显示-->
+    <script src="../../../ui/common/js/prettify.js"></script>
+    <!--adminite css3流程动画库-->
+	<script src="../../../ui/common/js/animo.js"></script>
+	<!--进度条-->
+	<script type="text/javascript" src="../../../ui/common/components/jRange/jquery.range.js"></script>
+    <!--此片段不要引用 ——angular控制器-->
+	<script src="../../../ui/common/js/user.js"></script>
+<script>
+//angular路由
+var app=angular.module('test', ["ngRoute", "userMod"]);
+app.config(function ($routeProvider){
+	$routeProvider
+	.when( '/anzhuang', { templateUrl:'Basic/begin.html', controller:'anzhuang' } )
+	.when( '/grid', { templateUrl: 'Basic/grid.html', controller:'biaoge'})
+	.when( '/layout', { templateUrl: 'Basic/5layout.html', controller:'biaoge'})
+	.when( '/paiban', { templateUrl: 'Basic/1paiban.html', controller:'paiban' } )
+	.when( '/biaoge', { templateUrl: 'Basic/4table.html', controller:'biaoge' } )
+	.when( '/color', { templateUrl: 'Basic/2color.html' } )
+	.when( '/adminite', { templateUrl: 'Basic/6adminite.html', controller:'userController' } )
+	.when( '/form', { templateUrl: 'form/form-xiala.html', controller:'form' } )
+	.when( '/button', { templateUrl: 'Basic/3button.html', controller:'button' } )
+	.when( '/Editor', { templateUrl: 'form/form-Editor.html', controller:'Editor' } )
+	.when( '/tanchuang', { templateUrl: 'jsmodule/Alert.html', controller:'tanchaung' } )
+	.when( '/Progress', { templateUrl: 'jsmodule/Progress.html', controller:'Progress' } )
+	.when( '/mobile', { templateUrl: 'Basic/mobile.html',controller:'mobile'})
+	.when( '/wuitab', { templateUrl: 'Basic/7tab.html',controller:'wuitab'})
+	.when( '/footer', { template: '<footer class="footer mt-20"> <div class="container-fluid"> <nav> <a href="#" target="_blank">关于我们</a> <span class="pipe">|</span> <a href="#" target="_blank">联系我们</a> <span class="pipe">|</span> <a href="#" target="_blank">法律声明</a> </nav> <p>Copyright &copy;2016 wd.com All Rights Reserved. <br> <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br> </p> </div> </footer>'})
+	.otherwise({ redirectTo: '/anzhuang' });
+});
+</script>
+<script>
+//滚动条
+$("ul").niceScroll({  
+cursorcolor:"hsla(220,8%,56%,.3)",  
+cursoropacitymax:1,  
+touchbehavior:false,  
+cursorwidth:"5px",  
+cursorborder:"0",  
+cursorborderradius:"5px"  
+}); 
+//左侧导航吸顶
+$(document).scroll(function() {
+	var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+	scrollTop > 50 ? $('.dofix').addClass('tabfix') : $('.dofix').removeClass('tabfix');
+})
+//dofix
+//$(".dofix ul li a").click(function(){
+//	alert(123)
+//})
+
+</script>
+</html>

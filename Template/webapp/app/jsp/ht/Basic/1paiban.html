@@ -1,0 +1,211 @@
+<!--	标题	-->	
+<div class="hp-operateBox">
+<h3>标题</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div class="fl">
+	<pre class="prettyprint linenums">
+	<xmp>
+	<h1>h1. 大标题<small>小标题</small></h1>
+	<h2>h2. 大标题<small>小标题</small></h2>
+	<h3>h3. 大标题<small>小标题</small></h3>
+	<h4>h4. 大标题<small>小标题</small></h4>
+	<h5>h5. 大标题<small>小标题</small></h5>
+	<h6>h6. 大标题<small>小标题</small></h6>	
+	</xmp>
+	</pre>
+</div>				
+<div class="fl">
+<h1>h1. 大标题<small>小标题</small></h1>
+<h2>h2. 大标题<small>小标题</small></h2>
+<h3>h3. 大标题<small>小标题</small></h3>
+<h4>h4. 大标题<small>小标题</small></h4>
+<h5>h5. 大标题<small>小标题</small></h5>
+<h6>h6. 大标题<small>小标题</small></h6>
+</div>
+</div>
+</div>	
+<!--文字尺寸-->
+<div class="hp-operateBox">
+<h3>文字尺寸</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div class="fl">
+	<pre class="prettyprint linenums">
+	<xmp>
+.f-12{font-size:12px}
+.f-14{font-size:14px}
+.f-16{font-size:16px}
+.f-18{font-size:18px}
+.f-20{font-size:20px}
+.f-24{font-size:24px}
+.f-26{font-size:26px}
+.f-28{font-size:28px}
+.f-30{font-size:30px}
+	</xmp>
+	</pre>
+</div>	
+<div class="fl">
+<p class="f-12">12px 字体</p>
+<p class="f-14">14px 字体</p>
+<p class="f-16">16px 字体</p>
+<p class="f-18">18px 字体</p>
+<p class="f-20">20px 字体</p>
+<p class="f-24">24px 字体</p>
+<p class="f-26">26px 字体</p>
+<p class="f-28">28px 字体</p>
+<p class="f-30">30px 字体</p>
+</div>
+</div>
+</div>
+<!--定位-->
+<div class="hp-operateBox">
+<h3>定位</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div class="fl">
+	<pre class="prettyprint linenums">
+	<xmp>
+	class="pos-r|pos-a|pos-f"
+	.pos-r 相对定位， .pos-a 绝对定位， .pos-f 固定
+	.pos-r{position:relative}
+	.pos-a{position:absolute}
+	.pos-f{position:fixed}
+	//位置
+	.left{ left:0; right:auto}
+	.right{ right:0; left:auto}
+	.top{ top:auto; bottom:0}
+	.bottom{ top:0; bottom:auto}
+	绝对定位于相对定位结合使用，
+	用例：
+	<div class="pos-r">
+		<div class="pos-a left">我是左侧</div>
+		<div class="pos-a rigt">我是右侧</div>
+	</div>
+	</xmp>
+	</pre>
+</div>	
+<div class="fl">
+	<div class="pos-r" style=" width: 300px; height:200px; background-color:#f7f7f9;">
+		<div class="pos-a left">我是左侧</div>
+		<div class="pos-a right">我是右侧</div>
+	</div>
+</div>
+</div>
+</div>
+<!--浮动-->
+<div class="hp-operateBox">
+<h3>浮动</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div class="fl">
+	<pre class="prettyprint linenums">
+	<xmp>
+	class="fl|fr|"
+	.fl 左浮动， .fr 右浮动
+	.fl{float:left;}
+	.fr{float:right;}
+	提示：使用浮动时父级清除浮动
+	用例：
+	<div class="clear">
+		<div class="fl">我是左侧</div>
+		<div class="fr">我是右侧</div>
+	</div>
+	</xmp>
+	</pre>
+</div>	
+<div class="fl">
+	<div class="clear" style=" width: 300px; height:200px; background-color:#f7f7f9;">
+		<div class="fl">我是左侧</div>
+		<div class="fr">我是右侧</div>
+	</div>
+</div>
+</div>
+</div>
+<!--文字单行溢出省略号-->
+<div class="hp-operateBox">
+<h3>文字单行溢出省略号</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div>
+	<pre class="prettyprint linenums">
+	<xmp>
+	使用方法：直接调用 class="text-overflow" 宽度需要附加样式
+<div class="text-overflow" style="width:300px;">我是很长很长的文字，我的所在的容器尺寸有限，所以我溢出了，并且显示省略号</div>
+css代码：
+.text-overflow{overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+	</xmp>
+	</pre>
+</div>				
+</div>
+</div>
+<!--行内分割线-->
+<div class="hp-operateBox">
+<h3>行内分割线</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div class="fl">
+	<pre class="prettyprint linenums">
+	<xmp>
+	 注册|登录 
+	css：
+    .pipe{margin:0 5px;color:#CCC}
+	用例：
+    <span class="pipe">|</span>
+	</xmp>
+	</pre>
+</div>	
+<div class="fl">
+	 注册<span class="pipe">|</span>登录 
+</div>
+</div>
+</div>
+<!--外边距定义-->
+<div class="hp-operateBox">
+<h3>外边距</h3>
+<div class="splitBar"></div>
+<div class="clear">
+<div>
+	<pre class="prettyprint linenums">
+	<xmp>
+.mt-5{margin-top:5px}/*距上5像素*/
+.mt-10{margin-top:10px}/*距上10像素*/
+.mt-15{margin-top:15px}/*距上15像素*/
+.mt-20{margin-top:20px}/*距上20像素*/
+.mt-25{margin-top:25px}/*距上25像素*/
+.mt-30{margin-top:30px}/*距上30像素*/
+.mt-35{margin-top:35px}/*距上35像素*/
+.mt-40{margin-top:40px}/*距上40像素*/
+.mt-50{margin-top:50px}/*距上50像素*/
+ 
+.mb-5{margin-bottom:5px}/*距下5像素*/
+.mb-10{margin-bottom:10px}/*距下10像素*/
+.mb-15{margin-bottom:15px}/*距下15像素*/
+.mb-20{margin-bottom:20px}/*距下20像素*/
+.mb-25{margin-bottom:25px}/*距下25像素*/
+.mb-30{margin-bottom:30px}/*距下30像素*/
+.mb-35{margin-bottom:35px}/*距下35像素*/
+.mb-40{margin-bottom:40px}/*距下40像素*/
+.mb-50{margin-bottom:50px}/*距下50像素*/
+ 
+.ml-5{margin-left:5px}/*距左5像素*/
+.ml-10{margin-left:10px}/*距左10像素*/
+.ml-15{margin-left:15px}/*距左15像素*/
+.ml-20{margin-left:20px}/*距左20像素*/
+.ml-30{margin-left:30px}/*距左30像素*/
+.ml-40{margin-left:40px}/*距左40像素*/
+.ml-50{margin-left:50px}/*距左50像素*/
+ 
+.mr-5{margin-right:5px}/*距右5像素*/
+.mr-10{margin-right:10px}/*距右10像素*/
+.mr-15{margin-right:15px}/*距右15像素*/
+.mr-20{margin-right:20px}/*距右20像素*/
+.mr-30{margin-right:30px}/*距右30像素*/
+.mr-40{margin-right:40px}/*距右40像素*/
+.mr-50{margin-right:50px}/*距右50像素*/
+	</xmp>
+	</pre>
+</div>				
+</div>
+</div>
+	

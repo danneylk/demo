@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>布局</title>
+		<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+		<link href="../../../ui/common/components/wdEdit/wdEdit.css" rel="stylesheet" />
+		<link href="../../../ui/common/components/wdselecttext/wdselecttext.css" rel="stylesheet" />
+		<!--<link href="../../../ui/common/components/wdatePicker/skin/wdatePicker.css" rel="stylesheet" />-->
+		<link href="../../../ui/common/components/wdDate/wdDate.css" rel="stylesheet" />
+		<link href="../../../ui/common/css/wd.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../ui/common/components/wd_dialog/css/wd_dialog.css" />	
+<style>
+	.wdb-percentage{
+		background: red;
+	}
+	.pBar{
+		
+	}
+	.uploadifyProgressBar{
+		background-color: red !important;
+	}
+</style>
+	</head>
+
+	<body class="wd-content clear">
+		<div class="hp-right">
+			<div class="hp-operateBox">
+				<div class="o-title">
+					<label>新建内容</label><span>* 标的必须填写</span>
+					<a class="return" onclick="history.back(-1)">返回</a>
+				</div>
+				<div class="splitBar"></div>
+				<div class="o-btnBox">
+					<input type="button" class="btn bg-default btn-tianjia" id="B01" value="弹出框">
+					<input type="button" class="btn bg-danger btn-tianjia" id="btn-success" value="成功">
+					<input type="button" class="btn bg-danger btn-tianjia" id="btn-error" value="失败">
+					<input type="button" class="btn bg-danger btn-tianjia" id="btn-confirm" value="询问">
+					<input type="button" class="btn bg-danger btn-tianjia fr" value="上一步">
+				</div>
+			</div>
+
+			<div class="hp-pannel">
+				<li>
+					<h4>文本框<em>*</em></h4>
+					<div class="_clear ">
+						<input type="text" class="input-style-search width-600" />
+					</div>
+				</li>
+				<li>
+					<h4>文本框-不可用<em>*</em></h4>
+					<div class="_clear ">
+						<input type="text" disabled="" class="input-style-search width-600" />
+					</div>
+				</li>
+				<li>
+					<h4>下拉框-默认</h4>
+					<div class="_clear ">
+						<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput WDinputHiddenCode" value="" placeholder="公共服务平台">
+					</div>
+				</li>
+				<li>
+					<h4>类型<em>*</em></h4>
+					<div class="lx-type">
+						<span>问答题问答题问答题</span>
+						<span>选择题</span>
+						<span>问答题</span>
+						<span>选择题</span>
+						<span class="selected">问答题</span>
+						<span>选择题</span>
+					</div>
+				</li>
+				<li>
+					<h4>下拉框-自定义长度 width-300</h4>
+					<div class="_clear ">
+						<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput width-300  WDinputHiddenCode" value="" placeholder="基础教育">
+					</div>
+				</li>
+				<li>
+					<h4><em class="star fl"></em>单选时间组件</h4>
+					<div class="_clear" id="rq">
+						<input type="text" class="Wdate" name="operatetime_s" />
+						<input type="text" class="Wdate" data-dateformat="yyyy-MM-dd hh:mm" />
+					</div>
+				</li>
+				<li>
+					<h4><em class="star fl"></em>双选时间组件</h4>
+					<div class="_clear">
+						不再使用
+						<!--<input type="text" class="hp-input-date WdDateto width-300 mr-20 fl" value="2017/2/14 - 2017/2/14" />-->
+					</div>
+				</li>
+				<li>
+					<h4>多选<em>*</em></h4>
+					<div class="_clear" id="ckLayout">
+						<input type="checkbox" class="wd-check" id="wdcheckall"><label>全部</label>
+						<span class="wd-check-groupbox">
+								<input name="wdcheckall" type="checkbox" class="wd-check" id="a2"><label>客户端</label>
+								<input name="wdcheckall" type="checkbox" class="wd-check" id="a3"><label>web端</label>
+								<input name="wdcheckall" type="checkbox" class="wd-check" id="a4"><label>手机端</label>
+								<input name="wdcheckall" type="checkbox" class="wd-check" id="a5"><label>pad端</label>
+							</span>
+					</div>
+				</li>
+				<li>
+					<h4>单选<em>*</em></h4>
+					<div class="_clear" id="ckLayout2">
+						<input type="radio" class="wd-radio" name="nrly"><label>在线输入</label>
+						<input type="radio" class="wd-radio" name="nrly"><label>上传文档</label>
+					</div>
+				</li>
+				<li>
+					<h4>多行文本 textArea</h4>
+					<div class="_clear ">
+						<textarea name="" rows="" cols="" class="textArea-style width-all"></textarea>
+					</div>
+				</li>
+				<li>
+					<h4>富文本编辑Editor</h4>
+					<div class="_clear ">
+						<div id="yl-editBoxStarter" class="wd-editbox"> </div>
+					</div>
+				</li>
+				<li>
+					<h4>上传</h4>
+					<div class="_clear ">
+						<div>
+							<div id="sctb-0"></div>
+						</div>
+						<div>
+							<div id="sctb-3"></div>
+						</div>
+						<div>
+							<div id="sctb-1"></div>
+							<div class="sctp-tx" id="aaa-1"></div>
+						</div>
+						<div>
+							<div id="sctb-2"></div>
+						</div>
+						<div class="relative fl mr-20">
+							<div id="sctb-5"></div>
+							<div class="sctp-5" id="aaa-5"></div>
+						</div>
+					</div>
+					<!--<span class="shangchuan-filelist fl" id="A001"><a>工程介绍.mp4</a><i class="del"></i><i class="download"></i></span>-->
+					<!--<span class="shangchuan-filelist fl" id="A002"><a>工程介绍.mp4</a><i class="del"></i><i class="download"></i></span>-->
+				</li>
+			</div>
+		</div>
+		
+<!--//提示1-->
+<!--iframe嵌入 更正最外层容器宽度-->
+<div id="prompt1" class="wd-prompt" data-shieldcolor="#333" data-width="400" data-height="200" style="width: 400px; margin-left: -200px; z-index: 2; top: 100px; display:none;">	
+	<div class="wd-prompt-titlearea" style=" height: 40px;">
+		<span style="float: left; margin-left: 10px;" id="prompt-title-prompt1">我是标题</span>
+		<span style="float: right;" class="wd-prompt-close" data-functionname="aaa"></span>
+	</div>
+	<div style=" padding: 10px; margin:0 auto; text-align: center;">
+	    <!--	iframe嵌入-->
+		<!--<iframe id="frmTree" name="frmTree" frameborder="0" src="menu.html"></iframe>-->
+		<img src="../../../ui/ht/images/index-background.png" width="200"/>
+		<span id="prompt-haha"></span>
+	</div>
+	<div class="wd-prompt-footer">
+		<input id="prompt-close-prompt1" type="button" value="关闭" class="wd-prompt-close" data-functionname="bbb" name="prompt1"></input>
+	</div>
+</div>
+
+
+<!--//提示3错误-->
+<div id="wd_dialog_error" class="wd-prompt" data-shieldcolor="#333" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-error">errortitle</span>
+		<span class="wd-prompt-close"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-error"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-error" style=" text-align: center;width: 100%; color: #e0620d; font-size: 16px;">保存失败</div>
+	</div>
+	<div class="wd-prompt-footer">
+		<div class="wd-prompt-footer-buttonarae">
+			<input id="prompt-wd_prompt_close-error" type="button" class="wd-prompt-footer-buttonarae-button wd-prompt-close" name="wd_dialog_error" value="关闭" style="font-family: 微软雅黑;">
+		</div>
+	</div>
+</div>
+
+<!--//提示4成功-->
+<div id="wd_dialog_success" class="wd-prompt" data-shieldcolor="#333" data-closetime="2000" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-success">保存成功</span>
+		<span class="wd-prompt-close" data-functionname="aaa"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-success"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-success" style=" color: #0fb54b; font-size: 16px;">保存成功</div>
+	</div>
+</div>
+<!--//提示5询问-->
+<div id="wd_dialog_confirm" class="wd-prompt" data-shieldcolor="#333" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-confirm">删除</span>
+		<span class="wd-prompt-close"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-confirm"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-confirm">确定要删除吗?</div>
+	</div>
+	<div class="wd-prompt-footer">
+		<div class="wd-prompt-footer-buttonarae">
+			<input type="button" id="prompt-wd_prompt_close-ok-confirm" class="wd-prompt-footer-buttonarae-button wd-prompt-close-ok" value="确定" style="font-family: 微软雅黑;">
+			<input type="button" id="prompt-wd_prompt_close-cancle-confirm" class="wd-prompt-footer-buttonarae-button wd-prompt-close-cancle" value="取消" style=" background-color: white; color:#999999; font-family: 微软雅黑;">
+		</div>
+	</div>
+</div>	
+	</body>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/storejson.js"></script>
+	<script type="text/javascript" src="../../../ui/common/js/requestAddressList.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd.js"></script>
+	<script type="text/javascript" src="../../../ui/common/js/custom.js"></script>
+	
+	
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdbuploadify/wdbuploadify.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdDate/wdDate.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdselecttext/wdselecttext.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdEdit/wdEditStarter.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdDateto/wdDateto.js"></script>
+	<!--<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wddialog/wddialog2.0.js"></script>-->
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd_table.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd_dialog.js"></script>
+	<script type="text/javascript" src="../../../ui/common/js/jquery.nicescroll.js"></script>
+	<link href="../../../ui/common/components/wdUploadify/css/wdUploadify.css" rel="stylesheet" />
+	<!--//弹出框模拟效果-->
+	<script>
+		$(function() {
+			//弹窗
+			//$("#prompt1").show();
+			$('#B01').on('click', function() {
+				$("#prompt1")[0].style.left="50%";
+				$("#prompt1").show();
+			})
+			//成功
+			//$("#wd_dialog_success")
+			$("#btn-success").on('click', function() {
+				$("#wd_dialog_success")[0].style.left="50%";
+				$("#wd_dialog_success").show();
+				setTimeout(function() {
+					$("#wd_dialog_success").hide()
+				}, 100000)
+			})
+			//错误
+			//$("#wd_dialog_error")
+			$("#btn-error").on('click', function() {
+				$("#wd_dialog_error")[0].style.left="50%";
+				$("#wd_dialog_error").show();
+			})
+			//询问	
+			//$("#wd_dialog_confirm")
+			$("#btn-confirm").on('click', function() {
+				$("#wd_dialog_confirm")[0].style.left="50%";
+				$("#wd_dialog_confirm").show();
+			})
+			//提示
+			//$("#wd_dialog_alert").show();//提示关闭效果			
+		$('.wd-prompt-close').on('click',function(){
+			 $(this).parent().parent().hide();
+		})
+		$('.wd-prompt-footer-buttonarae input').on('click',function(){
+			 $(this).parent().parent().parent().hide();
+		})
+		})
+
+		$(function() {
+			$("#sctb-0").wdbuploadify({
+				loginId: "", // 当前登录用户id
+				showUrl: "", // 文件查看、下载地址
+				buttonText: "本地上传",
+				btnClass: 'btn-shangchuan',
+				fileSizeLimit: 1024 * 1024 * 1024,
+				fileTypeExts: '*.jpg;*.png;*.jpeg;*.bmp',
+				multi: true,
+				//param: ["Id", "Name", "Size", "ExtName"],
+				customShowType: 0, // 自定义展现方式(0:初始方式;1:头像上传(单张图片);2:多张图片;3:自定义列表展示;4:自定义方式;)
+				onUploadComplete: function(originalFile, file) {}
+			});
+
+			$("#sctb-3").wdbuploadify({
+				loginId: "", // 当前登录用户id
+				showUrl: "http://192.168.6.100:8082/", // 文件查看、下载地址
+				buttonText: "本地上传",
+				btnClass: 'btn-shangchuan',
+				fileSizeLimit: 1024* 1024 * 1024,
+				fileTypeExts: '*.jpg;*.png;*.jpeg;*.bmp',
+				multi: true,
+				showFileListStyle: 1,
+				//param: ["Id", "Name", "Size", "ExtName"],
+				customShowType: 3, // 自定义展现方式(0:初始方式;1:头像上传(单张图片);2:多张图片;3:自定义列表展示;4:自定义方式;)
+				onUploadComplete: function(originalFile, file) {}
+			});
+
+			$("#sctb-1").wdbuploadify({
+				loginId: "", // 当前登录用户id
+				showUrl: "", // 文件查看、下载地址
+				buttonText: "本地上传",
+				btnClass: 'btn-shangchuan',
+				fileSizeLimit: 1024 * 1024 * 1024,
+				fileTypeExts: '*.jpg;*.png;*.jpeg;*.bmp',
+				multi: false,
+				//param: ["Id", "Name", "Size", "ExtName"],
+				customShowType: 1, // 自定义展现方式(0:初始方式;1:头像上传(单张图片);2:图片形式展示;3:自定义列表展示;4:自定义方式;)
+				onUploadComplete: function(originalFile, file) {
+					var fileallData = $("#sctb-1").getUploadFileIds();
+					var files = fileallData[fileallData.length - 1].fileId;
+					var html = "";
+					html = '<img id="tupian" width="80" height="80" class="tupian" data-value="' + files + '" src="http://192.168.6.100:8082/' + files + '?rw=214&rh=286" />';
+					$("#aaa-1").html(html);
+				}
+			});
+
+			$("#sctb-2").wdbuploadify({
+				loginId: "", // 当前登录用户id
+				showUrl: "http://192.168.6.100:8082/", // 文件查看、下载地址
+				buttonText: "本地上传",
+				btnClass: 'btn-shangchuan',
+				fileSizeLimit: 1024 * 1024 * 1024,
+				fileTypeExts: '*.jpg;*.png;*.jpeg;*.bmp',
+				multi: true,
+				//param: ["Id", "Name", "Size", "ExtName"],
+				customShowType: 2, // 自定义展现方式(0:初始方式;1:头像上传(单张图片);2:多张图片;3:自定义列表展示;4:自定义方式;)
+				onUploadComplete: function(originalFile, file) {}
+			});
+
+			$("#sctb-5").wdbuploadify({
+				loginId: "", // 当前登录用户id
+				showUrl: "", // 文件查看、下载地址
+				buttonText: "本地上传",
+				btnClass: 'btn-shangchuan',
+				fileSizeLimit: 1024 * 1024 * 1024,
+				fileTypeExts: '*.jpg;*.png;*.jpeg;*.bmp',
+				multi: false,
+				//param: ["Id", "Name", "Size", "ExtName"],
+				customShowType: 1, // 自定义展现方式(0:初始方式;1:头像上传(单张图片);2:多张图片;3:自定义列表展示;4:自定义方式;)
+				onUploadComplete: function(originalFile, file) {
+					var fileallData = $("#sctb-5").getUploadFileIds();
+					var files = fileallData[fileallData.length - 1].fileId;
+					var html = "";
+					html = '<img id="tupian" width="140" height="140" class="tupian" data-value="' + files + '" src="http://192.168.6.100:8082/' + files + '?rw=214&rh=286" />';
+					$("#aaa-5").html(html);
+				}
+			});
+
+			//复选框与单选框
+			addWdCheckBox("#ckLayout");
+			addWdRadioButton("#ckLayout2");
+             
+           //时间 
+			setWdDate("#rq");
+
+			$("#yl-editBoxStarter").wdEditStarter({
+				toolbar: ['bold', 'italic', 'underline', 'simpleupload', 'insertimage'],
+				width: "100%",
+				height: "200"
+			});
+
+			var hcDialog = {
+				url: "welcome.html",
+				width: 700,
+				height: 480,
+				title: "xx",
+				headHeight: 3,
+				maxbuttonshowFlg: false,
+				hideimg: true,
+				windowflg: false,
+				buttons: [{
+					"buttonName": "确定",
+					"buttonFunction": function() {
+						var _ = top.document.activeElement;
+						wdGetIframeObj(_).Closed(_.name);
+					},
+					"mainButFlg": false, // 是否主按钮，非必填，默认true
+					"buttonClass": "libuttonokstyle"
+				}, {
+					"buttonName": "取消",
+					"buttonFunction": function() {
+						wdGetIframeObj().Closed();
+					},
+					"mainButFlg": true, // 是否主按钮，非必填，默认true
+					"buttonClass": "libuttoncanlestyle"
+				}]
+			}
+			$('#B01').on('click', function() {
+
+				top._openDlg(hcDialog);
+
+			})
+
+			//保存成功提示框
+			var successObj = {
+				innerhtml: "<div class='alert-success'>保存成功</div>",
+				title: "提示",
+				buttonareaflg: false,
+				successCallBackFun: function() {
+					wdDialogClosed("dialog");
+				}
+			}
+			$('#btn-success').on('click', function() {
+				top._successDlg(successObj);
+			})
+
+			//保存失败提示框
+			var errObj = {
+				innerhtml: "<div class='alert-error'>保存失败</div>",
+				title: "提示",
+				successCallBackFun: function() {
+					wdDialogClosed("dialog");
+				}
+			}
+			$('#btn-error').on('click', function() {
+				top._errorDlg(errObj);
+			})
+
+			//询问提示框
+			var confirmObj = {
+				innerhtml: "<div class='alert-confirm'>确定要删除吗? </div>",
+				title: "删除",
+				buttons: [{
+					"buttonName": "确定",
+					"buttonClass": "libuttonokstyle",
+					"buttonFunction": function() {},
+					"mainButFlg": true // 是否主按钮，非必填，默认true
+				}, {
+					"buttonName": "取消",
+					"buttonClass": "libuttoncanlestyle",
+					"buttonFunction": function() {}
+				}]
+			}
+			$('#btn-confirm').on('click', function() {
+				top._confirmDlg(confirmObj);
+			})
+
+			//点击类型选中事件
+			$('.lx-type>span').on('click', function() {
+				//						$(this).parent().find('span').removeClass('selected');
+				$(this).toggleClass('selected');
+			})
+			initSelectInput.call(this, 'code_sjfl', [{
+				'code': 1,
+				'name': '全部'
+			}, {
+				'code': 2,
+				'name': '待提交'
+			}, {
+				'code': 3,
+				'name': '审核通过'
+			}, {
+				'code': 4,
+				'name': '审核退回'
+			}]);
+		})
+	</script>
+
+</html>

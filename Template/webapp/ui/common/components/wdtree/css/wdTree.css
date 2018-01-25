@@ -1,0 +1,142 @@
+.wd_zjml {
+	position: relative;
+	overflow: hidden;
+}
+.zjmldiv label{
+	font-family: "宋体";
+	font-size: 14px;}
+.wd_zjml li {
+	list-style: none;
+	line-height: 30px;
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+
+.zjmldiv {
+	width: 100%;
+	float: left;
+}
+
+.zjmldiv li{list-style: none;}
+.wd_zjml_title {
+	/*float: left;*/
+	font-size: 14px;
+	padding-left: 4px;
+	border: 1px solid #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+.wd_zjml_title_action{
+	color: blue;
+	font-size: 14px;
+	font-weight: bold;
+}
+.titleactive {
+	width: auto !important;
+	border: 1px solid #666666;
+	height: 24px;
+	line-height: 24px;
+	white-space: normal;
+	padding-left: 4px;
+	background: #f2f2f2;
+}
+.wdtreebanned{
+	color: #FF0000;
+}
+.zjmlctrl {
+	margin-right: 10px;
+	float: right;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	margin-top: 6px;
+}
+
+.ss {
+	width: 16px;
+	height: 16px;
+	/*border: 1px solid red;*/
+	float: left;
+	cursor: pointer;
+	margin-top: 6px;
+	background: url(images/iconfont-jia.png);
+}
+
+.ssactive {
+	width: 16px;
+	height: 16px;
+	/*border: 1px solid green;*/
+	float: left;
+	cursor: pointer;
+	margin-top: 6px;
+	background: url(images/iconfont-jian.png);
+}
+
+.leaf {
+	width: 16px;
+	height: 16px;
+	/*border: 1px solid gold;*/
+	float: left;
+	margin-top: 6px;
+	background: url(images/iconfont-iconfontfile.png);
+}
+
+.zjml-add {
+	background: url(images/iconfont-add.png);
+}
+
+.zjml-update {
+	background: url(images/iconfont-update.png);
+}
+
+.zjml-delete {
+	background: url(images/iconfont-delete.png);
+}
+
+.zjml-up {
+	background: url(images/iconfont-up.png);
+}
+
+.zjml-down {
+	background: url(images/iconfont-down.png);
+}
+
+.zjml-enable {
+	background: url(images/iconfont-enable.png);
+}
+
+.zjml-disable {
+	background: url(images/iconfont-disable.png);
+}
+.zjml-seach{
+	background: url(images/iconfont-search.png);
+}
+.zjml_shield {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	background: #333;
+	top: 0px;
+	text-align: center;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.zjml_shield_text {
+	top: 50%;
+	left: 50%;
+	margin-left: -70px;
+	position: absolute;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.wdtreecheckbox {
+	float: left;
+	margin-top: 8px;
+}

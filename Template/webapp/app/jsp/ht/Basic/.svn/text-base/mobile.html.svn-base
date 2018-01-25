@@ -1,0 +1,74 @@
+<div class="hp-operateBox">
+	<div class="o-title">
+		<label>手机端sass+rem适配方案</label><span></span>
+	</div>
+	<div class="splitBar"></div>
+<h3><small class="c-red">01</small>【sass部分】</h3>
+<pre class="prettyprint linenums">
+<xmp>
+<!--必备样式-->
+$globalColors: (
+  default:#6492FF,
+  defaulttwo:#C9D9FF,
+  red:#ff6666,
+  blue:#069,
+  white:white,
+  date:#000000,
+  green:#00CC00,
+  gray:#cccccc,
+  dark-gray:#666666,
+  medium-grey:#999999,
+  lightgray:#e4e4e4,
+  shadow:#B3CAFF
+);
+@function colors($color){
+    $names: map-keys($globalColors);
+    @if index($names, $color){
+        @return map-get($globalColors, $color);
+    }
+};
+@function s($px) {
+    @return($px/32)*1rem;
+}
+</xmp>
+</pre>
+<div class="hp-list-table" >
+	<div class="success" style="padding: 10px; max-width: 900px;">
+	<h3>颜色选择使用方法</h3>
+	<img src="../../../ui/common/images/color.png" />
+	<h3>使用方法s(设计稿尺寸值)</h3>
+	<p class="danger">
+		@function s($px) {
+         @return($px/32)*1rem;
+          }
+	</p>
+	<p class="mt-10">
+	  32为设计稿的尺寸宽度，除以10。
+             例如设计稿宽度为320px 则为：   @return($px/32)*1rem;
+	</p>
+	<p class="mt-10 danger">
+		用例：样式为btn的按钮，在设计稿中的宽度为 35px
+		使用rem换算则为:<span class="warning"> .btn{width:s(35)} </span>
+	</p>
+	</div>
+</div>
+<h3><small class="c-red">02</small>	html结构</h3>
+<pre class="prettyprint linenums">
+<xmp>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../../../../ui/common/css/wd.css" />
+		<script type="text/javascript" src="../../../../ui/common/js/font.js"></script>
+	</head>
+	<body>
+	</body>
+</html>
+</xmp>
+</pre>
+</div>
+
+

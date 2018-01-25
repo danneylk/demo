@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery.nicescroll完美滚动条使用方法</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+#lanrenzhijia{ width:500px; height:300px; margin:10px auto; padding-right:12px; overflow:hidden;}
+#lanrenzhijia p{color:#999; font-size:12px; line-height:220%; text-align:left; text-indent:2em;}
+</style>
+</head>
+
+<body>
+<div id="lanrenzhijia">
+<p>
+塑造品牌三大法宝的第一个法宝是广告语。广告语是品牌、产品、企业在市场营销传播的口号、主张和宣传主题及理念，包括品牌定位。品牌的所有主张或服务承诺就是通过广告语来承载、体现的，。广告语按其性质可分为：理念、科技、服务、品质、功能等五大类。海尔的“真诚到永远”，海信的“创新就是生活”当属理念类；诺基亚的“科技以人为本”和商务通的“科技让你更轻松”在诉求科技；农夫山泉的“农夫山泉有点甜”，可口可乐的“清凉一刻”，广州奥匹克花园的“运动就在家门口”诉求功能；碧桂圆“给您一个五星级的家”的服务承诺等等。常见的知名品牌广告语都在某种程度上交叉含有其它类型的含义，有口语化的趋势。比如耐克的“尽管去做”，百事可乐的“新一代的选择”等等。一条有穿透力、有深度、有内涵的广告语其传播的力量是无穷的，而且往往成为目标消费者的某种生活信条，直止成为生活方式。高起点的广告语就是该品牌的精神和思想，内涵相当深刻，也与通俗化并不矛盾，它所主张和诉求的价值理念与目标消费者的价值理念是高度和谐与对称的。</p>
+<p>塑造品牌三大法宝的第二个法宝是形象代言人。它是品牌的形象标识（最好自制卡通，明星风险大，成本又高）。形象代言人最能代表品牌个性及诠释品牌和消费者之间的感情、关系，致使许多形象代言人成为该产品的代名词。万宝路的硬汉没有肤色和语言的障碍通行世界。麦当劳叔叔带给全世界小朋友的何止是欢乐？美的北极熊憨厚可爱，幽默风趣，你还能说生活不美的吗？圣象让人读懂的不仅是地板！形象代言人一下拉近品牌与消费者之间的关系：像朋友、又像邻居，像家人一样毫不陌生、亲切熟悉，品牌个性具像之至，甚为传神。</p>
+<p>塑造品牌三大法宝的第三个法宝是实效VI。实效VI的优势在终端市场煞是抢眼，声光电综合运用形成立体效果，形成了一道品牌风景线，以区别于同类品牌，决战终端。家电城的金正金苹果；超市里的宝洁品牌区、可口可乐、百事可乐区、背背佳矫姿带，风格迥异，气势、氛围、亲和力一涌而上，互动沟通的色彩甚为浓重，徘徊期间不仅是购物，简直就是一种休闲享受，激情瞬间的刺激看你还能拒绝谁？品牌推广形象的统一，是一个品牌所有资源集中整合的直接再现，将使大量资源有了主心骨，使其立体化。与消费者的沟通也就很易，许许多多的渠道问题，推广问题迎刃而解。</p>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script>
+$("#lanrenzhijia").niceScroll({  
+cursorcolor:"#CC0071",  
+cursoropacitymax:1,  
+touchbehavior:false,  
+cursorwidth:"5px",  
+cursorborder:"0",  
+cursorborderradius:"5px"  
+}); 
+</script>
+</body>
+</html>

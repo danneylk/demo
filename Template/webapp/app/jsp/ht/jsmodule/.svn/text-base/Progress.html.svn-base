@@ -1,0 +1,148 @@
+
+<!--进度条-->	
+<div class="hp-operateBox">
+<h3>线形进度条 </h3>
+<div class="splitBar"></div>
+<div class="mt-25">
+	<div class="progress">
+		<div class="progress-bar">
+			<span class="sr-only" style="width:65%"></span>
+		</div>
+	</div>
+</div>
+<div class="mt-25">
+	<div class="progress">
+		<div class="progress-bar">
+			<span class="sr-only progress-danger" style="width:65%"></span>
+		</div>
+	</div>
+</div>
+<pre class="prettyprint linenums none">
+<xmp>
+<div class="progress">
+		<div class="progress-bar">
+			<span class="sr-only" style="width:65%"></span>
+		</div>
+	</div>
+<div class="progress">
+		<div class="progress-bar">
+			<span class="sr-only progress-danger" style="width:65%"></span>
+		</div>
+	</div>	
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6; ">查看代码</div>
+</div>
+</div>
+
+<!--Progress bar-->	
+<div class="hp-operateBox">
+<h3>Progress bar </h3>
+<div class="splitBar"></div>
+<div>
+	<span>progress bar 0-10</span>
+	<div class="slider"><input type="hidden" class="jxsz-slider" value="9" /></div>
+</div>
+<div class=" mt-30 mb-20">
+	<span>progress bar 0-100</span>
+	<div class="slider"><input type="hidden" class="spxg-slider" value="20" /></div>
+</div>
+
+<pre class="prettyprint linenums none">
+<xmp>
+【001引入关联文件】
+<link href="../../../../ui/common/components/jRange/jquery.range.css" rel="stylesheet" />
+<script type="text/javascript" src="../../../../ui/common/components/jRange/jquery.range.js"></script>
+
+【002HTML片段】
+<div>
+	<span>progress bar 0-10</span>
+	<div class="slider"><input type="hidden" class="jxsz-slider" value="9" /></div>
+</div>
+<div class=" mt-30">
+	<span>progress bar 0-100</span>
+	<div class="slider"><input type="hidden" class="spxg-slider" value="20" /></div>
+</div>
+
+【003实例化】
+//滑动块
+			$('.jxsz-slider').jRange({
+			    from: 1, //起始数值
+			    to: 10,  //最大数值
+			    step: 1, //步距
+			    width: 450, //宽度
+			    theme: "theme-blue2"//默认样式
+			});
+			$('.spxg-slider').jRange({
+			    from: 1,
+			    to: 100,
+			    step: 5,
+			    width: 300,
+			    theme: "theme-blue2",
+			});
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6; ">查看代码</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--环形进度条-->	
+<div class="hp-operateBox">
+<h3>环形进度条 <small> 行内进行颜色配置 [依赖jq]</small></h3>
+<div class="splitBar"></div>
+<div class="mt-25 clear">
+	<div class="progressbar fl">
+	<svg width="100px" height="100px">
+		<circle cx="50" cy="50" r="40" stroke="#eeeeee" fill="none" stroke-width="6"></circle>
+		<circle cx="50" cy="50" r="40" stroke="#6492ff" fill="none" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 252" transform="matrix(0,-1,1,0,0,100)"></circle>
+	</svg>
+	<span><i class="fs c-blue">60</i>分</span>
+    </div>
+    <div class="progressbar fl">
+	<svg width="100px" height="100px">
+		<circle cx="50" cy="50" r="40" stroke="#eeeeee" fill="none" stroke-width="6"></circle>
+		<circle cx="50" cy="50" r="40" stroke="#13ce66" fill="none" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 252" transform="matrix(0,-1,1,0,0,100)"></circle>
+	</svg>
+	<span><i class="fs c-green">90</i>分</span>
+</div>
+
+ <div class="progressbar fl">
+	<svg width="100px" height="100px">
+		<circle cx="50" cy="50" r="40" stroke="#eeeeee" fill="none" stroke-width="6"></circle>
+		<circle cx="50" cy="50" r="40" stroke="#ff4949" fill="none" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 252" transform="matrix(0,-1,1,0,0,100)"></circle>
+	</svg>
+	<span><i class="fs c-red">90</i>分</span>
+</div>
+</div>
+<pre class="prettyprint linenums none">
+<xmp>
+【 html】
+<div class="progressbar fl">
+	<svg width="100px" height="100px">
+		<circle cx="50" cy="50" r="40" stroke="#eeeeee" fill="none" stroke-width="6"></circle>
+		<circle cx="50" cy="50" r="40" stroke="#ff4949" fill="none" stroke-width="6" 
+            stroke-linecap="round" stroke-dasharray="0 252" transform="matrix(0,-1,1,0,0,100)"></circle>
+	</svg>
+	<span><i class="fs c-red">90</i>分</span>
+</div>
+
+【js】
+//环形进度
+		var circle = $("circle");
+		var perimeter = 2*Math.PI*40;
+			$(".fs").each(function(i, t){
+				var percent = parseInt($(this).html()) / 100;
+				circle.eq(2*i+1).attr("stroke-dasharray", perimeter * percent + " " + perimeter * (1- percent));
+			})
+
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6; ">查看代码</div>
+</div>
+</div>
+

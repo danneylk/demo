@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*屏蔽浏览器自带清除样式*/
+::-ms-clear, ::-ms-reveal{display: none;}
+#dmBody {
+	border-collapse: collapse;
+}
+#dmBody tr {
+	cursor: pointer;
+	text-align: center;
+}
+.WDInput {
+	width: 112px;
+	height: 30px;
+	padding-right: 20px;
+	*margin-top: 3px;
+	padding-left: 2px;
+	border: 1px solid #cccccc;
+	line-height: 30px;
+	color: #000;
+	outline: none;
+	background: url(images/wdslect_arrow_new.png) no-repeat right center;
+	outline:none;
+}
+.WDInput-long {
+	width:276px;
+}
+.dmLayerWrapper {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	/*filter: progid: DXImageTransform.Microsoft.Shadow(color=#999999, direction=135, strength=3);*/
+	
+	width: 200px;
+	cursor: default;
+	margin-top: -1px;
+}
+.DMLT {
+	border: 1px solid #cccccc;
+	/*border-left: 1px solid #666;*/
+	
+	width: 200px;
+	font-size: 9pt;
+}
+.DMLT .DMRB1 {
+	backgroundColor: #FFFFFF;
+	height: 30px;
+	padding: 0.1em 0.3em;
+	color: #000000;
+	font-weight: bold;
+	word-wrap: nowrap;
+	word-break: keep-all;
+}
+.DMLT .DMRB2 {
+	backgroundColor: #FFFFFF;
+	height: 30px;
+	padding-left: 4px;
+	word-break: break-word;
+	text-align: left;
+}
+/* 分页 样式 */
+.DMPager {
+	border: 1px solid #cccccc;
+	border-top: 0px;
+	background: #f2f2f2;
+	height: 30px;
+	font-size: 12px;
+	width: 100%;
+}
+.DMPager a {
+	color: #000 !important;
+	text-decoration: none !important;
+	cursor: pointer;
+	outline: none;
+}
+.DMPager a:hover {
+	color: #ff6600 !important;
+}
+.DMPager tr td {
+	position: relative;
+}
+.DMPager a#pageUp {
+	float: left;
+}
+.DMPager a#pageDown {
+	float: right;
+}
+.DMPager a#wd-clear {
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 50px;
+	left: 50%;
+	margin-left: -25px;
+	top:1px;
+}
+.DMPager a.disabled {
+	color: #999 !important;
+	cursor: default;
+}
+.DMPager a.disabled:hover {
+	text-decoration: none !important;
+}
+#multiTip {
+	display: none;
+	position: absolute;
+	padding: 2px 4px;
+	border: 1px solid #666;
+	background-color: #ffc;
+	text-align: left;
+	color: #222;
+	font-size: 12px;
+	word-break: break-word;
+}
+.DMPager a#wd-clear{
+	/*top:-2px;*/
+}

@@ -1,0 +1,253 @@
+
+<!--基础库-->
+<div class="hp-operateBox">
+	<h3 class="c-danger"> 控件css&&js基础库</h3>
+	<div class="splitBar"></div>
+	<div class="mt-30">
+		<p>提示：css文件放头部 ，js文件放在页面尾部 ，js文件注意引用依赖</p>
+		<pre class="prettyprint linenums">
+<xmp>
+	<!--必备css库-->
+	<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+	<!--以下为必备js-->
+    <script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/storejson.js"></script>
+	<script type="text/javascript" src="../../../../ui/common/js/requestAddressList.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd.js"></script>
+	<script type="text/javascript" src="../../../../ui/common/js/custom.js"></script>
+</xmp>
+</pre>
+
+	</div>
+</div>
+
+<!--下拉框///////////////////////////-->
+<div class="hp-operateBox">
+	<h3 class="c-primary">下拉框-自定义长度 width-300 <small class="c-danger">需要在body上追加 class="wd-content"</small></h3>
+	<div class="splitBar"></div>
+	<div class="mt-30">
+
+		<div class="_clear ">
+			<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput width-300  WDinputHiddenCode" value="" placeholder="基础教育">
+		</div>
+
+		<h3 class="mt-20"><small style="color: red;">01</small>引用css库&&js库</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+<!--下拉框控件css-->
+<link href="../../../../ui/common/components/wdselecttext/wdselecttext.css" rel="stylesheet" />
+<!--下拉框控件js-->
+<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdselecttext/wdselecttext.js"></script>
+
+</xmp>
+</pre>
+		<h3><small style="color: red;">02</small>html</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+<div class="_clear ">
+<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput width-300  WDinputHiddenCode" value="" placeholder="基础教育">
+</div>
+</xmp>
+</pre>
+		<h3>js片段</h3>
+		<div class="clear">
+			<pre class="prettyprint linenums">
+<xmp>
+	initSelectInput.call(this, 'code_sjfl', [{
+				'code': 1,
+				'name': '全部'
+			}, {
+				'code': 2,
+				'name': '待提交'
+			}, {
+				'code': 3,
+				'name': '审核通过'
+			}, {
+				'code': 4,
+				'name': '审核退回'
+			}]);
+</xmp>
+</pre>
+		</div>
+		<p class="c-green"> 提示：实例化多个时 更改html input [name="code_sjfl"] 对应修改js片断绑定元素</p>
+	</div>
+</div>
+
+<!--时间控件///////////////////////////-->
+<div class="hp-operateBox">
+	<h3 class="c-primary">单选时间组件</h3>
+	<div class="splitBar"></div>
+	<div class="mt-30">
+		<div class="_clear" id="rq">
+			<input type="text" class="Wdate" name="operatetime_s" />
+			<input type="text" class="Wdate" data-dateformat="yyyy-MM-dd hh:mm" />
+		</div>
+
+		<h3 class="mt-20"><small style="color: red;">01</small>引用css库&&js库</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+<!--时间框控件css-->
+<link href="../../../../ui/common/components/wdDate/wdDate.css" rel="stylesheet" />
+<!--时间框控件js-->
+<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wdDate/wdDate.js"></script>
+
+</xmp>
+</pre>
+		<h3><small style="color: red;">02</small>html</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+                    <div class="_clear" id="rq">
+						<input type="text" class="Wdate" name="operatetime_s" />
+						<input type="text" class="Wdate" data-dateformat="yyyy-MM-dd hh:mm" />
+					</div>
+</xmp>
+</pre>
+		<h3>js片段</h3>
+		<div class="clear">
+			<pre class="prettyprint linenums">
+<xmp>
+setWdDate("#rq");
+</xmp>
+</pre>
+</div>
+</div>
+</div>
+
+<!--类型选择///////////////////////////-->
+<div class="hp-operateBox">
+	<h3 class="c-primary">类型选择</h3>
+	<div class="splitBar"></div>
+	<div class="mt-30">
+		<div class="lx-type">
+			<span class="selected">问答题问答题问答题</span>
+			<span class="">选择题</span>
+			<span class="selected">问答题</span>
+			<span class="selected">选择题</span>
+			<span class="selected">问答题</span>
+			<span class="selected">选择题</span>
+		</div>
+
+		<h3 class="mt-20"><small style="color: red;">02</small>html</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+	                 <div class="lx-type">
+						<span class="selected">问答题问答题问答题</span>
+						<span class="">选择题</span>
+						<span class="selected">问答题</span>
+						<span class="selected">选择题</span>
+						<span class="selected">问答题</span>
+						<span class="selected">选择题</span>
+					</div>
+</xmp>
+</pre>
+		<h3>js片段</h3>
+		<div class="clear">
+			<pre class="prettyprint linenums">
+<xmp>
+            //点击类型选中事件
+			$('.lx-type>span').on('click', function() {
+				$(this).toggleClass('selected');
+			})
+</xmp>
+</pre>
+		</div>
+	</div>
+</div>
+<!--多行文本 textArea///////////////////////////-->
+<div class="hp-operateBox">
+	<h3 class="c-primary">多行文本 textArea && 文本框</h3>
+	<div class="splitBar"></div>
+	<div class="mt-30">
+		<div class="lx-type">
+		<div class="_clear ">
+						<textarea name="" rows="" cols="" class="textArea-style width-all"></textarea>
+					</div>
+					
+					<div class="_clear mt-15">
+						<input type="text" class="input-style-search width-600" />
+					</div>
+					
+					<div class="_clear mt-15">
+						<input type="text" disabled="" class="input-style-search width-600" />
+					</div>
+		</div>
+		<h3 class="mt-20"><small style="color: red;">01</small>html</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+<!--多行文本 textArea	-->
+<div class="_clear ">
+<textarea name="" rows="" cols="" class="textArea-style width-all"></textarea>
+</div>
+
+<!--文本框-->
+<div class="_clear">
+<input type="text" class="input-style-search width-600" />
+</div>
+
+<!--文本框[不可用]-->
+<div class="_clear">
+<input type="text" disabled="" class="input-style-search width-600" />
+</div>
+
+</xmp>
+</pre>
+	</div>
+</div>
+<!--多选///////////////////////////-->
+<div class="hp-operateBox">
+	<h3 class="c-primary">多选</h3>
+	<div class="splitBar"></div>
+	<div class="mt-30">
+		<div class="_clear" id="ckLayout">
+			<input type="checkbox" class="wd-check" id="wdcheckall"><label>全部</label>
+			<span class="wd-check-groupbox">
+	<input name="wdcheckall2" type="checkbox" class="wd-check" id="a2"><label>客户端</label>
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a3"><label>web端</label>
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a4"><label>手机端</label>
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a5"><label>pad端</label>
+	</span>
+		</div>
+		<div class="_clear" id="ckLayout2">
+			<input type="radio" class="wd-radio" name="nrly"><label>在线输入</label>
+			<input type="radio" class="wd-radio" name="nrly"><label>上传文档</label>
+		</div>
+
+		<h3 class="mt-20"><small style="color: red;">01</small>引用css库&&js库</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+<!--单选多选必备样式-->
+<link href="../../../../ui/common/css/wd.css" rel="stylesheet" />
+</xmp>
+</pre>
+		<h3><small style="color: red;">02</small>html</h3>
+		<pre class="prettyprint linenums">
+<xmp>
+<div class="_clear" id="ckLayout">
+	<input type="checkbox" class="wd-check" id="wdcheckall"><label>全部</label>
+	<span class="wd-check-groupbox">
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a2"><label>客户端</label>
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a3"><label>web端</label>
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a4"><label>手机端</label>
+	<input name="wdcheckall" type="checkbox" class="wd-check" id="a5"><label>pad端</label>
+	</span>
+</div>
+
+<div class="_clear" id="ckLayout2">
+						<input type="radio" class="wd-radio" name="nrly"><label>在线输入</label>
+						<input type="radio" class="wd-radio" name="nrly"><label>上传文档</label>
+					</div>
+</xmp>
+</pre>
+		<h3>js片段</h3>
+		<div class="clear">
+			<pre class="prettyprint linenums">
+<xmp>
+//复选框与单选框
+		addWdCheckBox("#ckLayout");
+		addWdRadioButton("#ckLayout2");
+</xmp>
+</pre>
+		</div>
+	</div>
+	<p class="c-green"> 提示：ID不能重复</p>
+</div>

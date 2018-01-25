@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>基础-控件-弹窗</title>
+		<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+		<!--弹窗控件css-->
+		<link rel="stylesheet" href="../../../../ui/common/components/wd_dialog/css/wd_dialog.css" />
+	</head>
+	<body onload="prettyPrint()"  class="wd-content">
+<!--基础库-->	
+<div class="hp-operateBox">
+<h3 class="c-danger"> 控件css&&js基础库</h3>
+<div class="splitBar"></div>
+<div class="mt-30">
+	<p>提示：css文件放头部 ，js文件放在页面尾部 ，js文件注意引用依赖</p>
+<pre class="prettyprint linenums">
+<xmp>
+	<!--必备css库-->
+	<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+	<!--以下为必备js-->
+     <script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/storejson.js"></script>
+	<script type="text/javascript" src="../../../../ui/common/js/requestAddressList.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd.js"></script>
+	<script type="text/javascript" src="../../../../ui/common/js/custom.js"></script>
+</xmp>
+</pre>
+
+</div>
+</div>	
+
+<!--弹窗///////////////////////////-->
+<div class="hp-operateBox">
+<h3>弹窗</h3>
+<div class="splitBar"></div>
+<div class="mt-30">
+					<input type="button" class="btn bg-default btn-tianjia" id="B01" value="弹出框">
+					<input type="button" class="btn bg-success btn-tianjia" id="btn-success" value="成功">
+					<input type="button" class="btn bg-danger btn-tianjia" id="btn-error" value="失败">
+					<input type="button" class="btn bg-info btn-tianjia" id="btn-confirm" value="询问">
+					
+<h3><small style="color: red;">01</small>引用css库&&js库</h3>
+<pre class="prettyprint linenums">
+<xmp>
+<!--弹窗控件css-->
+<link rel="stylesheet" href="../../../ui/common/components/wd_dialog/css/wd_dialog.css" />
+<!--弹窗控件js-->
+<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd_dialog.js"></script>
+</xmp>
+</pre>
+<h3><small style="color: red;">02</small>html</h3>
+<pre class="prettyprint linenums">
+<xmp>
+<input type="button" class="btn bg-default btn-tianjia" id="B01" value="弹出框">
+
+<!--//提示1-->
+<!--iframe嵌入 更正最外层容器宽度-->
+<div id="prompt1" class="wd-prompt" 
+	data-shieldcolor="#333" data-width="400" data-height="200" style="width: 400px; margin-left: -200px; z-index: 2; top: 100px; display:none;">	
+	<div class="wd-prompt-titlearea" style=" height: 40px;">
+		<span style="float: left; margin-left: 10px;" id="prompt-title-prompt1">我是标题</span>
+		<span style="float: right;" class="wd-prompt-close" data-functionname="aaa"></span>
+	</div>
+	<div style=" padding: 10px; margin:0 auto; text-align: center;" class="wd-prompt-body">
+	    <!--	iframe嵌入-->
+		<!--<iframe id="frmTree" name="frmTree" frameborder="0" src="menu.html"></iframe>-->
+		<img src="../../../../ui/ht/images/index-background.png" width="200"/>
+		<span id="prompt-haha"></span>
+	</div>
+	<div class="wd-prompt-footer">
+		<input id="prompt-close-prompt1" type="button" value="关闭"
+			 class="wd-prompt-close" data-functionname="bbb" name="prompt1"></input>
+	</div>
+</div>
+</xmp>
+</pre>	
+<pre class="prettyprint linenums">
+<xmp>
+<input type="button" class="btn bg-success btn-tianjia" id="btn-success" value="成功">
+
+<!--//提示2成功-->
+<div id="wd_dialog_success" class="wd-prompt" 
+	data-shieldcolor="#333" data-closetime="2000" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-success">保存成功</span>
+		<span class="wd-prompt-close" data-functionname="aaa"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-success"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-success" 
+			style=" color: #0fb54b; font-size: 16px;">保存成功</div>
+	</div>
+</div>
+
+</xmp>
+</pre>
+<pre class="prettyprint linenums">
+<xmp>
+<input type="button" class="btn bg-danger btn-tianjia" id="btn-error" value="失败">
+
+<!--//提示3错误-->
+<div id="wd_dialog_error" class="wd-prompt" data-shieldcolor="#333" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-error">errortitle</span>
+		<span class="wd-prompt-close"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-error"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-error" 
+		style=" text-align: center;width: 100%; color: #e0620d; font-size: 16px;">保存失败</div>
+	</div>
+	<div class="wd-prompt-footer">
+		<div class="wd-prompt-footer-buttonarae">
+			<input id="prompt-wd_prompt_close-error" 
+				type="button" class="wd-prompt-footer-buttonarae-button wd-prompt-close"
+				 name="wd_dialog_error" value="关闭" style="font-family: 微软雅黑;">
+		</div>
+	</div>
+</div>
+
+</xmp>
+</pre>
+<pre class="prettyprint linenums">
+<xmp>
+<input type="button" class="btn bg-info btn-tianjia" id="btn-confirm" value="询问">
+
+<!--//提示4询问-->
+<div id="wd_dialog_confirm" class="wd-prompt" 
+	data-shieldcolor="#333" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-confirm">删除</span>
+		<span class="wd-prompt-close"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-confirm"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-confirm">确定要删除吗?</div>
+	</div>
+	<div class="wd-prompt-footer">
+		<div class="wd-prompt-footer-buttonarae">
+			<input type="button" id="prompt-wd_prompt_close-ok-confirm" 
+				class="wd-prompt-footer-buttonarae-button wd-prompt-close-ok" value="确定" >
+			<input type="button" id="prompt-wd_prompt_close-cancle-confirm" 
+				class="wd-prompt-footer-buttonarae-button wd-prompt-close-cancle" value="取消">
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+<h3>js片段</h3>
+<div class="clear">
+	<pre class="prettyprint linenums fl">
+<xmp>
+//弹窗
+//$("#prompt1").show();
+$('#B01').on('click', function() {
+$("#prompt1")[0].style.left="50%";
+$("#prompt1").show();
+})
+</xmp>
+</pre>
+<pre class="prettyprint linenums fl">
+<xmp>
+//成功
+//$("#wd_dialog_success")
+$("#btn-success").on('click', function() {
+$("#wd_dialog_success")[0].style.left="50%";
+$("#wd_dialog_success").show();
+setTimeout(function() {
+$("#wd_dialog_success").hide()
+}, 100000)
+})
+</xmp>
+</pre>
+
+
+<pre class="prettyprint linenums fl">
+<xmp>
+//错误
+//$("#wd_dialog_error")
+$("#btn-error").on('click', function() {
+$("#wd_dialog_error")[0].style.left="50%";
+$("#wd_dialog_error").show();
+})
+			</xmp>
+</pre>
+
+
+<pre class="prettyprint linenums fl">
+<xmp>
+//询问	
+//$("#wd_dialog_confirm")
+$("#btn-confirm").on('click', function() {
+$("#wd_dialog_confirm")[0].style.left="50%";
+$("#wd_dialog_confirm").show();
+})
+</xmp>
+</pre>
+</div>
+<pre class="prettyprint linenums">
+<xmp>
+//提示关闭效果			
+		$('.wd-prompt-close').on('click',function(){
+			 $(this).parent().parent().hide();
+		})
+		$('.wd-prompt-footer-buttonarae input').on('click',function(){
+			 $(this).parent().parent().parent().hide();
+		})
+			</xmp>
+</pre>
+</div>
+</div>	
+<!--下拉框///////////////////////////-->
+
+<!--弹窗 ////////////////////////////////////////////////////////////-->
+<!--//提示1-->
+<!--iframe嵌入 更正最外层容器宽度-->
+<div id="prompt1" class="wd-prompt" data-shieldcolor="#333" data-width="400" data-height="200" style="width: 400px; margin-left: -200px; z-index: 2; top: 100px; display:none;">	
+	<div class="wd-prompt-titlearea" style=" height: 40px;">
+		<span style="float: left; margin-left: 10px;" id="prompt-title-prompt1">我是标题</span>
+		<span style="float: right;" class="wd-prompt-close" data-functionname="aaa"></span>
+	</div>
+	<div style=" padding: 10px; margin:0 auto; text-align: center;">
+	    <!--	iframe嵌入-->
+		<!--<iframe id="frmTree" name="frmTree" frameborder="0" src="menu.html"></iframe>-->
+		<img src="../../../ui/ht/images/index-background.png" width="200"/>
+		<span id="prompt-haha"></span>
+	</div>
+	<div class="wd-prompt-footer">
+		<input id="prompt-close-prompt1" type="button" value="关闭" class="wd-prompt-close" data-functionname="bbb" name="prompt1"></input>
+	</div>
+</div>
+
+<!--//提示2成功-->
+<div id="wd_dialog_success" class="wd-prompt" data-shieldcolor="#333" data-closetime="2000" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-success">保存成功</span>
+		<span class="wd-prompt-close" data-functionname="aaa"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-success"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-success" style=" color: #0fb54b; font-size: 16px;">保存成功</div>
+	</div>
+</div>
+
+
+<!--//提示3错误-->
+<div id="wd_dialog_error" class="wd-prompt" data-shieldcolor="#333" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-error">errortitle</span>
+		<span class="wd-prompt-close"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-error"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-error" style=" text-align: center;width: 100%; color: #e0620d; font-size: 16px;">保存失败</div>
+	</div>
+	<div class="wd-prompt-footer">
+		<div class="wd-prompt-footer-buttonarae">
+			<input id="prompt-wd_prompt_close-error" type="button" class="wd-prompt-footer-buttonarae-button wd-prompt-close" name="wd_dialog_error" value="关闭" style="font-family: 微软雅黑;">
+		</div>
+	</div>
+</div>
+
+<!--//提示4询问-->
+<div id="wd_dialog_confirm" class="wd-prompt" data-shieldcolor="#333" style="width: 450px; margin-left: -225px; z-index: 2; top: 100px; display:none;">
+	<div class="wd-prompt-titlearea">
+		<span class="wd-prompt-title" id="prompt-title-confirm">删除</span>
+		<span class="wd-prompt-close"></span>
+	</div>
+	<div class="wd-prompt-textarea">
+		<div class="wd-prompt-textarea-img wd-prompt-textarea-img-confirm"></div>
+		<div class="wd-prompt-textarea-text" id="prompt-text-confirm">确定要删除吗?</div>
+	</div>
+	<div class="wd-prompt-footer">
+		<div class="wd-prompt-footer-buttonarae">
+			<input type="button" id="prompt-wd_prompt_close-ok-confirm" class="wd-prompt-footer-buttonarae-button wd-prompt-close-ok" value="确定" >
+			<input type="button" id="prompt-wd_prompt_close-cancle-confirm" class="wd-prompt-footer-buttonarae-button wd-prompt-close-cancle" value="取消">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+	</body>
+	<!--jquery-->
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/storejson.js"></script>
+	<script type="text/javascript" src="../../../../ui/common/js/requestAddressList.js"></script>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd.js"></script>
+	<script type="text/javascript" src="../../../../ui/common/js/custom.js"></script>
+	<!--以上为必备js-->
+	<!--弹窗控件-->
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd_dialog.js"></script>
+	
+	
+	
+	
+	<!--代码高亮显示库-->
+	<script src="../../../../ui/common/js/prettify.js"></script>
+	
+	
+	
+	
+	
+	<!--弹窗JS/////////////////////////////////////////-->
+	<script>
+		//弹窗本地样式
+		$(function(){
+			//弹窗
+			//$("#prompt1").show();
+			$('#B01').on('click', function() {
+				$("#prompt1")[0].style.left="50%";
+				$("#prompt1").show();
+			})
+			//成功
+			//$("#wd_dialog_success")
+			$("#btn-success").on('click', function() {
+				$("#wd_dialog_success")[0].style.left="50%";
+				$("#wd_dialog_success").show();
+				setTimeout(function() {
+					$("#wd_dialog_success").hide()
+				}, 1000)
+			})
+			//错误
+			//$("#wd_dialog_error")
+			$("#btn-error").on('click', function() {
+				$("#wd_dialog_error")[0].style.left="50%";
+				$("#wd_dialog_error").show();
+			})
+			//询问	
+			//$("#wd_dialog_confirm")
+			$("#btn-confirm").on('click', function() {
+				$("#wd_dialog_confirm")[0].style.left="50%";
+				$("#wd_dialog_confirm").show();
+			})
+			//提示
+		//提示关闭效果			
+		$('.wd-prompt-close').on('click',function(){
+			 $(this).parent().parent().hide();
+		})
+		$('.wd-prompt-footer-buttonarae input').on('click',function(){
+			 $(this).parent().parent().parent().hide();
+		})
+		})
+		
+	</script>
+	
+	
+	
+	
+</html>
+
+
+
+
+
+<style>
+xmp{ font-family: "微软雅黑"; font-size: 12px; line-height:10px;}
+pre{display:block;font-family:Monaco,Menlo,Consolas,"Courier New",monospace；padding:9.5px;margin-bottom:10px;font-size:12px;line-height:10px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;color:#333}
+.prettyprint{ margin: 10px; margin-left: 0px; margin-right: 10px; padding:8px; padding-right: 30px;  background-color:#F9FAFC;}
+.prettyprint .com { color: #998;font-style:italic }/*注释*/
+.prettyprint .tag{color:#3182bd}/*标签*/
+.prettyprint .lit { color: #195f91}
+.prettyprint .pun,.prettyprint .opn,.prettyprint .clo { color: #93a1a1}/*等于*/
+.prettyprint .fun { color: #dc322f}
+.prettyprint .str,.prettyprint .atv { color: #D14}/*值*/
+.prettyprint .kwd,.prettyprint .prettyprint .tag { color: #3182bd}
+.prettyprint .typ,.prettyprint .atn,.prettyprint .dec,.prettyprint .var { color: teal}/*文档声明，属性*/
+.prettyprint .pln { color: #48484c}
+.prettyprint.linenums{box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0}
+.pre-scrollable{max-height:340px;overflow-y:scroll}
+pre ol.linenums{list-style:decimal outside none;margin:0 0 0 33px}
+pre ol.linenums li{padding-left:12px;color:#3182bd;line-height:12px;text-shadow:0 1px 0 #fff}
+</style>

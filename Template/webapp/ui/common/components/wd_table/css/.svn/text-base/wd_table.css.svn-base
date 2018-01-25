@@ -1,0 +1,137 @@
+/**************表格翻页
+ * 
+ */
+.czdivbox {
+	width: 96%;
+	margin: 0 auto;
+	padding-top: 6px;
+}
+.czdivbox .czdiv {
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	background: #F7F7F7;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.czdivbox .div_fleft_all{
+	margin-top: 3px;
+	background: url(../images/pageleftall.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_fleft_all_active {
+	margin-top: 3px;
+	background: url(../images/pageleftall-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_fleft {
+	margin-top: 3px;
+	background: url(../images/pageleft.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_fleft_active {
+	margin-top: 3px;
+	background: url(../images/pageleft-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_right {
+	margin-top: 3px;
+	background: url(../images/pageright.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_rightall {
+	margin-top: 3px;
+	background: url(../images/pagerightall.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_right_active {
+	margin-top: 3px;
+	background: url(../images/pageright-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_rightall_active {
+	margin-top: 3px;
+	background: url(../images/pagerightall-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+.czdivbox .div_selectbox {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 10px;
+	width: 60px;
+	padding: 0;
+}
+.czdivbox .div_pagedetailbox {
+	height: 25px;
+	float: right;
+}
+.czdivbox .wdgrid-pageWholeWide{
+	width: 100%;
+	margin-top: 10px;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.wdgrid-pageWholeWide .wdgrid-pagebox {
+	width: 360px;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 30px;
+	position: relative;
+}
+.wdgrid-pageNumBox {
+	text-align: center;
+}
+.wdgrid-pageBtn {
+	border: 1px solid #D7D7D7;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	position: absolute;
+}
+.wdgrid-pageprev {
+	background: #F8F8F8 url(../images/iconfont-zuo.png) center center no-repeat;
+	left: 0;
+}
+.wdgrid-pageprev-active {
+	background: #F8F8F8 url(../images/iconfont-zuo-active.png) center center no-repeat;
+	left: 0;
+}
+.wdgrid-pagenext {
+	background: #F8F8F8 url(../images/iconfont-you.png) center center no-repeat;
+	right: 0;
+}
+.wdgrid-pagenext-active {
+	background: #F8F8F8 url(../images/iconfont-you-active.png) center center no-repeat;
+	right: 0;
+}
+.wdgrid-pageprev-active:hover,
+.wdgrid-pagenext-active:hover,
+.wdgrid-pageNum:hover {
+	background-color: #E4E4E4;
+	cursor: pointer;
+}
+.wdgrid-activeNum:hover {
+	background-color: #999999;
+	border: 1px solid #999999;
+	color: #FFFFFF;
+	cursor: default;
+}
+.wdgrid-pageNum {
+	width: 30px;
+	height: 30px;
+	margin-left: 4px;
+	border-radius: 2px;
+	text-align: center;
+	display: inline-block;
+	line-height: 30px;
+	color: #999999;
+	background-color: #F8F8F8;
+	border: 1px solid #D7D7D7;
+}
+.wdgrid-activeNum {
+	background-color: #cccccc;
+	color: #FFFFFF;
+	border: 1px solid #cccccc;
+}

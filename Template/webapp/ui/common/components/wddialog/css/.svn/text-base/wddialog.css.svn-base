@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.ulstyle {
+	list-style: none;
+	margin: 0px;
+	padding-top: 0;
+	width: 100%;
+	border-radius: 4px;
+	-webkit-box-shadow: #000 0px 0px 3px;
+	-moz-box-shadow: #000 0px 0px 3px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.lititlestyle {
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-family: 'Microsoft YaHei';
+}
+
+.lititledeteilstyle {
+	float: left;
+	color: #333333;
+	font-size: 18px;
+	padding-left: 8px;
+}
+
+.lititlectrlstyle {
+	float: right;
+	cursor: pointer;
+	width: 26px;
+	height: 32px;
+	background: url(../images/iconfont-cuo.png) center center;
+	background-size: 26px 32px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+
+.lititlectrlstyle:hover {
+	float: right;
+	cursor: pointer;
+	width: 26px;
+	height: 32px;
+	background: url(../images/iconfont-cuo2.png) center center;
+	background-size: 26px 32px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+
+.bigstyle {
+	float: right;
+	cursor: pointer;
+	width: 26px;
+	height: 32px;
+	background: url(../images/iconfont-big.png) center center;
+	background-size: 26px 32px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+.bigstyle:hover {
+	float: right;
+	cursor: pointer;
+	width: 26px;
+	height: 32px;
+	background: url(../images/iconfont-big2.png) center center;
+	background-size: 26px 32px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+.deoxidizetyle {
+	float: right;
+	cursor: pointer;
+	width: 26px;
+	height: 32px;
+	background: url(../images/iconfont-small.png) center center;
+	background-size: 26px 32px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+.deoxidizetyle:hover {
+	float: right;
+	cursor: pointer;
+	width: 26px;
+	height: 32px;
+	background: url(../images/iconfont-small2.png) center center;
+	background-size: 26px 32px;
+	margin-top: -2px;
+	margin-right: 6px;
+}
+.liitemstyle {
+	background: #fff;
+	font-size: 12px;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 4px 4px 0 0;
+}
+
+.liitemstyledialog {
+	background: #fff;
+	text-align: center;
+	border-radius: 4px 4px 0 0;
+}
+
+.libuttonareastyle {
+	background: #fff;
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 0 0 4px 4px;
+}
+
+.libuttonareadivboxstyle {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+/*匹配确定和取消按钮修改样式*/
+input[id^="wd-condialog-ok"]{
+	background-color: #5b9ce8;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+}
+input[id^="wd-condialog-cancel"]{
+	background-color: #f2f2f2;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: 16px;
+}
+.libuttonokstyle {
+	height: 26px;
+    color: #ffffff;
+    background: #5b9ce8;
+	text-align: center;
+	font-size: 12px;
+	line-height: 26px;
+	border: 1px solid #E4E4E4;
+	width: 60px;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+}
+
+.libuttonokstyle:hover {
+	border: 0px solid #E4E4E4;
+	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+}
+
+
+/*.libuttoncanlestyle {
+	margin-left: 10px;
+	height: 33px;
+	color: #666666;
+	background: #CCCCCC;
+	text-align: center;
+	font-size: 14px;
+	line-height: 33px;
+	border: 0px;
+	width: 110px;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+}
+.libuttoncanlestyle:hover {
+	background-color: #999999;
+}*/
+
+.libuttoncanlestyle {
+    height: 26px;
+    color: #666666;
+    background: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    line-height: 26px;
+    border: 1px solid #E4E4E4;
+    width: 60px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.libuttoncanlestyle:hover {
+    border: 0px solid #E4E4E4;
+   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349019607843137);
+}
+
+
+
+.txtbox {
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.itemimg {
+	width: 32px;
+	height: 32px;
+	float: left;
+	background-repeat: no-repeat;
+	margin-top: 40px;
+}
+
+.itemimgalert {
+	background: url(../images/alert-alert.png) center center no-repeat;
+}
+
+.itemimgerror {
+	background: url(../images/alert-error.png) center center no-repeat;
+}
+
+.itemimgsuccess {
+	background: url(../images/alert-success.png) center center no-repeat;
+}
+
+.itemimgconfirm {
+	background: url(../images/alert-confirm.png) center center no-repeat;
+}
+
+.itemtxt {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	margin-left: 40px;
+}
+
+.shield {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.Framitem {
+	position: fixed;
+	left: 50%;
+	background: #ccc;
+	/*line-height: 150px;*/
+}
+
+.itemtxtalert {
+	line-height: 160% !important;
+	font-size: 14px;
+	text-align: left;
+	width: 300px;
+	margin-top: 30px;
+	height: 50px;
+	overflow-y: auto;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+/*弹框样式更改*/
+.lititlestyle{
+	background-color: #4f5866;
+	border-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.lititlectrlstyle {
+	background: url(../images/wddialog_close_new.png) center center/22px no-repeat;
+	margin-top: 0;
+	height: 26px;
+	width: 26px;
+	margin: 7px;
+}
+.lititlectrlstyle:hover{
+	margin-top: 0;
+	background: url(../images/wddialog_close_newHover.png) center center/22px no-repeat;
+	height: 26px;
+	width: 26px;
+	margin: 7px;
+	transition: all ease 500ms;
+	-webkit-transition:all ease 500ms;
+	-moz-transition:all ease 500ms;
+	transform: rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+}
+.lititledeteilstyle{
+	font-size: 16px;
+	color: #fff;
+}
+.condialog,.ulstyle{
+    border-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;	
+}
+.ulstyle{padding: 0 !important;}

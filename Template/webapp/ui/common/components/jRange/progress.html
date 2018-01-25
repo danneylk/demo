@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>progress bar</title>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="jquery.range.css"/>
+	</head>
+	<body>
+<div>
+	<span>progress bar 0-10</span>
+	<div class="slider"><input type="hidden" class="jxsz-slider" value="9" /></div>
+</div>
+<div class=" mt-30">
+	<span>progress bar 0-100</span>
+	<div class="slider"><input type="hidden" class="spxg-slider" value="20" /></div>
+</div>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="jquery.range.js"></script>
+	<script>
+		$(function() {
+			//滑动块
+			$('.jxsz-slider').jRange({
+			    from: 1,
+			    to: 10,
+			    step: 1,
+			    width: 450,
+			    theme: "theme-blue2"
+			});
+			$('.spxg-slider').jRange({
+			    from: 1,
+			    to: 100,
+			    step: 5,
+			    width: 300,
+			    theme: "theme-blue2",
+			});
+		})
+	</script>
+	</body>
+</html>

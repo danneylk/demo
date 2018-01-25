@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>列表样式二</title>
+		<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+		<link href="../../../../ui/common/css/wd.css" rel="stylesheet" />
+		<link href="../../../../ui/common/components/wdselecttext/wdselecttext.css" rel="stylesheet" />
+
+	</head>
+
+	<body class="wd-content clear">
+		<div class="hp-right">
+			<div class="hp-operateBox">
+				<div class="o-title">
+					<label>查询区域一</label><span>这里写注意事项</span>
+					<a class="return" onclick="history.back(-1)">返回</a>
+				</div>
+				<div class="splitBar"></div>
+				<div class="o-btnBox">
+					<p>
+						<span>工程名称：</span>
+						<input type="text" class="input-style-search  width-200" />
+					</p>
+					<p>
+						<span>领域：</span>
+						<input type="text" name="code_sjfl" id="code_sjfl" class="WDInput WDinputHiddenCode lingyu " value="" placeholder="基础教育">
+					</p>
+					<input type="button" class="btn bg-default btn-tianjia" value="搜索">
+				</div>
+			</div>
+
+			<div class="hp-list " id="ckLayout">
+				<!--列表：按钮区 -->
+				<div class="hp-list-head">
+					<div class="hp-list-cz">
+						<input name="wdcheckall" type="checkbox" class="wd-check  wd-nolink" id="ck-all">
+						<input type="button" value="新增" class="btn bg-default btn-tianjia" />
+						<input type="button" value="新增" class="btn bg-default btn-tianjia" />
+					</div>
+					<div class="hp-list-count fr">
+						<span>共 125 条记录</span>
+						<a href="javascript:void(0)" class="hp-list-filter">筛选</a>
+						<div class="hp-filter">
+							<input type="text" id="wjfl" class="input-style-search width-100" placeholder="问卷分类">
+							<input type="text" name="code_SHZT" id="code_SHZT" class="WDInput WDinputHiddenCode WDinputWidth-125" value="" placeholder="审核状态">
+							<input type="button" class="hp-filter-btn" id="tm-search" value="确定" />
+						</div>
+					</div>
+				</div>
+				<!--列表：按钮区 -->
+				<div class="hp-list-table">
+					<div class="nodata">
+						没有数据
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th width="10%"></th>
+								<th width="50%">上级分类</th>
+								<th width="20%">问卷分类</th>
+								<th width="20%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input id="ck1" type="checkbox" name="ck-all" class="wd-check wd-nolink">
+								</td>
+								<td>伟东云教育平台基于全球最强大的开放源码项目，采用开放独立的微服务架构，将云计算、大数据、移动互联网、人工智能、机器学习等新一代信息技术与教育业务进行高度融合</td>
+								<td>二级分类</td>
+								<td>
+									<div class="hp-list-operate">
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico-text btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input id="ck4" type="checkbox" name="ck-all" class="wd-check wd-nolink">
+								</td>
+								<td>一级分类</td>
+								<td>二级分类</td>
+								<td>
+									<div class="hp-list-operate">
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico-text btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input id="ck5" type="checkbox" name="ck-all" class="wd-check wd-nolink">
+								</td>
+								<td>一级分类</td>
+								<td>二级分类</td>
+								<td>
+									<div class="hp-list-operate">
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico-text btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input id="ck6" type="checkbox" name="ck-all" class="wd-check wd-nolink">
+								</td>
+								<td>一级分类</td>
+								<td>二级分类</td>
+								<td>
+									<div class="hp-list-operate">
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico-text btn-icon-shanchu">删除</p>
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input id="ck3" type="checkbox" name="ck-all" class="wd-check wd-nolink">
+								</td>
+								<td>一级分类</td>
+								<td>二级分类</td>
+								<td>
+									<div class="hp-list-operate">
+										<p title="删除" class="btn-ico-text btn-icon-shanchu">删除2</p>
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除1</p>
+										<p title="删除" class="btn-ico btn-icon-shanchu">删除删除删除删除</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="hp-page">
+						<a href="javascript:;" class="prevPage">上一页</a>
+						<a href="javascript:;" class="tcdNumber">1</a>
+						<a href="javascript:;" class="tcdNumber">2</a>
+						<span class="current">3</span>
+						<a href="javascript:;" class="tcdNumber">4</a>
+						<a href="javascript:;" class="tcdNumber">5</a>
+						<a href="javascript:;" class="nextPage">下一页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../ui/common/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/storejson2.min.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/components/wdselecttext/wdselecttext.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/custom.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/jquery.nicescroll.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/wd.js"></script>
+		<script>
+			$(function() {
+
+				//复选框与单选框
+				addWdCheckBox("#ckLayout");
+
+				//下拉框插件
+				function initSelectInput(key, obj) {
+					if(key) {
+						var keyArr = key.split('_');
+						var keyArr_key = keyArr[1].toUpperCase();
+					}
+					var _mbList = [];
+					if(typeof obj == "object") {
+						for(var i = 0; i < obj.length; i++) {
+							var temp = {
+								"code": obj[i].code,
+								"codedesc": obj[i].name
+							};
+							_mbList.push(temp);
+						}
+					}
+					store.set(keyArr_key, JSON.stringify(_mbList));
+					selecttextInfo();
+				}
+				initSelectInput.call(this, 'code_SFYX', [{
+					'code': 1,
+					'name': '全部'
+				}, {
+					'code': 2,
+					'name': '待提交'
+				}, {
+					'code': 3,
+					'name': '审核通过'
+				}, {
+					'code': 4,
+					'name': '审核退回'
+				}]);
+				//筛选-点击搜索
+				$(".hp-list-filter").click(function() {
+						$(".hp-filter").slideDown("fast");
+						var searchText = $("#wjfl").val() + "、" + getWDCodeDesc("code_SHZT");
+						$(".hp-list-filter").html(searchText);
+						$(".hp-list-filter").addClass("pink");
+					})
+					//筛选-点击搜索
+				$("#tm-search").click(function() {
+					$(".hp-filter").slideUp("fast");
+					var searchText = $("#wjfl").val() + "、" + getWDCodeDesc("code_SHZT");
+					$(".hp-list-filter").html(searchText);
+					$(".hp-list-filter").addClass("pink");
+				})
+			})
+		</script>
+	</body>
+
+</html>

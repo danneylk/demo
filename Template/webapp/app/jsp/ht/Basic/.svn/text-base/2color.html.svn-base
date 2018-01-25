@@ -1,0 +1,123 @@
+<style>
+	.colordef span {
+		margin-top: 15px;
+		display: inline-block;
+		border-radius: 4px;
+		padding: 20px;
+		height: 74px;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 14px;
+	}
+	
+	.colordef ul li {
+		padding: 15px;
+		color: white;
+	}
+	
+	.colordef ul li:nth-child(1) {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	
+	.colordef ul li:nth-child(3) {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+</style>
+
+<!--主色	-->
+<div class="hp-operateBox">
+	<h3>主色   <small>主要品牌颜色是鲜艳、友好的蓝色。</small></h3>
+	<div class="splitBar"></div>
+	<div class="colordef">
+		<span style="background-color: #58B7FF;">
+Light Blue
+#58B7FF
+</span>
+		<span style="background-color: #20A0FF;">
+Blue
+#20A0FF
+</span>
+		<span style="background-color: #1D8CE0;">
+Dark Blue
+#1D8CE0
+</span>
+	</div>
+</div>
+
+<!--辅助色-->
+<div class="hp-operateBox">
+	<h3>辅助色 <small>除了主色外的场景色，需要在不同的场景中使用（例如危险色表示危险的操作）。</small></h3>
+	<div class="splitBar"></div>
+	<div class="colordef">
+		<span style="background-color: #20A0FF;">
+Blue
+#20A0FF
+</span>
+		<span style="background-color: #13CE66;">
+Success
+#13CE66
+</span>
+		<span style="background-color: #F7BA2A;">
+Warning
+#F7BA2A
+</span>
+		<span style="background-color: #FF4949;">
+Danger
+#FF4949
+</span>
+	</div>
+</div>
+
+<!--中性色-->
+<div class="hp-operateBox">
+	<h3>中性色 <small> 中性色用于文本、背景和边框颜色。通过运用不同的中性色，来表现层次结构</small></h3>
+	<div class="splitBar"></div>
+	<div class="colordef clear">
+		<ul class="fl mt-15 mr-15">
+			<li style="background-color:#1F2D3D ;">
+				Black<br/> #1F2D3D
+			</li>
+			<li style="background-color:#324057 ;">
+				Light Black<br/> #324057
+			</li>
+			<li style="background-color:#475669 ;">
+				Extra Light Black<br/> #475669
+			</li>
+		</ul>
+
+		<ul class="fl mt-15 mr-15">
+			<li style="background-color:#8492A6 ;">
+				Silver<br/> #8492A6
+			</li>
+			<li style="background-color:#99A9BF;">
+				Light Silver<br/> #99A9BF
+			</li>
+			<li style="background-color:#C0CCDA ;">
+				Extra Light Silver<br/> #C0CCDA
+			</li>
+		</ul>
+
+		<ul class="fl mt-15 mr-15">
+			<li style="background-color:#D3DCE6 ;">
+				Gray<br/> #D3DCE6
+			</li>
+			<li style="background-color:#E5E9F2;">
+				Light Gray<br/> #E5E9F2
+			</li>
+			<li style="background-color:#EFF2F7;">
+				Extra Light Gray<br/> #EFF2F7
+			</li>
+		</ul>
+
+		<ul class="fl mt-15 mr-15" style="border: 1px solid #EFF2F7;">
+			<li style="background-color:#F9FAFC; color: #C0CCDA;">
+				Dark White<br/> #F9FAFC
+			</li>
+			<li style="background-color:#FFFFFF; color: #C0CCDA;">
+				White<br/> #FFFFFF
+			</li>
+		</ul>
+	</div>
+</div>

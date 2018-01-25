@@ -1,0 +1,10 @@
+.hp-index-img{
+	padding: 200px 0px;
+	text-align: center;
+	background: #fff;
+	min-height: 645px;
+}
+.hp-index-img img{
+	width: 253px;
+	height: 180px;
+}

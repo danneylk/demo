@@ -1,0 +1,79 @@
+<style>
+	.admite {
+		overflow: hidden;
+	}
+	.admite ul {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		height: auto;
+	}
+	.admite ul li {
+		display: inline-block;
+		width: 100px;
+		height: 65px;
+		background-color: royalblue;
+		border-radius: 5px;
+		float: left;
+		margin-right: 10px;
+	}
+</style>
+<!--<div class="hp-operateBox">
+	<div class="o-title">
+		<label>adminite 动画</label>
+		<a class="return" onclick="history.back(-1)">返回</a>
+	</div>
+</div>-->
+<!--标题	-->
+<div class="hp-operateBox">
+	<h3>adminite <small>动画(动画样式来自adminite css3 动画库，可自行定义，选择)</small><a href="http://www.jq22.com/demo/animate-141106223642/" class="f-12 c-blue"  target="_blank">点击查看</a></h3>
+	<div class="splitBar"></div>
+	<div class="clear">
+		<div class="clear mt-30 mb-30 admite">
+			<ul>
+				<li class="one_icon"> </li>
+				<li class="two_icon"></li>
+				<li class="three_icon"></li>
+				<li class="four_icon"></li>
+				<li class="five_icon"></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="c-green"> css&&js库</h3>
+			<pre class="prettyprint linenums">
+	<xmp>
+	<!--CSS3 ADMINITE 动画库-->
+	<link rel="stylesheet" href="../../../../ui/common/components/wow/css/animate.css" /><!--动画库-->
+    <script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<!--adminite css3流程动画库-->
+	<script src="../../../../ui/common/js/animo.js"></script>
+	</xmp>
+	</pre>
+			<h3 class="c-green"> html</h3>
+			<pre class="prettyprint linenums">
+	<xmp>
+	<ul>
+		<li class="one_icon"> </li>
+		<li class="two_icon"></li>
+		<li class="three_icon"></li>
+		<li class="four_icon"></li>
+		<li class="five_icon"></li>
+	</ul>	
+	</xmp>
+	</pre>
+			<h3 class="c-green">js</h3>
+			<pre class="prettyprint linenums">
+	<xmp>
+		$(".one_icon").on("mouseover",function(){  
+    	             $(this).animo({ animation: "wobble", duration:1, keep:false })
+    	  }) 	
+	
+		$(".two_icon").on("mouseover",function(){  	
+	    	$(this).animo({ animation: "bounceOutUp", duration:1, keep:false })
+	     }) 	
+	</xmp></pre>
+			<p class="c-green">
+				配置：$("元素选择器").on("绑定鼠标事件",function(){$(this).animo({animstion:"css3样式库动画名称", duration:1(播放速度值越大速度越慢),keep:false(默认：循环，为true时只播放一次) })})
+			</p>
+		</div>
+	</div>
+</div>

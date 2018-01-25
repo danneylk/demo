@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>常用布局</title>
+		<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+	</head>
+	<body onload="prettyPrint()"  class="wd-content">
+
+<div class="hp-operateBox">
+<h3>常用布局一 </h3>
+<div class="splitBar"></div>
+<div class="hp-list-table mt-30">
+<div class="wui-header">
+	<p style="line-height: 60px; text-align:center; background-color: #b3c0d1; ">Header</p>
+</div>
+<div class="wui-container">
+	<p  style="line-height: 180px; text-align:center;background-color: #e9eef3;">main</p>
+</div>
+<div class="wui-footer">
+	<p style="line-height: 60px; text-align:center; background-color: #b3c0d1; ">footer</p>
+</div>
+</div>
+<pre class="prettyprint linenums none">
+<xmp>
+<div class="wui-header">
+<p style="line-height: 60px; text-align:center; background-color: #b3c0d1; ">Header</p>
+</div>
+<div class="wui-container">
+<p  style="line-height: 180px; text-align:center;background-color: #e9eef3;">main</p>
+</div>
+<div class="wui-footer">
+<p style="line-height: 60px; text-align:center; background-color: #b3c0d1; ">footer</p>
+</div>
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6;
+	">查看代码</div>
+</div>	
+<div class="hp-operateBox">
+<h3>常用布局二<small> 最大宽度为1200px//左右宽度需要自定义</small> </h3>
+<div class="splitBar"></div>
+<div class="hp-list-table mt-30">
+<div class="wui-header">
+<p style="line-height: 60px; text-align:center; background-color: #b3c0d1; ">Header</p>
+</div>
+<div class="wui-container">
+<div class="wui-aside" style="width: 34%;">
+<p style="line-height: 180px; text-align:center;background-color: #d3dce6;">wui-aside</p>
+</div>
+<div class="wui-main" style="width: 65%;">
+<p style="line-height: 180px; text-align:center;background-color: #e9eef3;">wui-main</p>
+</div>
+</div>
+<div class="wui-footer">
+<p style="line-height: 60px; text-align:center; background-color: #b3c0d1; ">footer</p>
+</div>
+<pre class="prettyprint linenums none">
+<xmp>
+<div class="wui-header">
+Header
+</div>
+<div class="wui-container">
+<div class="wui-aside" style="width: 30%;">
+wui-aside
+</div>
+<div class="wui-main" style="width: 65%;">
+wui-main
+</div>
+</div>
+<div class="wui-footer">
+footer
+</div>
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6;
+	">查看代码</div>
+</div>	
+</body>
+<script type="text/javascript" src="../../../../ui/common/js/jquery-1.10.2.js"></script>
+<script src="../../../../ui/common/js/prettify.js"></script>
+</html>
+<style>
+xmp{ font-family: "微软雅黑"; font-size: 14px; line-height:10px;}
+ pre{display:block;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;padding:10px;margin-bottom:10px;font-size:12px;line-height:10px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;color:#333}
+.prettyprint{ margin: 10px; margin-left: 0px; margin-right: 40px; padding:8px; padding-right: 30px;  background-color:#f7f7f9;}
+.prettyprint .com { color: #998;font-style:italic }/*注释*/
+.prettyprint .tag{color:#007}/*标签*/
+.prettyprint .lit { color: #195f91}
+.prettyprint .pun,.prettyprint .opn,.prettyprint .clo { color: #93a1a1}/*等于*/
+.prettyprint .fun { color: #dc322f}
+.prettyprint .str,.prettyprint .atv { color: #D14}/*值*/
+.prettyprint .kwd,.prettyprint .prettyprint .tag { color: #1e347b}
+.prettyprint .typ,.prettyprint .atn,.prettyprint .dec,.prettyprint .var { color: teal}/*文档声明，属性*/
+.prettyprint .pln { color: #48484c}
+.prettyprint.linenums{box-shadow:inset 40px 0 0 #fbfbfc,inset 41px 0 0 #ececf0}
+.pre-scrollable{max-height:340px;overflow-y:scroll}
+pre ol.linenums{list-style:decimal outside none;margin:0 0 0 33px}
+pre ol.linenums li{padding-left:12px;color:#bbb;line-height:18px;text-shadow:0 1px 0 #fff}
+</style>
+
+<script>
+	$(function(){
+		$(".togglecode").click(function(){
+			$(this).parent().find('pre').toggle()
+			if($(this).html()=='查看代码'){
+				$(this).html('隐藏代码')
+			}else{
+				$(this).html('查看代码')
+			}
+		})
+	})
+</script>

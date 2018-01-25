@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title> main window </title>
+
+  <script type="text/javascript">
+
+  // main js function
+  function fMain(){
+	alert('main function execute success');
+  }
+
+  // exec iframe function
+  function exec_iframe(){
+	if(typeof(exec_obj)=='undefined'){
+		var url= "http://192.168.8.200:8020/A08-evaluateService/webapp/app/jsp/qt/"
+		exec_obj = document.createElement('iframe');
+		exec_obj.name = 'tmp_frame';
+		exec_obj.src = url+'execB.html';
+		exec_obj.style.display = 'none';
+		document.body.appendChild(exec_obj);
+	}else{
+		exec_obj.src = url+'execB.html?' + Math.random();
+	}
+  }
+  </script>
+
+ </head>
+
+ <body>
+  <p>A.html main</p>
+  <p><input type="button" value="exec iframe function" onclick="exec_iframe()"></p>
+  <iframe src="http://192.168.8.200:8020/A08-evaluateService/webapp/app/jsp/qt/B.html" name="_wdFrame" width="500" height="100"></iframe>
+ </body>
+</html>

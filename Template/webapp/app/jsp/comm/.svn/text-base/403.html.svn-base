@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>没有权限</title>
+	</head>
+
+	<body>
+		<style type="text/css">
+			html,
+			body {
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			.ico{
+				position: absolute;
+				display: block;
+				top: 30%;
+				margin-left: -43px;
+				height:10px;
+				width: 100%;
+				text-align: center;
+				padding-top: 150px;
+				color:#b3b0a2 ;
+				background: url(../../../ui/common/images/403.png) no-repeat center center; 
+			}
+			.bottomBg{
+				position: fixed;
+				display: block;
+				height: 85px;
+				bottom: 10px;
+				width: 100%;
+				background: url(../../../ui/common/images/builder-bottom.png) center center  repeat-x;
+			}
+			.bottom{
+				position: fixed;
+				display: block;
+				height:20px;
+				bottom: 0;
+				width: 100%;
+				background: #b3b0a2;
+			}
+		</style>
+		
+			<div class="ico">亲~ 没有访问当前页面的权限</div>
+			<div class="bottomBg"></div>
+			<div class="bottom"></div>
+	</body>
+
+</html>

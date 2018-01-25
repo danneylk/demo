@@ -1,0 +1,187 @@
+		<title>栅格布局</title>
+		<link href="../../../ui/common/css/grid.css" rel="stylesheet" />
+	</head>
+	<body onload="prettyPrint()"  class="wd-content">
+	<div class="hp-operateBox">
+<h3>栅格布局<small> 引入栅格文件ui/common/css/grid.css</small></h3>
+<div class="splitBar"></div>
+<div class="hp-list-table mt-30">
+<div class="wui-container mb-25">
+	<table class="table" style="border:1px solid #e9eef3; color: #627793;">
+				<thead>
+					<tr>
+						<th></th>
+						<th> 超小屏幕 <small>手机 (&lt;768px)</small> </th>
+						<th> 小屏幕 <small>平板 (≥768px)</small> </th>
+						<th> 中等屏幕 <small>桌面显示器 (≥992px)</small> </th>
+						<th> 大屏幕 <small>大桌面显示器 (≥1200px)</small> </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">栅格系统行为</th>
+						<td>总是水平排列</td>
+						<td colspan="3">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">.container最大宽度</th>
+						<td>None （自动）</td>
+						<td>750px</td>
+						<td>970px</td>
+						<td>1170px</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">类前缀</th>
+						<td><code>.col-xs-</code></td>
+						<td><code>.col-sm-</code></td>
+						<td><code>.col-md-</code></td>
+						<td><code>.col-lg-</code></td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">列（column）数</th>
+						<td colspan="4">12</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">最大列column宽</th>
+						<td class="text-muted">自动</td>
+						<td>~62px</td>
+						<td>~81px</td>
+						<td>~97px</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">槽（gutter）宽</th>
+						<td colspan="4">30px （每列左右均有 15px）</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">可嵌套</th>
+						<td colspan="4">是</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">偏移（Offsets）</th>
+						<td colspan="4">是</td>
+					</tr>
+					<tr>
+						<th class="text-nowrap" scope="row" style="font-size: 12px;">列排序</th>
+						<td colspan="4">是</td>
+					</tr>
+				</tbody>
+			</table>
+</div>	
+	
+<div class="wui-container" style="color: #627793;">
+	
+<div class="row clear">
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-xs-12 col-sm-3" style="background-color: #e9eef3; text-align: center;">3/12</div>
+<div class="col-xs-12 col-sm-3" style="background-color: #b3c0d1; text-align: center;">3/12</div>
+<div class="col-xs-12 col-sm-3" style="background-color: #e9eef3; text-align: center;">3/12</div>
+<div class="col-xs-12 col-sm-3" style="background-color: #b3c0d1; text-align: center;">3/12</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-xs-12 col-sm-6" style="background-color: #e9eef3; text-align: center;">6/12</div>
+<div class="col-xs-12 col-sm-6" style="background-color: #b3c0d1; text-align: center;">6/12</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-sm-3 col-sm-offset-3" style="background-color: #e9eef3; text-align: center;">偏移3/12(1/4)</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-sm-3 col-sm-offset-4" style="background-color: #e9eef3; text-align: center;">偏移4/12(1/3)</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-sm-6 col-sm-offset-6" style="background-color: #e9eef3; text-align: center;">偏移6/12(1/2)</div>
+</div>
+
+</div>
+
+</div>
+<pre class="prettyprint linenums none">
+<xmp>
+<div class="wui-container">
+
+<div class="row clear">
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #e9eef3; text-align: center;">1/12</div>
+<div class="col-xs-12 col-sm-1" style="background-color: #b3c0d1; text-align: center;">1/12</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-xs-12 col-sm-3" style="background-color: #e9eef3; text-align: center;">3/12</div>
+<div class="col-xs-12 col-sm-3" style="background-color: #b3c0d1; text-align: center;">3/12</div>
+<div class="col-xs-12 col-sm-3" style="background-color: #e9eef3; text-align: center;">3/12</div>
+<div class="col-xs-12 col-sm-3" style="background-color: #b3c0d1; text-align: center;">3/12</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-xs-12 col-sm-6" style="background-color: #e9eef3; text-align: center;">6/12</div>
+<div class="col-xs-12 col-sm-6" style="background-color: #b3c0d1; text-align: center;">6/12</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-sm-3 col-sm-offset-3" style="background-color: #e9eef3; text-align: center;">偏移3/12(1/4)</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-sm-3 col-sm-offset-4" style="background-color: #e9eef3; text-align: center;">偏移4/12(1/3)</div>
+</div>
+
+<div class="row mt-15 clear">
+<div class="col-sm-6 col-sm-offset-6" style="background-color: #e9eef3; text-align: center;">偏移6/12(1/2)</div>
+</div>
+
+</div>
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6;
+	">查看代码</div>
+</div>	
+</body>
+<script type="text/javascript" src="../../../../ui/common/js/jquery-1.10.2.js"></script>
+<script src="../../../../ui/common/js/prettify.js"></script>
+</html>
+
+<script>
+	$(function(){
+		$(".togglecode").click(function(){
+			$(this).parent().find('pre').toggle()
+			if($(this).html()=='查看代码'){
+				$(this).html('隐藏代码')
+			}else{
+				$(this).html('查看代码')
+			}
+		})
+	})
+</script>
+
+
+
+
+
+
+

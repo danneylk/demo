@@ -1,0 +1,284 @@
+.wd-prompt {
+	position: fixed;
+	/*left: 50%;*/
+	background: #fff;
+	border-radius: 4px;
+	display: none;
+	box-shadow: #D9D9D9 1px 2px 30px;
+}
+
+.wd-prompt-shield {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.wd-prompt-otherclose {
+	position: fixed;
+	float: right;
+	cursor: pointer;
+	top: -40px;
+	right: -40px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 50%;
+}
+.wd-prompt .wd-prompt-close,
+.wd-prompt .wd-prompt-max {
+	cursor: pointer;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-close {
+	width: 22px;
+	height: 22px;
+	background: url(../image/wddialog_close_new.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-close:hover {
+	background: url(../image/wddialog_close_newHover.png) center center/22px no-repeat;
+	width: 22px;
+	height: 22px;
+	transition: all ease 500ms;
+	-webkit-transition: all ease 500ms;
+	-moz-transition: all ease 500ms;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-max {
+	width: 22px;
+	height: 22px;
+	background: url(../image/wddialog_close_newHover.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+.wd-prompt .wd-prompt-footer input {
+	border: none;
+	background-color: #5b9ce8;
+	color: white;
+	border-radius: 5px;
+	width: 60px;
+	height: 25px;
+}
+
+.wd-prompt .wd-prompt-footer input:hover {
+	box-shadow: #D9D9D9 3px 3px 5px;
+}
+
+
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-min {
+	width: 22px;
+	height: 22px;
+	background: url(../image/dialog-min1.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-old-min {
+	width: 22px;
+	height: 22px;
+	background: url(../image/dialog-min2.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-old {
+	width: 22px;
+	height: 22px;
+	background: url(../image/dialog-max1.png) center center;
+	background-size: 22px 22px;
+	float: right;
+	cursor: pointer;
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.wd-prompt .wd-prompt-titlearea {
+	border-radius: 4px 4px 0 0;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #4f5866;
+	font-family: 'Microsoft YaHei';
+}
+
+.wd-prompt .wd-prompt-titlearea .wd-prompt-title {
+	float: left;
+	color: #ffffff;
+	font-size: 16px;
+	padding-left: 8px;
+	width: 360px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+.wd-prompt .wd-prompt-footer {
+	border-radius: 0 0 4px 4px;
+}
+
+.wd-prompt .wd-prompt-textarea {
+	height: 100%;
+	background-color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img {
+	width: 48px;
+	height: 48px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-alert {
+	background: url(../image/alert-alert.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-error {
+	background: url(../../../images/alert-error.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-success {
+	background: url(../../../images/alert-success.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-img-confirm {
+	background: url(../../../images/alert-confirm.png) center center no-repeat;
+}
+
+.wd-prompt .wd-prompt-textarea .wd-prompt-textarea-text {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	line-height: 160%;
+	font-size: 14px;
+	color: #5b9ce8;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	height: 40px;
+	overflow-y: auto;
+	word-wrap: break-word;
+}
+
+.wd-prompt .wd-prompt-footer {
+	height: 40px;
+	line-height: 40px;
+	background-color: #F6F6F6;
+	text-align: center;
+	margin: auto;
+}
+
+.wd-prompt .wd-prompt-footer .wd-prompt-footer-buttonarae {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.wd-prompt .wd-prompt-footer .wd-prompt-footer-buttonarae .wd-prompt-footer-buttonarae-button {
+	height: 26px;
+	background-color: #5b9ce8;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 26px;
+	border: 1px solid #E4E4E4;
+	width: 60px;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	margin-top: -4px;
+}
+
+
+
+.wd-prompt-img-toolbar{
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+}
+.wd-prompt-img-toolbar > span {
+    display: block;
+    float: left;
+  	width: 24px;
+  	height: 24px;
+  	margin-left: 4px;
+  	overflow: hidden;
+  	cursor: pointer;
+  	background-color: #000;
+  	background-color: rgba(0, 0, 0, .5); 
+  	border-radius: 50%;
+}
+.wd-prompt-img-toolbar > span:hover {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .8);
+}
+.wd-prompt-img-footer{
+	position: fixed;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+ 	overflow: hidden; 
+  	text-align: center;
+}
+.wd-prompt-img-footer .wd-prompt-img-navbar{
+	overflow: hidden;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, .5);
+}
+.wd-prompt-img-footer .wd-prompt-img-navbar .wd-prompt-img-list{
+	height: 50px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  	padding: 1px 0;
+  	margin: 0;
+  	overflow: hidden;
+}
+.wd-prompt-img-list > li {
+  float: left;
+  width: 30px;
+  height: 50px;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  cursor: pointer;
+  filter: alpha(opacity=50); 
+  opacity: .5;
+}
+.wd-prompt-img-list > li + li {
+  margin-left: 1px;
+}
+
+

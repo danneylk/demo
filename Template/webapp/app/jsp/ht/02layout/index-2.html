@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>首页</title>
+		<link href="../../../../ui/common/css/common.css" rel="stylesheet" />
+		<link href="../../../../ui/common/components/wddialog/css/wddialog.css" rel="stylesheet" />
+		
+
+		<style>
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				line-height: 150%;
+				margin: 0px;
+				background: #f2f2f2;
+			}
+			
+			html {
+				overflow: hidden;
+			}
+			/* for ie6 */
+			
+			* html {
+				padding: 60px 0 0 0;
+			}
+			
+			* html .header,
+			* html .main,
+			* html .footer {
+				width: 100%;
+			}
+			
+			* html .main,
+			* html .mainNav,
+			* html .content {
+				height: 100%;
+			}
+			/* for nice browsers */
+			
+			.header {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				height: 65px;
+			}
+			
+			.main {
+				position: absolute;
+				left: 0;
+				top: 45px;
+				right: 0;
+				bottom: 40px;
+				margin: 0 auto;
+			}
+			
+			.footer {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				height: 0px;
+			}
+			
+			.mainNav {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 200px;
+			}
+			
+			.content {
+				position: absolute;
+				left: 200px;
+				top: 0;
+				right: 0;
+				bottom: 0;
+			}
+			
+			.header {
+				height: 65px;
+			}
+			
+			.fr {
+				float: right;
+			}
+			/* mainNav */
+			
+			.mainNav {
+				height: 100%;
+				background: #f2f2f2;
+				top: 31px;
+			}
+			
+			.splitBar {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 8px;
+				height: 100%;
+				background: #f2f2f2;
+				cursor: pointer;
+			}
+			
+			
+
+			.splitBtn {
+				display: none;
+				position: absolute;
+				top: 50%;
+				border-radius: 4px;
+				left: -6px;
+				z-index: 1000;
+				height: 30px;
+				width: 16px;
+				background: #f2f2f2 url(../../../ui/common/components/menu/images/btn-leftright.png) no-repeat center center;
+				border: 1px solid #ccc;
+			}
+			
+			.mainMenu {
+				position: relative;
+				height: 100%;
+				margin: 0 8px 0 8px;
+				background: #ffffff;
+				border-radius: 4px 4px 0 0;
+			}
+			/* content */
+			
+			.content {
+				height: 100%;
+				background: red;
+				top: 31px;
+			}
+			body{
+				transform:translateZ(0); 
+				-webkit-transform:translateZ(0);
+				}
+			.contentWrapper { 
+				height: 100%;
+				margin-right: 0px;
+				background: #fff;
+				border: 0px solid #6A818C;
+				position: relative;
+			}
+			.m_top_fixed.fixed {
+				position: fixed;
+				margin-right: 0px;
+				width: 100%;
+				z-index: 1002;
+				top: 76px;
+				text-align: left;
+				padding: 10px 20px;
+				margin-right: 6px;
+			}
+			/* footer */
+			
+			.footer {
+				border: 1px solid #269FDB;
+				text-align: center;
+				color: #EDF8FF;
+				line-height: 26px;
+			}
+			/* iframe */
+			
+			iframe {
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<iframe id="frmHeader" name="frmHeader" frameborder="0" src="header2.html"></iframe>
+		</div>
+		<div class="main">
+			<div class="mainNav">
+				<div class="splitBar">
+					<div class="splitBtn"></div>
+				</div>
+				<div class="mainMenu">
+					<iframe id="frmTree" name="frmTree" frameborder="0" src="menu.html"></iframe>
+				</div>
+			</div>
+			<div class="content">
+				<div class="contentWrapper" id="m_box" style="overflow: auto; position: relative;">
+					<div class="m_top_fixed"  style="background: blue; color: #FFF0FF;">固定</div>
+					<div style="height: 1600px; background: red;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+		<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/storejson.js"></script>
+		<script type="text/javascript" src="../../../../ui/common/js/requestAddressList.js"></script>
+		<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd.js"></script>
+		<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/wd_boder.js" ></script>
+		<script type="text/javascript" src="../../../../ui/common/js/custom.js" ></script>
+		<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.nicescroll.js" ></script>
+  		<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/components/wddialog/wddialog2.0.js"></script>
+		
+		<script>
+			$(function() {
+				
+				$("#m_box").niceScroll({
+					cursorcolor: "#666",
+					autohidemode: false,
+					background: "#cccccc",
+					cursorborder: "0px solid #fff",
+					spacebarenabled: true,
+					railpadding: {
+						top: 0,
+						right: 2, 
+						left: 0,
+						bottom: 0
+					},
+					grabcursorenabled: true
+				});
+				$('#m_box').on('scroll',function(){
+					if($('#m_box').scrollTop() > 80 ){
+						$('.m_top_fixed').addClass('fixed') ;
+					}else{
+						$('.m_top_fixed').removeClass('fixed');
+					}
+				});
+				$(".splitBar").click(function() {
+					if($(".mainNav").css("width") != "200px") {
+						$(".mainNav").animate({
+							width: '200px'
+						}, "fast", function() {});
+						$(".content").animate({
+							'left': '200px'
+						}, "fast");
+					} else {
+						$(".mainNav").animate({
+							width: '8px'
+						}, "slow", function() {});
+						$(".content").animate({
+							'left': '8px'
+						}, "fast");
+					}
+				})
+				$(".splitBar").mouseleave(function() {
+					$(".splitBtn").hide(10);
+				});
+				$(".splitBar").mouseover(function() {
+					$(".splitBtn").show(100);
+				});
+				$(".splitBar").click(function() {
+					$(".splitBtn").hide(10);
+				});
+			});
+		</script>
+		<script>
+			function _openDlg(obj) {dialog(obj);}
+			function _successDlg(obj){success(obj);}
+			function _errorDlg(obj){error(obj);}
+			function _confirmDlg(obj){confirm(obj);}
+		</script>
+</html>

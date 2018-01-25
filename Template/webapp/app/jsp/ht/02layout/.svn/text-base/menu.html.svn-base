@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>菜单</title>
+
+		<style>
+			/*重置默认样式===============================*/
+			
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			
+			img {
+				border: 0;
+			}
+			
+			ul,
+			li {
+				list-style-type: none;
+			}
+			
+			a {
+				color: #000;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #000;
+				text-decoration: underline;
+			}
+			
+			.treebox {
+				width: 100%;
+				background-color: #ffffff;
+			}
+			
+			.treebox h1 {
+				width: 100%;
+				height: 45px;
+				background: #4f5866 url(../../../ui/ht/images/btn-fenlei.png) no-repeat 10px 14px;
+				border-radius: 4px 4px 0 0;
+			}
+			
+			.menu {
+				overflow: hidden;
+				border-color: #ddd;
+				border-style: solid;
+				border-width: 0;
+			}
+			/*第一层*/
+			
+			.menu li.level1>a {
+				display: block;
+				height: 45px;
+				line-height: 45px;
+				color: #000;
+				padding-left: 40px;
+				border-bottom: 1px solid #ccc;
+				font-size: 14px;
+				position: relative;
+				transition: all .5s ease 0s;
+			}
+			
+			.menu li.level1 a:hover {
+				text-decoration: none;
+				background-color: #cccccc;
+			}
+			
+			.menu li.level1 a.current {
+				background: #dddddd;
+			}
+			/*============修饰图标*/
+			
+			.ico {
+				width: 20px;
+				height: 20px;
+				display: block;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				background-repeat: no-repeat;
+			}
+			/*============小箭头*/
+			
+			.level1 i {
+				width: 20px;
+				height: 10px;
+				background-image: url(../../../ui/common/components/menu/images/arrow.png);
+				background-repeat: no-repeat;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 20px;
+			}
+			
+			.level1 i.down {
+				background-position: 0 -10px;
+			}
+			
+			.ico1 {
+				background-image: url(../../../ui/ht/images/btn-chanpin.png);
+			}
+			
+			.ico2 {
+				background-image: url(../../../ui/ht/images/btn-gongchengguanli.png);
+			}
+			
+			.ico3 {
+				background-image: url(../../../ui/ht/images/btn-kefu.png);
+			}
+			
+			.ico4 {
+				background-image: url(../../../ui/ht/images/btn-peixun.png);
+			}
+			
+			.ico5 {
+				background-image: url(../../../ui/ht/images/btn-chanpin.png);
+			}
+			/*第二层*/
+			
+			.menu li ul {
+				overflow: hidden;
+			}
+			
+			.menu li ul.level2 {
+				display: none;
+				background: #FAFAFA;
+			}
+			
+			.menu li ul.level2 li a {
+				display: block;
+				height: 45px;
+				line-height: 45px;
+				color: #000;
+				text-indent: 60px;
+				font-size: 14px;
+				transition: all 0.5s ease 0s;
+				background: url(../../../ui/common/components/menu/images/btn-arrow-right.png) no-repeat 20px center;
+			}
+			
+			.menu li ul.level2 li a.current {
+				background: #4f5866 url(../../../ui/common/components/menu/images/btn-arrow-right.png) no-repeat 30px center;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="treebox">
+			<h1></h1>
+			<ul class="menu">
+				<li class="level1">
+					<a href="#none"><em class="ico ico1"></em>布局<i class="down"></i></a>
+					<ul class="level2">
+						<li>
+							<a href="02layout/new-01paiban.html" target="frmMain">排版</a>
+						</li>
+						<li>
+							<a href="02layout/01layout.html" target="frmMain">编辑页</a>
+						</li>
+						<li>
+							<a href="02layout/02layout-list.html" target="frmMain">DIV模拟表格</a>
+						</li>
+						<li>
+							<a href="02layout/03layout-list2.html" target="frmMain">通用Table</a>
+						</li>
+						<li>
+							<a href="02layout/04moreSearch.html" target="frmMain">查询区扩展</a>
+						</li>
+						<li>
+							<a href="01button/01button.html" target="frmMain">按钮</a>
+						</li>
+					</ul>
+				</li>
+				<li class="level1">
+					<a href="#none"><em class="ico ico2"></em>导航一<i></i></a>
+					<ul class="level2">
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+					</ul>
+				</li>
+				<li class="level1">
+					<a href="#none"><em class="ico ico3"></em>导航一<i></i></a>
+					<ul class="level2">
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+					</ul>
+				</li>
+				<li class="level1">
+					<a href="#none"><em class="ico ico4"></em>导航一<i></i></a>
+					<ul class="level2">
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+						<li>
+							<a href="javascript:;">导航选项</a>
+						</li>
+					</ul>
+				</li>
+				<li class="level1">
+					<a href="#none"><em class="ico ico5"></em>同步代码<i></i></a>
+					<ul class="level2">
+						<li>
+							<a href="01button/sync.html" target="frmMain">同步代码</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 引入 jQuery -->
+		<script type="text/javascript" src="../../../ui/common/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="../../../ui/common/components/menu/js/easing.js"></script>
+		<script type="text/javascript" src="../../../ui/common/js/jquery.nicescroll.js"></script>
+		<script type="text/javascript" src="../../../ui/common/js/custom.js"></script>
+
+		<script>
+			//等待dom元素加载完毕.
+			$(function() {
+				$(".treebox .level1>a").click(function() {
+					$(this).addClass('current') //给当前元素添加"current"样式
+						.find('i').addClass('down') //小箭头向下样式
+						.parent().next().slideDown('fast', 'easeOutQuad') //下一个元素显示
+						.parent().siblings().children('a').removeClass('current') //父元素的兄弟元素的子元素去除"current"样式
+						.find('i').removeClass('down').parent().next().slideUp('fast', 'easeOutQuad'); //隐藏
+					return false; //阻止默认时间
+				});
+
+				$(".treebox .level2 li>a").click(function() {
+					$(".treebox .level2 li>a").removeClass('current');
+					$(this).addClass('current') //给当前元素添加"current"样式
+					return false; //阻止默认时间
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

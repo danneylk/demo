@@ -1,0 +1,33 @@
+<div class="hp-operateBox">
+<h3>Tabs切换  </h3>
+<div class="splitBar"></div>
+<div class="hp-list-table mt-30">
+<div id="tab_demo" class="wuiTab">
+  <div class="tabBar clearfix"><span class="current">选项卡一</span><span>选项卡二</span><span>自适应宽度</span></div>
+  <div class="tabCon" style="display: block;">内容一</div>
+  <div class="tabCon">内容二</div>
+  <div class="tabCon">内容三</div>
+</div>
+</div>
+<pre class="prettyprint linenums none">
+<xmp>
+【HTML】
+<div  class="wuiTab">
+  <div class="tabBar clearfix">
+  	<span class="current">选项卡一</span>
+  	<span>选项卡二</span>
+  	<span>自适应宽度</span>
+  </div>
+  <div class="tabCon" style="display: block;">内容一</div>
+  <div class="tabCon">内容二</div>
+  <div class="tabCon">内容三</div>
+</div>
+
+【JS】
+$(".wuiTab").wuitab("click")
+</xmp>
+</pre>
+<div class="togglecode" style=" padding-top: 8px; border-top:1px dashed #eaeefb; margin-top: 15px;font-size: 16px; text-align: center; cursor: pointer; color: #8492A6;
+	">查看代码</div>
+</div>	
+

@@ -1,0 +1,291 @@
+.wd-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-sizing: border-box;
+	color: #777777;
+	width: 100%;
+}
+
+.textHover:hover {
+	background: #EFF4F7 !important;
+}
+
+.wd-table tr th {
+	/*border: 1px solid #E1E1E1;*/
+	font-size: 13px;
+	/*background: #F2F2F2;
+	text-align: center;*/
+	vertical-align: middle;
+	/*overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;*/
+}
+
+.wd-table tr td {
+	/*border: 1px solid #E1E1E1;*/
+	font-size: 13px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.wd-table tr td div {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	*white-space: nowrap;
+	overflow: hidden;
+}
+
+.wd-table tr td a {
+	color: #5959FF;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.wd-table tr td a:hover {
+	color: #310A98;
+}
+
+.wd-page {
+	/*border: 1px solid #E1E1E1;*/
+	border-top: 0;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	/*background: #EFF3F8;*/
+}
+
+.wd-page .czdivbox {
+	width: 96%;
+	margin: 0 auto;
+	padding-top: 6px;
+	/*min-width: 600px;*/
+}
+
+.wd-page .czdivbox .czdiv {
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	/*border: 1px solid #DDDDDD;*/
+	background: #F7F7F7;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.wd-page .czdivbox .div_fleft_all {
+	margin-top: 3px;
+	background: url(images/pageleftall.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_fleft_all_active {
+	margin-top: 3px;
+	background: url(images/pageleftall-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_fleft {
+	margin-top: 3px;
+	background: url(images/pageleft.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_fleft_active {
+	margin-top: 3px;
+	background: url(images/pageleft-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_right {
+	margin-top: 3px;
+	background: url(images/pageright.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_right_active {
+	margin-top: 3px;
+	background: url(images/pageright-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_rightall {
+	margin-top: 3px;
+	background: url(images/pagerightall.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .div_rightall_active {
+	margin-top: 3px;
+	background: url(images/pagerightall-active.png) no-repeat;
+	background-size: 25px 25px;
+}
+
+.wd-page .czdivbox .span_blank {
+	margin-right: 10px;
+	float: left;
+	/*background: #C9D5DB;*/
+	height: 16px;
+	width: 1px;
+	margin-top: 4px;
+}
+
+.wd-page .czdivbox .div_span {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding-top: 2px;
+	color: #000000;
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.wd-page .czdivbox .input_page {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	width: 30px;
+	border: 1px solid #CBCBCD;
+	padding: 0;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.wd-page .czdivbox .div_selectbox {
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin-right: 10px;
+	width: 60px;
+	padding: 0;
+}
+
+.wd-page .czdivbox .div_selectbox select {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #CBCBCD;
+	margin: 0;
+}
+
+.wd-page .czdivbox .div_pagedetailbox {
+	height: 25px;
+	float: right;
+}
+
+.wd-shield {
+	z-index: 10;
+	position: absolute;
+	background: #aaa;
+	text-align: center;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.wd-shieldText {
+	z-index: 11;
+	position: absolute;
+}
+
+.wd-shieldText div {
+	/*font-size: 14px;
+	font-weight: bold;
+	color: #f60;
+	background: #ddd;
+	height: 40px;
+	width: 250px;
+	line-height: 40px;
+	text-align:center;
+	margin: 0 auto;*/
+	width: 18px;
+	height: 18px;
+	margin: 0 auto;
+	background: url(images/loading.gif);
+}
+
+.wd-wite {
+	position: relative;
+	height: 200px;
+	background: url(images/shield.png);
+}
+
+.wd-wite div {
+	width: 18px;
+	height: 18px;
+	margin: 0 auto;
+	background: url(images/loading.gif);
+}
+.wdgrid-pageWholeWide {
+	width: 100%;
+	margin-top: 10px;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.wdgrid-pagebox {
+	width: 360px;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 30px;
+	position: relative;
+}
+.wdgrid-pageBtn {
+	border: 1px solid #D7D7D7;
+	width: 26px;
+	height: 26px;
+	top: 0;
+	position: absolute;
+}
+.wdgrid-pageprev {
+	background: #F8F8F8 url(images/iconfont-zuo.png) center center no-repeat;
+	left: 0;
+}
+
+.wdgrid-pageprev-active {
+	background: #F8F8F8 url(images/iconfont-zuo-active.png) center center no-repeat;
+	left: 0;
+}
+.wdgrid-pagenext {
+	background: #F8F8F8 url(images/iconfont-you.png) center center no-repeat;
+	right: 0;
+}
+
+.wdgrid-pagenext-active {
+	background: #F8F8F8 url(images/iconfont-you-active.png) center center no-repeat;
+	right: 0;
+}
+.wdgrid-pageNumBox {
+	text-align: center;
+}
+.wdgrid-pageNum {
+	width: 26px;
+	height: 26px;
+	margin-left: 4px;
+	border-radius: 4px;
+	text-align: center;
+	display: inline-block;
+	line-height: 24px;
+	color: #999999;
+	background-color: #F8F8F8;
+	border: 1px solid #D7D7D7;
+}
+.wdgrid-activeNum {
+	background-color: #1792B3;
+	color: #FFFFFF;
+}
+.wdgrid-pageNum-clearhover:hover {
+	background-color: #F8F8F8;
+	cursor: default;
+}
+.wdgrid-pageprev-active:hover,
+.wdgrid-pagenext-active:hover,
+.wdgrid-pageNum:hover {
+	background-color: #E4E4E4;
+	cursor: pointer;
+}
+.wdgrid-activeNum:hover {
+	background-color: #1792B3;
+	color: #FFFFFF;
+	cursor: default;
+}

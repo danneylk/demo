@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>伟东—网站快速成型工具</title>
+		<link href="../../../ui/common/css/common.css" rel="stylesheet" />
+		<link href="../../../ui/ht/css/WD—index.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="wrapper clear">
+				<div class="logo fl"></div>
+				<div class="nav fr">
+					<a href="##" class="active">首页</a>
+					<a href="##">指南</a>
+					<a href="index.html">组件</a>
+					<a href="##">资源</a>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<h3>网站快速成型工具</h3>
+			<p>架起设计与后端的桥梁轻量级前端框架，简单免费，兼容性好，服务中国网站。</p>
+		</div>
+		<div class="container">
+			<img src="../../../ui/ht/images/base-bg.png" />
+			<em class="ggp"></em>
+			<em class="xd"></em>
+			<em class="js"></em>
+			<em class="axure"></em>
+			<em class="car"></em>
+		</div>
+		<div class="card_box">
+			<ul id="cardArea" class="clear">
+				<li class="fl card-item active">
+					<div class="card_first">
+						<div class="card_first_t">
+							<h4>指南
+							<p>Guide</p>
+							</h4>
+						</div>
+						<div class="card_first_b">
+							<img src="../../../ui/ht/images/Guide.png" />
+							<span>了解设计指南，帮助产品设计人员<br>搭建逻辑清晰、结构合理且高效易用的产品。</span>
+							<p>查看详情</p>
+						</div>
+					</div>
+					<div class="card_second">
+						<div class="guide-bg">
+							<h1>指南</h1>
+						</div>
+						<div class="card_second_b">
+							<img src="../../../ui/ht/images/Guide.png" />
+							<span>了解设计指南，帮助产品设计人员<br>搭建逻辑清晰、结构合理且高效易用的产品。</span>
+						</div>
+							<a href="##">查看详情</a>
+					</div>
+				</li>
+				<li class="fl card-item">
+					<div class="card_first">
+						<div class="card_first_t">
+							<h4>组件
+							<p>Widget</p>
+							</h4>
+						</div>
+						<div class="card_first_b">
+							<img src="../../../ui/ht/images/widget.png" />
+							<span>了解设计指南，帮助产品设计人员<br>搭建逻辑清晰、结构合理且高效易用的产品。</span>
+							<p>查看详情...</p>
+						</div>
+					</div>
+					<div class="card_second">
+						<div class="widget-bg">
+							<h1>组件</h1>
+						</div>
+						<div class="card_second_b">
+							<img src="../../../ui/ht/images/widget.png" />
+							<span>了解设计指南，帮助产品设计人员<br>搭建逻辑清晰、结构合理且高效易用的产品。</span>
+						</div>
+							<a href="##">查看详情</a>
+					</div>
+				</li>
+				<li class="fl card-item">
+					<div class="card_first">
+						<div class="card_first_t">
+							<h4>资源
+							<p>Resources</p>
+							</h4>
+						</div>
+						<div class="card_first_b">
+							<img src="../../../ui/ht/images/Resources.png" />
+							<span>了解设计指南，帮助产品设计人员<br>搭建逻辑清晰、结构合理且高效易用的产品。</span>
+						</div>
+					</div>
+					<div class="card_second">
+						<div class="resources-bg">
+							<h1>资源</h1>
+						</div>
+						<div class="card_second_b">
+							<img src="../../../ui/ht/images/Resources.png" />
+							<span>了解设计指南，帮助产品设计人员<br>搭建逻辑清晰、结构合理且高效易用的产品。</span>
+						</div>
+							<a href="##">查看详情</a>
+					</div>
+			   	</li>
+			</ul>
+		</div>
+		<footer>
+			<p>Copyright © 2014 - 2015 Jquery EasyUI中文网, 粤ICP备14024044号-2, All Rights Reserved.</p>
+		</footer>
+	</body>
+
+	<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.js"></script>
+	<script type="text/javascript" src="../../../ui/ht/js/function.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#cardArea").cardArea()
+		});
+	</script>
+	<script>
+		$(function() {
+			//			$(".card_box ul li").mouseover(function() {
+			//				$(this).addClass('active').siblings().removeClass('active')
+			//			});
+			$(".nav a").mouseover(function() {
+				$(this).addClass('active').siblings().removeClass('active')
+			});
+		});
+	</script>
+
+</html>
