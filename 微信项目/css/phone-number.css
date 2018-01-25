@@ -1,0 +1,94 @@
+.phone-bg {
+  position: relative;
+  width: 10rem;
+  height: 4.375rem;
+  background: white url(../img/phone-bg.png) no-repeat 2.9375rem center;
+  background-size: 3.4375rem;
+  border-bottom: 0.03125rem solid #cccccc; }
+  .phone-bg .phone-number {
+    position: absolute;
+    left: 50%;
+    bottom: -0.53125rem;
+    margin-left: -3.125rem;
+    width: 6.25rem;
+    height: 1.0625rem;
+    line-height: 1.0625rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #666666;
+    background-color: white;
+    border: 0.03125rem solid #6492FF;
+    border-radius: 3.125rem; }
+
+.content {
+  display: flex;
+  width: 8.125rem;
+  margin: 0 auto;
+  margin-top: 1.5625rem; }
+  .content .phone_input {
+    width: 4.6875rem;
+    height: 1.25rem;
+    border-radius: 0.125rem;
+    border: 0.03125rem solid #e4e4e4;
+    font-size: 0.4375rem;
+    padding-left: 0.3125rem;
+    appearance: button;
+    -moz-appearance: button;
+    -webkit-appearance: button; }
+  .content .btn {
+    display: block;
+    width: 2.8125rem;
+    height: 1.25rem;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 0.4375rem;
+    color: #666666;
+    background-color: white;
+    border: 0.03125rem solid #e4e4e4;
+    border-radius: 0.125rem;
+    margin-left: 0.3125rem; }
+  .content .count {
+    background-color: #6492FF;
+    border: 0.03125rem solid #6492FF;
+    color: white; }
+
+.code-box {
+  display: none;
+  width: 8.125rem;
+  margin: 0 auto;
+  margin-top: 0.3125rem; }
+  .code-box label {
+    color: #666666;
+    font-size: 0.4375rem; }
+    .code-box label span {
+      color: #6492FF; }
+  .code-box .input-box {
+    display: flex;
+    justify-content: space-between; }
+    .code-box .input-box .code_input {
+      margin-top: 0.3125rem;
+      width: 1.6875rem;
+      height: 1.6875rem;
+      text-align: center;
+      color: #6492FF;
+      border-radius: 0.125rem;
+      border: 0.03125rem solid #e4e4e4;
+      font-size: 0.9375rem;
+      appearance: button;
+      -moz-appearance: button;
+      -webkit-appearance: button; }
+    .code-box .input-box .bbb {
+      border: 0.03125rem solid #6492FF; }
+  .code-box .submit {
+    width: 8.125rem;
+    height: 1.25rem;
+    margin: 0.9375rem auto;
+    line-height: 1.25rem;
+    border-radius: 2.03125rem;
+    text-align: center;
+    color: white;
+    font-size: 0.4375rem;
+    background-color: #6492FF;
+    box-shadow: 0.0625rem 0 0.9375rem #B3CAFF; }
+
+/*# sourceMappingURL=phone-number.css.map */

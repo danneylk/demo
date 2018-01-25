@@ -1,0 +1,90 @@
+@import 'base';
+body {
+    background-color: colors(lightgray);
+}
+.top {
+    position: relative;
+    width: s(320);
+    height: s(40);
+    text-align: center;
+    line-height: s(40);
+    font-size: s(14);
+    color: colors(date);
+    background-color: colors(white);
+    .return {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: s(40);
+        height: s(40);
+        background: url(../img/return.svg) no-repeat center;
+        background-size: s(18);
+    }
+    a {
+        position: absolute;
+        right: s(10);
+        font-size: s(14);
+        color: colors(date);
+    }
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    .boy,
+    .girl {
+        width: s(60);
+        height: s(60);
+        border-radius: 50%;
+        margin: s(30) s(20) 0 s(20);
+        p {
+            text-align: center;
+            margin-top: s(64);
+            font-size: s(16);
+        }
+    }
+    .boy {
+        position: relative;
+        background: colors(white) url(../img/boy-gender.svg) no-repeat center;
+        background-size: s(30);
+        color: #a7bbe9;
+        border: s(1) solid #C2D4FF;
+        .boy-selected {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: s(20);
+            height: s(20);
+            background: url(../img/dg-boy.svg);
+        }
+    }
+    .girl {
+        position: relative;
+        background: colors(white) url(../img/girl-gender.svg) no-repeat center;
+        background-size: s(30);
+        border: s(1) solid #FFC5C5;
+        color: #ffb8b8;
+        .girl-selected {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: s(20);
+            height: s(20);
+            background: url(../img/dg-girl.svg);
+        }
+    }
+    .boy-active {
+        background: colors(default) url(../img/boy-white.svg) no-repeat center;
+        background-size: s(30);
+        border: none;
+        color: colors(default) !important;
+    }
+    .girl-active {
+        background: colors(red) url(../img/girl-white.svg) no-repeat center;
+        background-size: s(30);
+        border: none;
+        color: colors(red) !important;
+    }
+}

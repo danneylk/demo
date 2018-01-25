@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>手机号</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../../css/frozen.css" />
+		<link rel="stylesheet" href="../../css/phone-number.css" />
+		<script type="text/javascript" src="../../js/font.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+	</head>
+
+	<body>
+		<div class="phone-bg">
+			<div class="phone-number">13883724791</div>
+		</div>
+		<div class="content">
+			<input type="text" class="phone_input" placeholder="请输入手机号" />
+			<span class="btn" onclick="settime(this)">获取验证码</span>
+		</div>
+		<div class="code-box">
+			<label>验证码已发送到手机：<span>13883724791</span></label>
+			<div class="input-box">
+				<input type="text" class="code_input" />
+				<input type="text" class="code_input" />
+				<input type="text" class="code_input" />
+				<input type="text" class="code_input" />
+			</div>
+			<div class="submit">提交</div>
+		</div>
+	</body>
+<script type="text/javascript">
+			var countdown = 2;
+			function settime(obj) {
+				if(countdown == 0) {
+					obj.removeAttribute("disabled");
+					obj.innerHTML = "获取验证码";
+					countdown = 2;
+					$(".btn").removeClass('count');
+					$(".code-box").hide()
+					return;
+				} else {
+					obj.setAttribute("disabled", true);
+					obj.innerHTML= "" + countdown + "s";
+					$(".btn").addClass('count');
+					countdown--;
+				}
+				setTimeout(function() {
+					settime(obj)
+				}, 1000)
+			}
+		</script>
+		<script>
+		$(function() {
+			$(".code_input").tap(function() {
+				$(this).addClass("bbb")
+			});
+			$(".btn").tap(function() {
+				$(".code-box").show()
+			})
+		})
+	</script>
+</html>

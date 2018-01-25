@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<title>千分检测 —诊断报告</title>
+		<script type="text/javascript" src="../js/font.js"></script>
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/qianfen.css" />
+	</head>
+	<body>
+		<!-- HEADER 头部-->
+		<header>
+			<p class="title">诊断报告</p>
+			<p>基本图形基础知识测试-A卷</p>
+			<p class="YourScore">青岛市第42中学青岛市第42中学青岛市第42中学</p>
+				<p class="grade">青岛市第42中学 | 七年级一班 | 李乐乐</p>
+			<p class="nidefenshu">你的分数(分)</p>
+			<h1>92.5</h1>
+			<ul>
+				<li>
+					<p>本班前(%)</p>
+					<h2>92.5</h2>
+				</li>
+				<li>
+					<p>本班前(%)</p>
+					<h2>92.5</h2>
+				</li>
+				<li>
+					<p>本班前(%)</p>
+					<h2>92.5</h2>
+				</li>
+			</ul>
+		</header>
+		<!--分割线-->
+		<section class="hr"></section>
+		<!--BOX ONE-->
+		<section class="box-one">
+			<dl>
+				<dd>
+					班级参加测试(人)
+					<span>92</span>
+				</dd>
+				<dd>
+					班级参加测试(人)
+					<span>92</span>
+				</dd>
+			</dl>
+			<ul>
+				<li>班级情况</li>
+				<li>
+					<p>92.0</p>
+					<h2>平均分</h2>
+				</li>
+				<li>
+					<p>92.0</p>
+					<h2>平均分</h2>
+				</li>
+				<li>
+					<p>92.0</p>
+					<h2>平均分</h2>
+				</li>
+				<li>
+					<p>92.0</p>
+					<h2>平均分</h2>
+				</li>
+				<li>
+					<p>92.0</p>
+					<h2>平均分</h2>
+				</li>
+			</ul>
+		</section>
+        
+        <!--BOX TWO-->
+        <section class="box-two">
+        	<dl>
+        		<dd>
+        			<ul>
+        				<li>0-39分</li>
+        				<li><span><i style="width:50%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        			<dd>
+        			<ul>
+        				<li>40-49分</li>
+        				<li><span><i style="width:20%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        			</dd>
+        			<dd>
+        			<ul>
+        				<li>40-59分</li>
+        				<li><span><i style="width:20%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        		</dd>
+        			<dd>
+        			<ul>
+        				<li>60-69分</li>
+        				<li><span><i style="width:20%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        		</dd>
+        			<dd>
+        			<ul>
+        				<li>70-79分</li>
+        				<li><span><i style="width:20%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        		</dd>
+        			<dd>
+        			<ul>
+        				<li>80-89分</li>
+        				<li><span><i style="width:20%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        			<dd>
+        			<ul>
+        				<li>90-100分</li>
+        				<li><span><i style="width:20%;"></i></span></li>
+        				<li>11人</li>
+        			</ul>
+        		</dd>
+        	</dl>
+        </section>
+		<!--图片banner 1-->
+		<section> <img src="../img/qianone.jpg" /> </section>
+		
+		<!--BOX TUBIAO 概念答对率分析-->
+		<section class="box-Chart">
+			<h1> 概念答对率分析 </h1>
+			<div>
+				<span><i class="orange"></i>个人</span>
+				<span><i class="green"></i>班级</span>
+				<span><i class="blue"></i>学校</span>
+			</div>
+			<dl>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+			</dl>
+		</section>
+		
+		<!--BOX TUBIAO 原理答对率分析-->
+		<section class="box-Chart">
+			<h1> 原理答对率分析 </h1>
+			<div>
+				<span><i class="orange"></i>个人</span>
+				<span><i class="green"></i>班级</span>
+				<span><i class="blue"></i>学校</span>
+			</div>
+			<dl>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+			</dl>
+		</section>
+		
+		<!--BOX TUBIAO 法则答对率分析-->
+		<section class="box-Chart">
+			<h1> 法则答对率分析 </h1>
+			<div>
+				<span><i class="orange"></i>个人</span>
+				<span><i class="green"></i>班级</span>
+				<span><i class="blue"></i>学校</span>
+			</div>
+			<dl>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+				<dd>
+					<h2>有理数的概念</h2>
+					<ul>
+						<li><span><i class="orange" style="width: 50%;"></i></span><span class="orange-ft">23.5%</span></li>
+						<li><span><i class="green" style="width: 90%;"></i></span><span class="green-ft">23.5%</span></li>
+						<li><span><i class="blue" style="width: 80%;"></i></span><span class="blue-ft">23.5%</span></li>
+					</ul>
+				</dd>
+			</dl>
+		</section>
+
+        <!--BOX THREE 检测对象分项掌握程度对比-->
+        <section class="box-three">
+        	<h1>检测对象分项掌握程度对比</h1>
+        	<dl>
+        		<dd>
+        			<ul>
+        				<li>
+        					<h2>概念</h2>
+        					<p>答对率</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>学生</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>班级</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>学校</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>青岛市</p>
+        				</li>
+        			</ul>
+        		</dd>
+        	    
+        	    <dd>
+        			<ul>
+        				<li>
+        					<h2>概念</h2>
+        					<p>答对率</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>学生</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>班级</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>学校</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>青岛市</p>
+        				</li>
+        			</ul>
+        		</dd>
+        	<dd>
+        			<ul>
+        				<li>
+        					<h2>概念</h2>
+        					<p>答对率</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>学生</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>班级</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>学校</p>
+        				</li>
+        				<li>
+        					<h3>62.0%</h3>
+        					<p>青岛市</p>
+        				</li>
+        			</ul>
+        		</dd>
+        	
+        	</dl>
+        </section>
+
+   		<!--分割线-->
+		<section class="hr"></section>
+		<!--图片banner 2-->
+		<section> 
+		<img src="../img/qiantwo.jpg" />
+		</section>
+		
+		<!--BOX FOUR 知识点掌握程度设计-->
+		<section class="box-four">
+			<dl>
+				<dd>
+				<h1>有理数的概念（答对率）</h1>
+					<ul>
+						<li>
+							<h2>62.5%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>92.5%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.5%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.1%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dd>
+			    <dd>
+					<h1>有理数的概念（答对率）</h1>
+					<ul>
+						<li>
+							<h2>62.5%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>92.5%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.5%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.1%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dd>
+				<dd>
+					<h1>有理数的概念（答对率）</h1>
+					<ul>
+						<li>
+							<h2>62.5%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>92.5%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.5%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.1%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</section>	
+		<!--分割线-->
+		<section class="hr"></section>
+		<!--图片banner 3-->
+		<section> 
+		<img src="../img/qianthree.jpg" />
+		</section>
+		
+		<!--BOX FIVE 各知识单元答题情况统计-->
+		<section class="box-five">
+			<dl>
+				<dt>
+					<h1>整卷 <small>共70题</small></h1>
+					<ul>
+						<li>
+							<h2>62.0%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dt>
+				<dd class="zhangjie">
+					<h1>七上第2章有理数及其运算的认识… <small>共70题</small></h1>
+					<ul>
+						<li>
+							<h2>62.0%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dd>
+				<dd>
+					<h1>有理数的概念 <small>共70题</small></h1>
+					<ul>
+						<li>
+							<h2>62.0%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dd>
+				<dd>
+					<h1>有理数及其运算 <small>共70题</small></h1>
+					<ul>
+						<li>
+							<h2>62.0%</h2>
+							<p>学生</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>班级</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>学校</p>
+						</li>
+						<li>
+							<h2>62.0%</h2>
+							<p>青岛市</p>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			
+			
+		</section>
+		<!--分割线-->
+		<section class="hr"></section>
+		<!--图片banner 4-->
+		<section> 
+		<img src="../img/qianfour.jpg" />
+		</section>
+		<!--BOX SIX 总体评价与建议-->
+		<section class="box-six">
+			<dl>
+				<dd>
+					<i>01.</i>
+					<ul>
+						<li>有关七上第2章有理数及其运算的基础知识，知识知识知识知识</li>
+						<li>有关七上第2章有理数及其运算的基础知识，知识知识知识知识</li>
+						<li>有关七上第2章有理数及其运算的基础知识，知识知识知识知识</li>
+						<li>有关七上第2章有理数及其运算的基础知识</li>
+					</ul>
+					<em>A</em>
+				</dd>
+				<dd>
+					<i>02.</i>
+					<ul>
+						<li>有关七上第2章有理数及其运算的基础知识，知识知识知识知识</li>
+						<li>有关七上第2章有理数及其运算的基础知识，知识知识知识知识</li>
+						<li>有关七上第2章有理数及其运算的基础知识</li>
+					</ul>
+					<em>A</em>
+				</dd>
+				<dd>
+					<i>03.</i>
+					<ul>
+						<li>有关七上第2章有理数及其运算的基础知识，知识知识知识知识</li>
+						<li>有关七上第2章有理数及其运算的基础知识</li>
+					</ul>
+					<em>A</em>
+				</dd>
+			</dl>
+		
+		</section>
+		<section class="fix-btn">
+		</section>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+.demo {
+  width: 10rem;
+  margin-left: 0.3125rem;
+  margin-top: 1.5625rem; }
+
+a {
+  display: block;
+  float: left;
+  width: 4.0625rem;
+  height: 1.25rem;
+  margin: 0.3125rem 0.3125rem;
+  line-height: 1.25rem;
+  border-radius: 2.03125rem;
+  text-align: center;
+  color: white;
+  font-size: 0.4375rem;
+  background-color: #6492FF;
+  box-shadow: 0.0625rem 0 0.9375rem #B3CAFF; }
+
+/*# sourceMappingURL=demo.css.map */

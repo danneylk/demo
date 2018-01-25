@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="619 228 44 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8b8c8d;
+        font-size: 12px;
+        font-family: MicrosoftYaHei, Microsoft YaHei;
+      }
+
+      .cls-2 {
+        fill: #0065ca;
+      }
+    </style>
+  </defs>
+  <g id="Group_973" data-name="Group 973" transform="translate(503 50)">
+    <text id="掌握度_" data-name="掌握度  " class="cls-1" transform="translate(116 191)"><tspan x="0" y="0" xml:space="preserve">掌握度  </tspan></text>
+    <rect id="Rectangle_490" data-name="Rectangle 490" class="cls-2" width="34" height="2" rx="1" transform="translate(116 196)"/>
+  </g>
+</svg>

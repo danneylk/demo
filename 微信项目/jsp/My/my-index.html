@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../../css/frozen.css" />
+		<link rel="stylesheet" href="../../css/my-index.css" />
+		<script type="text/javascript" src="../../js/font.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+	</head>
+
+	<body class="content">
+		<div class="top">
+			<span>Mr.崔萃萃</span>
+			<img src="../../img/default-tx.svg" />
+		</div>
+		<div class="personal">
+			<li onclick="window.location.href='phone-number.html'">
+				<p>手机号</p>
+				<span>138428452381</span>
+			</li>
+			<li onclick="window.location.href='name.html'">
+				<p>姓名</p>
+				<span>Mr.崔萃萃</span>
+			</li>
+			<li onclick="window.location.href='gender.html'" class="border-no">
+				<p>性别</p>
+				<span>男</span>
+			</li>
+		</div>
+		<div class="personal">
+			<li onclick="window.location.href='wechat.html'">
+				<p>微信号</p>
+				<span>Mr.wang</span>
+			</li>
+			<li onclick="window.location.href='QQ.html'" class="border-no">
+				<p>QQ号</p>
+				<span>997800223</span>
+			</li>
+		</div>
+		<div class="my_children">
+			<h4>我的孩子</h4>
+			<li>
+				<img src="../../img/1.jpg" />
+				<div>
+					<p>刘小悦<img src="../../img/boy.svg"></p>
+					<span>手机号：<i>1359300233</i></span>
+					<a class="relieve">解绑</a>
+				</div>
+			</li>
+			<li>
+				<img src="../../img/3.jpg" />
+				<div class="border-no">
+					<p>刘小蕊<img src="../../img/girl.svg"></p>
+					<span>手机号：<i>1359300233</i></span>
+					<a class="relieve">解绑</a>
+				</div>
+			</li>
+		</div>
+		<div class="relieve_btn">解除绑定</div>
+		<!--解绑弹窗-->
+		<div class="relieve_bg">
+			<div class="relieve_tc">
+				<span>当前您要解绑的孩子信息为</span>
+				<img src="../../img/3.jpg" />
+				<p>刘小悦<img src="../../img/girl.svg"></p>
+				<p>手机号：<i>1359300233</i></p>
+				<div class="confirm_btn">确定解绑</div>
+				<div class="close"></div>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		$(function() {
+			$(".relieve, .confirm_btn, .close").tap(function() {
+				$(".relieve_bg").toggle();
+				$("html").addClass("fix")
+			});
+			$(".confirm_btn, .close").tap(function() {
+				$("html").removeClass("fix")
+				var offtop=$(".my_children").offset().top
+				$("body").scrollTop(offtop)
+			})
+		})
+	</script>
+
+</html>

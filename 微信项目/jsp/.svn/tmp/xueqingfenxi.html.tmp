@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/xueqing.css" />
+		<link rel="stylesheet" href="../css/menuitem.css" />
+	</head>
+	<body>
+		<div class="classname">
+			<span>七年级上册</span>
+			<span class="xq_up"></span>
+			<ul>
+				<li>七年级上册</li>
+				<li>七年级下册</li>
+			</ul>
+		</div>
+		<div id="iSlider-effect-wrapper">
+			<div id="dom-effect" class="iSlider-effect">
+			</div>
+		</div>
+		<div class="card">
+			<h1>知识掌握图谱</h1>
+			<div id="zhishi" style="width: 100%; height: 350px;"></div>
+		</div>
+		<div class="card">
+			<h1>学习能力图谱</h1>
+			<div id="xuexi" style="width: 100%; height: 350px;"></div>
+		</div>
+		<div class="card">
+			<h1>学业测试进度</h1>
+			<div class="menuitem">
+				<div class="menuitem_school">
+					<ul>
+						<li class="upimg" style="border-top: none;">
+							<a class="active">北京市</a>
+							<ul style="display:block;">
+								<li>
+									<a><span><i></i></span>北京市直属学校（4）</a>
+									<ul>
+										<li>
+											<span><i></i></span>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+										</li>
+										<li>
+											<a><span><i></i></span>1111</a>
+												<a class="school">北京大学北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											<a class="school">北京师范大学</a>
+											
+										</li>
+										<li>
+											<a><span><i></i></span>111111</a>
+										</li>
+										<li>
+											<a><span><i></i></span>111111</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a><span><i></i></span>东城区（15)</a>
+									<ul style="display:none;">
+										<li>
+											<a><span><i></i></span>菜单 1</a>
+										</li>
+										<li>
+											<a><span><i></i></span>菜单2</a>
+										</li>
+										<li>
+											<a><span><i></i></span>菜单 3</a>
+										</li>
+										<li>
+											<a><span><i></i></span>菜单 4</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a> <span><i></i></span>菜单 3</a>
+								</li>
+								<li>
+									<a> <span><i></i></span>菜单4</a>
+									<ul style="display:none;">
+										<li>
+											<a> <span><i></i></span>菜单 1</a>
+										</li>
+										<li>
+											<a> <span><i></i></span>S菜单2</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a> <span><i></i></span>菜单 5</a>
+								</li>
+							</ul>
+						</li>
+						<li class="upimg">
+							<a>菜单 2</a>
+							<ul style="display:none;">
+								<li>
+									<a> <span><i></i></span>菜单 1</a>
+								</li>
+								<li>
+									<a> <span><i></i></span>菜单 2</a>
+								</li>
+								<li>
+									<a> <span><i></i></span>菜单 3</a>
+								</li>
+								<li>
+									<a> <span><i></i></span>菜单 4</a>
+								</li>
+							</ul>
+						</li>
+						<li class="upimg">
+							<a>菜单 3</a>
+							<ul style="display:none;">
+								<li><span><i></i></span>
+									<a>菜单 1</a>
+								</li>
+								<li><span><i></i></span>
+									<a>菜单 2</a>
+								</li>
+								<li><span><i></i></span>
+									<a>菜单 3</a>
+								</li>
+								<li><span><i></i></span>
+									<a>菜单 4</a>
+								</li>
+								<li><span><i></i></span>
+									<a>菜单 5</a>
+								</li>
+								<li><span><i></i></span>
+									<a>菜单 6</a>
+								</li>
+							</ul>
+						</li>
+						<li class="upimg">
+							<a>04</a>
+						</li>
+						<li class="upimg">
+							<a>05</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jq.js"></script>
+	<script type="text/javascript" src="../js/font.js"></script>
+	<!--<script type="text/javascript" src="../js/zepto.min.js" ></script>-->
+	<script type="text/javascript" src="../js/islider.js"></script>
+	<script src="../js/echarts.min.js"></script>
+	<script src="../js/menu_min.js"></script>
+	<script>
+		//册别切换
+		var flage = 1;
+		$(".classname").click(function() {
+			$(this).children('ul').slideToggle()
+			if(flage == 1) {
+				$(".xq_up").css("transform", "rotate(180deg)")
+				flage = 2;
+			} else {
+				$(".xq_up").css("transform", "rotate(0deg)")
+				flage = 1
+			}
+		})
+		$(".classname ul li").click(function() {
+			$(".classname span").eq(0).html($(this).html())
+		})
+	//头像切换
+		var domList = [{
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="0" style="font-size: 26px;"><img src="../img/1.jpg" />王小刀1</p>'
+		}, {
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="1" style="font-size: 26px;"><img src="../img/2.jpg"/>王小刀2</p>'
+		}, {
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="2" style="font-size: 26px;"><img src="../img/3.jpg"/>王小刀3</p>'
+		}, {
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="3" style="font-size: 26px;"><img src="../img/4.jpg"/>王小刀3</p>'
+		}];
+		var islider4 = new iSlider({
+			//initIndex:1,
+			data: domList,
+			dom: document.getElementById("dom-effect"),
+			type: 'dom',
+			animateType: 'depth',
+			isAutoplay: false,
+			//duration: 500000,
+			isLooping: true,
+			onslideend: function() {
+				console.log("回调")
+			}
+		});
+		islider4.addDot();
+		//目录导航
+		$(document).ready(function() {
+			$(".menuitem_school ul li").menu();
+			$(".school").on("click", function() {
+				$(this).toggleClass('schoolactvie').siblings().removeClass('schoolactvie')
+			})
+		});
+	</script>
+	<script>
+		//百度图表
+		var myChart = echarts.init(document.getElementById('zhishi'));
+		var myChart2 = echarts.init(document.getElementById('xuexi'));
+
+		option = {
+			title: {
+				//text: '知识掌握图谱',
+				textStyle: {
+					color: '#6492FF',
+					fontSize: 14,
+				},
+			},
+
+			//关闭提示框
+			tooltip: {
+				show: false,
+			},
+			//图示
+			legend: {
+				show: true,
+				data: ['掌握度', '参与度'],
+				bottom: '0',
+				right: '0',
+			},
+			textStyle: {
+				color: '#6492FF',
+				fontSize: 12,
+			},
+			radar: {
+				shape: 'circle',
+				splitNumber: 10, //环数
+				splitArea: {
+					areaStyle: {
+						color: ['white', 'white'],
+					},
+				}, //环色
+				//米字线
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: '#B3CAFF',
+						width: 1,
+						type: 'solid',
+					},
+				},
+				//环形线
+				splitLine: {
+					lineStyle: {
+						color: ['#B3CAFF', 'white', 'white', 'white', 'white',
+							'white', '#B3CAFF', 'white', 'white', '#B3CAFF'
+						],
+						width: 1,
+						type: 'dashed',
+						radius: ['100', '80', '90'],
+					},
+				},
+				radius: 110,
+				indicator: [{
+						name: '销售销售销售销售销售',
+						max: 100
+					},
+					{
+						name: '管售销',
+						max: 100
+					},
+					{
+						name: '信息技术',
+						max: 100
+					},
+					{
+						name: '客服',
+						max: 100
+					},
+					{
+						name: '研发',
+						max: 100
+					},
+					{
+						name: '市场',
+						max: 100
+					}
+				]
+			},
+			series: [{
+				name: '预算 vs 开销',
+				type: 'radar',
+				data: [{
+						value: [70, 50, 50, 70, 60, 80],
+						name: '掌握度',
+						tooltip: {
+							position: ['10%', '50%']
+						},
+						//单项线条标志
+						itemStyle: {
+							normal: {
+								color: '#0066CC',
+								borderWidth: 0,
+								opacity: 0,
+							}
+						},
+						//单线条颜色
+						lineStyle: {
+							normal: {
+								color: '#0066CC',
+								width: 0,
+							}
+						},
+						//单区域颜色
+						areaStyle: {
+							normal: {
+								color: '#0066CC',
+								opacity: 0.25,
+							}
+						},
+					},
+					{
+						value: [20, 40, 22, 21, 42, 80],
+						name: '参与度',
+
+						//单线条颜色
+						lineStyle: {
+							normal: {
+								color: '#FF6666',
+								width: 1,
+							}
+						},
+						//单项线条标志
+						itemStyle: {
+							normal: {
+								color: '#FF6666',
+								borderWidth: 1,
+								opacity: 1,
+							}
+						},
+
+					}
+				]
+			}]
+		};
+
+		myChart.setOption(option);
+
+		optiontwo = {
+			title: {
+				//text:'学习能力图谱',
+				textStyle: {
+					color: '#6492FF',
+					fontSize: 14,
+				},
+			},
+			//关闭提示框
+			tooltip: {
+				show: false,
+			},
+			//图示
+			legend: {
+				show: true,
+				data: ['掌握度'],
+				bottom: '0',
+				right: '0',
+			},
+			textStyle: {
+				color: '#6492FF',
+				fontSize: 12,
+			},
+			radar: {
+				splitArea: {
+					areaStyle: {
+						color: ['white', 'white']
+					}
+				},
+				shape: 'circle',
+				splitNumber: 10,
+				//米字线
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: '#B3CAFF',
+						width: 1,
+						type: 'solid',
+					},
+				},
+				//环形线
+				splitLine: {
+					lineStyle: {
+						color: ['#B3CAFF', 'white', 'white', 'white', 'white',
+							'white', '#B3CAFF', 'white', 'white', '#B3CAFF'
+						],
+						width: 1,
+						type: 'dashed'
+					},
+				},
+				radius: 110,
+				indicator: [{
+						name: '数学抽象',
+						max: 100
+					},
+					{
+						name: '推理能力',
+						max: 100
+					},
+					{
+						name: '数据分析',
+						max: 100
+					},
+					{
+						name: '数学应用',
+						max: 100
+					},
+					{
+						name: '直观想象',
+						max: 100
+					},
+					{
+						name: '数学运算',
+						max: 100
+					}
+				]
+			},
+			series: [{
+				type: 'radar',
+				//areaStyle: {normal: {}},
+				data: [{
+					value: [70, 50, 50, 70, 60, 80],
+					name: '掌握度',
+					tooltip: {
+						position: ['10%', '50%']
+					},
+					//单项线条标志
+					itemStyle: {
+						normal: {
+							color: '#0066CC',
+							borderWidth: 0,
+							opacity: 0,
+						}
+					},
+					//单线条颜色
+					lineStyle: {
+						normal: {
+							color: '#0066CC',
+							width: 0,
+						}
+					},
+					//单区域颜色
+					areaStyle: {
+						normal: {
+							color: '#0066CC',
+							opacity: 0.25,
+						}
+					},
+				}, ]
+			}]
+		};
+		myChart2.setOption(optiontwo);
+	</script>
+
+</html>

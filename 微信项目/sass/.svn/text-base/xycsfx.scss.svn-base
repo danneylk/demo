@@ -1,0 +1,106 @@
+@import 'base';
+body {
+    background: url(../img/xy_bg.jpg) no-repeat;
+    background-size: 100%;
+}
+.card_title{
+     margin: 0 auto;
+    margin-top: s(70);
+    width: s(300);
+    border-radius: s(5);
+    text-align: center;
+    box-shadow: 0px 0px s(10) colors(defaulttwo);
+    background-color: rgba(colors(white), .9);
+    margin-bottom: s(15);
+      section {
+    min-height: s(70);
+        padding: s(8);
+        margin-top: s(-10);
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        span:nth-child(1) {
+            padding-top: s(10);
+            color: colors(date);
+            font-size: s(16);
+            max-width: s(200);
+            margin-top: s(10);
+        }
+        span:nth-child(2) {
+            color: colors(red);
+            font-size: s(36);
+            text-align: center;
+            margin-top: s(-6);
+            width: s(80);
+            background: url(../img/xy_fenshu.png) center s(50) no-repeat;
+            background-size: s(70);
+            small {
+                font-size: s(12);
+                color: colors(date);
+            }
+        }
+    }
+}
+.card {
+    margin: 0 auto;
+    margin-top: s(20);
+    z-index: 10000;
+    width: s(300);
+    min-height: s(200);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px s(10) colors(defaulttwo);
+    padding-top: s(30);
+    padding-bottom: s(35);
+    background-color: rgba(colors(white), .9);
+    margin-bottom: s(15);
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: s(175);
+        margin: 0 auto;
+        padding-left: s(15);
+        padding-right: s(15);
+        border-bottom: 1px solid #e4e4e4;
+        margin-top: s(20);
+        color: colors(default);
+        li {
+            width: s(18);
+            dl {
+                width: s(20);
+                display: inline-block;
+                height: s(160);
+                margin-top: s(5);
+                background-color: colors(defaulttwo);
+                border-top-left-radius: s(10);
+                border-top-right-radius: s(10);
+            }
+            dl dt {
+                display: inline-block;
+                width: s(20);
+                background-color: colors(default);
+                border-top-left-radius: s(10);
+                border-top-right-radius: s(10);
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+    .noul {
+        border-bottom: none;
+        margin-top: s(5);
+        color: #999999;
+        font-size: s(12);
+        li {
+            width: s(25);
+            text-align: center;
+        }
+    }
+}
+
+.message {
+    color: colors(defaulttwo);
+    font-size: s(12);
+    text-align: center;
+    margin-top: s(25);
+    margin-bottom: s(25);
+}

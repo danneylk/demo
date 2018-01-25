@@ -1,0 +1,151 @@
+body {
+  height: 100%;
+  background: -webkit-linear-gradient(top, #6492FF, #D6EFFF); }
+
+.top {
+  position: relative;
+  width: 10rem;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.4375rem;
+  color: white; }
+  .top .return {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url(../img/return-white.svg) no-repeat center;
+    background-size: 0.5625rem; }
+
+.container .Upper_part {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1.5625rem 1.5625rem 0 0; }
+  .container .Upper_part span {
+    display: inline-block;
+    width: 2.1875rem;
+    height: auto;
+    color: #ff6666;
+    text-align: center;
+    font-size: 1.125rem;
+    background: url(../img/xy_fenshu.png) center 1.5625rem no-repeat;
+    background-size: 2.1875rem;
+    padding-bottom: 0.625rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.9375rem; }
+    .container .Upper_part span small {
+      font-size: 0.375rem;
+      color: #ff6666; }
+.container .Lower_part {
+  width: 9.375rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.3125rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.125rem;
+  margin: 0 auto;
+  margin-bottom: 0.625rem; }
+  .container .Lower_part .deadline {
+    width: 8.4375rem;
+    margin: 0 auto;
+    border-bottom: 0.03125rem solid rgba(100, 146, 255, 0.3);
+    padding-bottom: 0.3125rem;
+    display: flex; }
+    .container .Lower_part .deadline .left {
+      position: relative;
+      width: 0.75rem;
+      background: url(../img/time.png) no-repeat;
+      background-size: 0.75rem; }
+      .container .Lower_part .deadline .left .line {
+        position: absolute;
+        left: 0.375rem;
+        top: 0.84375rem;
+        width: 0.03125rem;
+        height: 82%;
+        background-color: #e4e4e4; }
+    .container .Lower_part .deadline .right {
+      width: 7.375rem;
+      padding-left: 0.3125rem; }
+      .container .Lower_part .deadline .right span {
+        color: #999999;
+        font-size: 0.4375rem;
+        line-height: 0.9375rem; }
+      .container .Lower_part .deadline .right p {
+        font-size: 0.4375rem;
+        margin-bottom: 0.3125rem;
+        margin-top: 0.3125rem; }
+      .container .Lower_part .deadline .right a {
+        display: block;
+        height: 0.9375rem;
+        font-size: 0.4375rem;
+        color: white;
+        line-height: 0.9375rem;
+        text-indent: 0.9375rem;
+        background: url(../img/yuyin.svg) no-repeat;
+        background-size: 2.8125rem 0.9375rem;
+        margin-bottom: 0.3125rem; }
+      .container .Lower_part .deadline .right img {
+        width: 3.375rem;
+        height: 2.125rem;
+        margin-bottom: 0.3125rem; }
+      .container .Lower_part .deadline .right h4 {
+        color: #6492FF;
+        font-size: 0.4375rem;
+        margin-bottom: 0.3125rem; }
+  .container .Lower_part .my_answer {
+    width: 8.4375rem;
+    margin: 0 auto;
+    border-bottom: 0.03125rem solid rgba(100, 146, 255, 0.3);
+    padding-bottom: 0.3125rem; }
+    .container .Lower_part .my_answer h4 {
+      color: #6492FF;
+      font-size: 0.5rem;
+      margin: 0.3125rem 0; }
+    .container .Lower_part .my_answer .img_box img {
+      width: 2.1875rem;
+      height: 1.5625rem;
+      margin-right: 0.3125rem; }
+    .container .Lower_part .my_answer .score_box {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.3125rem 0; }
+      .container .Lower_part .my_answer .score_box .title {
+        font-size: 0.4375rem;
+        color: #000000; }
+        .container .Lower_part .my_answer .score_box .title img {
+          margin-left: 0.1875rem; }
+      .container .Lower_part .my_answer .score_box .score {
+        font-size: 0.4375rem;
+        color: #00CC00; }
+      .container .Lower_part .my_answer .score_box .dui_color {
+        color: #00CC00; }
+      .container .Lower_part .my_answer .score_box .cuo_color {
+        color: #ff6666; }
+      .container .Lower_part .my_answer .score_box .bandui_color {
+        color: #ff9900; }
+  .container .Lower_part .comment {
+    width: 8.4375rem;
+    margin: 0 auto; }
+    .container .Lower_part .comment h4 {
+      color: #6492FF;
+      font-size: 0.5rem;
+      margin: 0.3125rem 0; }
+    .container .Lower_part .comment a {
+      display: inline-block;
+      width: 2.8125rem;
+      height: 0.9375rem;
+      font-size: 0.4375rem;
+      color: white;
+      line-height: 0.9375rem;
+      text-indent: 0.9375rem;
+      background: url(../img/yuyin.svg) no-repeat;
+      background-size: 2.8125rem 0.9375rem;
+      margin-bottom: 0.3125rem;
+      margin-right: 0.3125rem; }
+
+/*# sourceMappingURL=ckzy-wj.css.map */

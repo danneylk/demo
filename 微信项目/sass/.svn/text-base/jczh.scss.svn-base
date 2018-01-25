@@ -1,0 +1,110 @@
+@import 'base';
+.popup_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: s(320);
+    height: 100%;
+    background: rgba(colors(date), .5);
+    .popup {
+        position: absolute;
+        top: s(20);
+        left: 50%;
+        margin-left: s(-150);
+        width: s(300);
+        height: s(470);
+        background-color: rgba(colors(white), .96);
+        box-shadow: s(2) 0 s(30) colors(shadow);
+        border-radius: s(24);
+        span {
+            display: block;
+            font-size: s(16);
+            text-align: center;
+            margin-top: s(30);
+            color: colors(dark-gray);
+        }
+        .relation_box {
+            width: s(300);
+            margin-top: s(20);
+            display: flex;
+            justify-content: center;
+            li {
+                width: s(60);
+                height: s(60);
+                border-radius: 50%;
+                border: s(1) solid colors(gray);
+                margin: 0 s(10);
+                text-align: center;
+                font-size: s(14);
+                line-height: s(150);
+            }
+            .father {
+                background: url("../img/father.svg") no-repeat center center;
+                background-size: 50%;
+            }
+            .father.ac{
+                background: url("../img/father-blue.svg") no-repeat center center;
+                background-size: 50%;
+                border: 1px solid colors(default) !important;
+                color: colors(default);
+            }
+            .mother {
+                background: url("../img/mother.svg") no-repeat center center;
+                background-size: 50%;
+            }
+            .mother.ac{
+                background: url("../img/mother-blue.svg") no-repeat center center;
+                background-size: 50%;
+                border: 1px solid colors(default) !important;
+                color: colors(default);
+            }
+            .other {
+                background: url("../img/other.svg") no-repeat center center;
+                background-size: 50%;
+            }
+            .other.ac{
+                background: url("../img/other-blue.svg") no-repeat center center;
+                background-size: 50%;
+                border: 1px solid colors(default) !important;
+                color: colors(default);
+            }
+        }
+        a {
+            display: block;
+            color: colors(default);
+            font-size: s(14);
+            text-align: center;
+            margin: s(36) 0 s(16) 0;
+        }
+        .confirm_btn {
+            width: s(230);
+            height: s(40);
+            margin: s(10) auto;
+            line-height: s(40);
+            border-radius: s(65);
+            text-align: center;
+            color: colors(white);
+            font-size: s(14);
+            background-color: colors(default);
+            box-shadow: s(2) 0 s(30) colors(shadow);
+             &:active{
+            background-color: colors(defaulttwo);
+        }
+        }
+        .skip {
+            width: s(230);
+            height: s(40);
+            margin: 0 auto;
+            line-height: s(40);
+            border-radius: s(65);
+            text-align: center;
+            color: colors(default);
+            font-size: s(14);
+            background-color: colors(white);
+            box-shadow: s(2) 0 s(30) colors(shadow);
+             &:active{
+            background-color: colors(shadow);
+        }
+        }
+    }
+}

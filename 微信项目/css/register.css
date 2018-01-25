@@ -1,0 +1,65 @@
+body {
+  background-color: #f5f5f5; }
+
+.content {
+  width: 8.75rem;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+  border-radius: 0.125rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0.0625rem 0 0.9375rem #B3CAFF; }
+  .content .input-box {
+    border-bottom: 0.03125rem solid #cccccc;
+    display: flex; }
+    .content .input-box label {
+      font-size: 0.4375rem;
+      color: #666666;
+      width: 1.875rem;
+      height: 1.5625rem;
+      line-height: 1.5625rem; }
+    .content .input-box .phone {
+      width: 4.0625rem; }
+    .content .input-box input {
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      color: #000000;
+      font-size: 0.4375rem;
+      -webkit-appearance: none; }
+    .content .input-box .btn {
+      width: 2.8125rem;
+      height: 0.9375rem;
+      text-align: center;
+      line-height: 0.9375rem;
+      font-size: 0.4375rem;
+      color: #666666;
+      border: 0.03125rem solid #cccccc;
+      border-radius: 0.125rem;
+      margin-top: 0.3125rem; }
+    .content .input-box .count {
+      background-color: #6492FF;
+      border: 0.03125rem solid #6492FF;
+      color: white; }
+  .content button {
+    display: block;
+    width: 7.8125rem;
+    height: 1.25rem;
+    text-align: center;
+    font-size: 0.4375rem;
+    border-radius: 3.90625rem;
+    color: white;
+    background-color: #6492FF;
+    box-shadow: 0 0.125rem 0.3125rem #6492FF;
+    margin: 0.625rem auto; }
+    .content button:active {
+      background-color: #C9D9FF; }
+  .content span {
+    font-size: 0.375rem;
+    color: #cccccc;
+    text-align: left; }
+    .content span i {
+      color: #6492FF; }
+
+/*# sourceMappingURL=register.css.map */

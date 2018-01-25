@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="621 198 88 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8b8c8d;
+        font-size: 12px;
+        font-family: MicrosoftYaHei, Microsoft YaHei;
+      }
+
+      .cls-2 {
+        fill: #0065ca;
+      }
+
+      .cls-3 {
+        fill: #fe6664;
+      }
+    </style>
+  </defs>
+  <g id="Group_972" data-name="Group 972" transform="translate(505 20)">
+    <text id="掌握度_参与度" data-name="掌握度  / 参与度" class="cls-1" transform="translate(116 191)"><tspan x="0" y="0" xml:space="preserve">掌握度  / 参与度</tspan></text>
+    <rect id="Rectangle_490" data-name="Rectangle 490" class="cls-2" width="34" height="2" rx="1" transform="translate(116 196)"/>
+    <rect id="Rectangle_491" data-name="Rectangle 491" class="cls-3" width="34" height="2" rx="1" transform="translate(169 196)"/>
+  </g>
+</svg>

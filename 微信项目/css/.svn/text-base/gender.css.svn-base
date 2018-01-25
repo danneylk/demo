@@ -1,0 +1,80 @@
+body {
+  background-color: #e4e4e4; }
+
+.top {
+  position: relative;
+  width: 10rem;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.4375rem;
+  color: #000000;
+  background-color: white; }
+  .top .return {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url(../img/return.svg) no-repeat center;
+    background-size: 0.5625rem; }
+  .top a {
+    position: absolute;
+    right: 0.3125rem;
+    font-size: 0.4375rem;
+    color: #000000; }
+
+.gender {
+  display: flex;
+  justify-content: center; }
+  .gender .boy,
+  .gender .girl {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    margin: 0.9375rem 0.625rem 0 0.625rem; }
+    .gender .boy p,
+    .gender .girl p {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.5rem; }
+  .gender .boy {
+    position: relative;
+    background: white url(../img/boy-gender.svg) no-repeat center;
+    background-size: 0.9375rem;
+    color: #87a9fa;
+    border: 0.03125rem solid #C2D4FF; }
+    .gender .boy .boy-selected {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0.625rem;
+      height: 0.625rem;
+      background: url(../img/dg-boy.svg); }
+  .gender .girl {
+    position: relative;
+    background: white url(../img/girl-gender.svg) no-repeat center;
+    background-size: 0.9375rem;
+    border: 0.03125rem solid #FFC5C5;
+    color: #fa8d8d; }
+    .gender .girl .girl-selected {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0.625rem;
+      height: 0.625rem;
+      background: url(../img/dg-girl.svg); }
+  .gender .boy-active {
+    background: #6492FF url(../img/boy-white.svg) no-repeat center;
+    background-size: 0.9375rem;
+    border: none;
+    color: #6492FF !important; }
+  .gender .girl-active {
+    background: #ff6666 url(../img/girl-white.svg) no-repeat center;
+    background-size: 0.9375rem;
+    border: none;
+    color: #ff6666 !important; }
+
+/*# sourceMappingURL=gender.css.map */

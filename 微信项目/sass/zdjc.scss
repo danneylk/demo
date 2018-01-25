@@ -1,0 +1,80 @@
+@import 'base';
+.card{
+    margin: 0 auto;
+    z-index: 10000;
+    width: s(300);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.islider-dot-wrap{
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top:s(-10);
+    li{
+        width: s(6);
+        height: s(6);
+        background-color:colors(defaulttwo);
+        margin: s(5);
+        border-radius: 50%;
+    }
+    .active{
+        background-color: colors(default) !important; 
+    }
+}
+.iSlider-effect {
+  height:s(140);
+  width: s(120);
+  position: relative;
+  margin: 0 auto;
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+   }
+  li{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  list-style: none;
+  text-align: center;
+  color: colors(default);
+  font-size: s(14);
+  
+}
+ul li img{
+  margin: 0;
+  padding: 0;
+  width: s(116);
+  height: s(116);
+  border-radius: 50%;
+  box-shadow: 0px 0px s(5) colors(defaulttwo);
+}
+ div{
+  padding: 3px;
+  color:colors(white);
+  font-size: s(14);
+}
+}
+.addchose{
+
+
+&:before{
+    content: "";
+    position: absolute;
+    bottom: s(25);
+    right: s(10);
+    width: s(25);
+    height: s(25);
+    background-size: 100% 100%;
+    z-index: 2000;
+}
+&:before{
+    background-image:url(../img/addimg.png) ;
+}
+}

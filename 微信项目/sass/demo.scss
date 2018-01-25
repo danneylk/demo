@@ -1,0 +1,21 @@
+@import 'base';
+.demo {
+    width: s(320);
+    margin-left: s(10);
+    margin-top: s(50);
+}
+
+a {
+    display: block;
+    float: left;
+    width: s(130);
+    height: s(40);
+    margin: s(10) s(10);
+    line-height: s(40);
+    border-radius: s(65);
+    text-align: center;
+    color: colors(white);
+    font-size: s(14);
+    background-color: colors(default);
+    box-shadow: s(2) 0 s(30) colors(shadow);
+}

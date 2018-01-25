@@ -1,0 +1,48 @@
+@import 'base';
+body {
+    background-color: colors(lightgray);
+}
+
+.top {
+    position: relative;
+    width: s(320);
+    height: s(40);
+    text-align: center;
+    line-height: s(40);
+    font-size: s(14);
+    color: colors(date);
+    background-color: colors(white);
+    .return {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: s(40);
+        height: s(40);
+        background: url(../img/return.svg) no-repeat center;
+        background-size: s(18);
+    }
+    a {
+        position: absolute;
+        right: s(10);
+        font-size: s(14);
+        color: colors(date);
+    }
+}
+
+input {
+    width: s(320);
+    height: s(44);
+    color: colors(date);
+    font-size: s(14);
+    background: colors(white) url(../img/close-gray.svg) no-repeat s(290) center;
+    background-size: s(18);
+    border: none;
+    border-top: s(1) solid colors(gray);
+    border-bottom: s(1) solid colors(gray);
+    border-radius: 0;
+    margin-top: s(20);
+    padding-left: s(10);
+    appearance: button;
+    -moz-appearance: button;
+    -webkit-appearance: button;
+}

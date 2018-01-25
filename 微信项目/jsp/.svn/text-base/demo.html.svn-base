@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/frozen.css" />
+		<link rel="stylesheet" href="../css/demo.css" />
+		<script type="text/javascript" src="../js/font.js"></script>
+	</head>
+	<body>
+		<div class="demo">
+			<a href="register.html">注册</a>
+			<a href="ckzy.html">查看作业</a>
+			<a href="jczh.html">检测账号</a>
+			<a href="xueqingfenxi.html">学情分析</a>
+			<a href="xycsfx.html">学业测试分析</a>
+			<a href="My/my-index.html">我的</a>
+		</div>
+	</body>
+</html>

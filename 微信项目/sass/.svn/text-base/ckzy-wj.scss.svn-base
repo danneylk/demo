@@ -1,0 +1,183 @@
+@import 'base';
+body {
+    height: 100%;
+    background: -webkit-linear-gradient(top, #6492FF, #D6EFFF);
+}
+
+.top {
+    position: relative;
+    width: s(320);
+    height: s(40);
+    text-align: center;
+    line-height: s(40);
+    font-size: s(14);
+    color: colors(white);
+    .return {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: s(40);
+        height: s(40);
+        background: url(../img/return-white.svg) no-repeat center;
+        background-size: s(18);
+    }
+}
+
+.container {
+    .Upper_part {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: rgba(colors(white), .8);
+        border-radius: s(50) s(50) 0 0;
+        span {
+            display: inline-block;
+            width: s(70);
+            height: auto;
+            color: colors(red);
+            text-align: center;
+            font-size: s(36);
+            background: url(../img/xy_fenshu.png) center s(50) no-repeat;
+            background-size: s(70);
+            padding-bottom: s(20);
+            position: absolute;
+            left:50%;
+            margin-left: s(-30);
+            small {
+                font-size: s(12);
+                color: colors(red);
+            }
+        }
+    }
+    .Lower_part {
+        width: s(300);
+        padding-top: s(40);
+        padding-bottom: s(10);
+        background-color: rgba(colors(white), .8);
+        border-radius: s(4);
+        margin: 0 auto;
+        margin-bottom: s(20);
+        .deadline {
+            width: s(270);
+            margin: 0 auto;
+            border-bottom: s(1) solid rgba(colors(default), .3);
+            padding-bottom: s(10);
+            display: flex;
+            .left {
+                position: relative;
+                width: s(24);
+                background: url(../img/time.png) no-repeat;
+                background-size: s(24);
+                .line {
+                    position: absolute;
+                    left: s(12);
+                    top: s(27);
+                    width: s(1);
+                    height: 82%;
+                    background-color: colors(lightgray);
+                }
+            }
+            .right {
+                width: s(236);
+                padding-left: s(10);
+                span {
+                    color: colors(medium-grey);
+                    font-size: s(14);
+                    line-height: s(30);
+                }
+                p {
+                    font-size: s(14);
+                    margin-bottom: s(10);
+                    margin-top: s(10);
+                }
+                a {
+                    display: block;
+                    height: s(30);
+                    font-size: s(14);
+                    color: colors(white);
+                    line-height: s(30);
+                    text-indent: s(30);
+                    background: url(../img/yuyin.svg) no-repeat;
+                    background-size: s(90) s(30);
+                    margin-bottom: s(10);
+                }
+                img {
+                    width: s(108);
+                    height: s(68);
+                    margin-bottom: s(10);
+                }
+                h4 {
+                    color: colors(default);
+                    font-size: s(14);
+                    margin-bottom: s(10);
+                }
+            }
+        }
+        .my_answer {
+            width: s(270);
+            margin: 0 auto;
+            border-bottom: s(1) solid rgba(colors(default), .3);
+            padding-bottom: s(10);
+            h4 {
+                color: colors(default);
+                font-size: s(16);
+                margin: s(10) 0;
+            }
+            .img_box {
+                img {
+                    width: s(70);
+                    height: s(50);
+                    margin-right: s(10);
+                }
+            }
+            .score_box {
+                display: flex;
+                justify-content: space-between;
+                margin: s(10) 0;
+                .title {
+                    font-size: s(14);
+                    color: colors(date);
+                    img {
+                        margin-left: s(6);
+                    }
+                }
+                .score {
+                    font-size: s(14);
+                    color: colors(green);
+                }
+                .dui_color {
+                    color: colors(green);
+                }
+                .cuo_color {
+                    color: colors(red);
+                }
+                .bandui_color {
+                    color: colors(orange);
+                }
+            }
+        }
+        .comment {
+            width: s(270);
+            margin: 0 auto;
+            h4 {
+                color: colors(default);
+                font-size: s(16);
+                margin: s(10) 0;
+            }
+            a {
+                display: inline-block;
+                width: s(90);
+                height: s(30);
+                font-size: s(14);
+                color: colors(white);
+                line-height: s(30);
+                text-indent: s(30);
+                background: url(../img/yuyin.svg) no-repeat;
+                background-size: s(90) s(30);
+                margin-bottom: s(10);
+                margin-right: s(10);
+            }
+        }
+    }
+}

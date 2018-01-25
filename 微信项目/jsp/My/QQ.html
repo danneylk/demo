@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../../css/frozen.css" />
+		<link rel="stylesheet" href="../../css/name.css" />
+		<script type="text/javascript" src="../../js/font.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="top">QQ
+			<div class="return"></div>
+			<a class="finish">完成</a>
+		</div>
+		<input type="text" value="wcy1299320101" />
+	</body>
+	<script>
+		$(function() {
+			$(".return, .finish").tap(function() {
+				history.back(-1)
+			});
+		})
+	</script>
+
+</html>

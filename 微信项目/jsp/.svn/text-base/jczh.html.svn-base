@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>检测账号</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/zdjc.css" />
+		<link rel="stylesheet" href="../css/jczh.css" />
+		<script type="text/javascript" src="../js/font.js"></script>
+		<script type="text/javascript" src="../js/jq.js"></script>
+	</head>
+
+	<body>
+		<div class="popup_bg">
+			<div class="popup">
+				<span>检测到该手机号已经有关联学生信息</span>
+				<section class="card">
+					<div id="iSlider-effect-wrapper">
+						<div id="dom-effect" class="iSlider-effect">
+						</div>
+					</div>
+				</section>
+				<div class="relation_box">
+					<li class="father">爸爸
+					</li>
+					<li class="mother">妈妈
+					</li>
+					<li class="other">其他
+					</li>
+				</div>
+				<a>并不认识</a>
+				<div class="confirm_btn" onclick="window.location.href='My/my-index.html'">确定</div>
+				<div class="skip">跳过</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/islider.js"></script>
+		<script>
+			$('.relation_box li').click(function() {
+				var imgs = $("img", this);
+				$(this).addClass('ac').siblings().removeClass('ac');
+			})
+		</script>
+	<script>
+		//头像切换
+		var domList = [{
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="0" style="font-size: 26px;"><img src="../img/1.jpg" />王小刀1</p>'
+		}, {
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="1" style="font-size: 26px;"><img src="../img/2.jpg"/>王小刀2</p>'
+		}, {
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="2" style="font-size: 26px;"><img src="../img/3.jpg"/>王小刀3</p>'
+		}, {
+			'height': '100%',
+			'width': '100%',
+			'content': '<p data="3" style="font-size: 26px;"><img src="../img/4.jpg"/>王小刀3</p>'
+		}];
+		var arr = [];
+		var islider4 = new iSlider({
+			//initIndex:1,
+			data: domList,
+			dom: document.getElementById("dom-effect"),
+			type: 'dom',
+			animateType: 'depth',
+			isAutoplay: false,
+			//duration: 500000,
+			isLooping: true,
+			onslideend: function() {
+				//根据数组互动结束时查找p标签相对应data数据进行页面重写
+				$.each(arr, function(index, item) {
+					$(".iSlider-effect ul li p[data='" + item + "']").addClass("addchose")
+				})
+				if(Index) {
+					console.log(Index)
+				} else {
+					console.log(0)
+				}
+			}
+		});
+		islider4.addDot();
+		//点击头像选择或者取消选择
+		//重复项筛查
+		//将孩子存入数组
+		$(".iSlider-effect ul li").on("tap", function() {
+			$(this).find('p').toggleClass('addchose')
+			var Pdata = $(this).find('p').attr("data");
+			if($(this).find('p').hasClass('addchose')) {
+				arr.push(Pdata);
+				console.log(arr)
+			} else(
+				$.each(arr, function(index, item) {
+					if(item == Pdata) {
+						arr.splice(index, 1);
+					}
+				})
+			)
+		})
+	</script>
+
+</html>

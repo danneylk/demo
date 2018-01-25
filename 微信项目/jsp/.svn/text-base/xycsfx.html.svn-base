@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学业测试分析</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/xycsfx.css" />
+		<script type="text/javascript" src="../js/font.js"></script>
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+	</head>
+	<body>
+		<div class="card_title">
+			<section>
+				<span>有理数测试测试测试无</span>
+				<span>90<small>分</small></span>
+			</section>
+			
+		</div>
+		<div class="card">
+			
+			<ul>
+				<li>
+				    30%
+				    <dl><dt style="height: 30%;"></dt><dd></dd></dl>
+				</li>
+				<li>
+					50%
+					<dl><dt style="height: 50%;"></dt><dd></dd></dl>
+				</li>
+				<li>
+					20%
+					<dl><dt style="height: 20%;"></dt><dd></dd></dl>
+				</li>
+				<li>
+					66%
+					<dl><dt style="height: 66%;"></dt><dd></dd></dl>
+				</li>
+			</ul>
+			<ul class="noul">
+				<li>班级</li>
+				<li>学校</li>
+				<li>地区</li>
+				<li>全网</li>
+			</ul>
+		</div>
+		<p class="message">学习不是一天的事，继续努力吧！</p>
+	</body>
+</html>

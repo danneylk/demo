@@ -1,0 +1,95 @@
+body {
+  background: url(../img/xy_bg.jpg) no-repeat;
+  background-size: 100%; }
+
+.card_title {
+  margin: 0 auto;
+  margin-top: 2.1875rem;
+  width: 9.375rem;
+  border-radius: 0.15625rem;
+  text-align: center;
+  box-shadow: 0px 0px 0.3125rem #C9D9FF;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.46875rem; }
+  .card_title section {
+    min-height: 2.1875rem;
+    padding: 0.25rem;
+    margin-top: -0.3125rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between; }
+    .card_title section span:nth-child(1) {
+      padding-top: 0.3125rem;
+      color: #000000;
+      font-size: 0.5rem;
+      max-width: 6.25rem;
+      margin-top: 0.3125rem; }
+    .card_title section span:nth-child(2) {
+      color: #ff6666;
+      font-size: 1.125rem;
+      text-align: center;
+      margin-top: -0.1875rem;
+      width: 2.5rem;
+      background: url(../img/xy_fenshu.png) center 1.5625rem no-repeat;
+      background-size: 2.1875rem; }
+      .card_title section span:nth-child(2) small {
+        font-size: 0.375rem;
+        color: #000000; }
+
+.card {
+  margin: 0 auto;
+  margin-top: 0.625rem;
+  z-index: 10000;
+  width: 9.375rem;
+  min-height: 6.25rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 0.3125rem #C9D9FF;
+  padding-top: 0.9375rem;
+  padding-bottom: 1.09375rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.46875rem; }
+  .card ul {
+    display: flex;
+    justify-content: space-between;
+    width: 5.46875rem;
+    margin: 0 auto;
+    padding-left: 0.46875rem;
+    padding-right: 0.46875rem;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 0.625rem;
+    color: #6492FF; }
+    .card ul li {
+      width: 0.5625rem; }
+      .card ul li dl {
+        width: 0.625rem;
+        display: inline-block;
+        height: 5rem;
+        margin-top: 0.15625rem;
+        background-color: #C9D9FF;
+        border-top-left-radius: 0.3125rem;
+        border-top-right-radius: 0.3125rem; }
+      .card ul li dl dt {
+        display: inline-block;
+        width: 0.625rem;
+        background-color: #6492FF;
+        border-top-left-radius: 0.3125rem;
+        border-top-right-radius: 0.3125rem;
+        border-bottom: 1px solid white; }
+  .card .noul {
+    border-bottom: none;
+    margin-top: 0.15625rem;
+    color: #999999;
+    font-size: 0.375rem; }
+    .card .noul li {
+      width: 0.78125rem;
+      text-align: center; }
+
+.message {
+  color: #C9D9FF;
+  font-size: 0.375rem;
+  text-align: center;
+  margin-top: 0.78125rem;
+  margin-bottom: 0.78125rem; }
+
+/*# sourceMappingURL=xycsfx.css.map */

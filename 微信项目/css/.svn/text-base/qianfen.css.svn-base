@@ -1,0 +1,331 @@
+header {
+  background: url(../img/qiantop.jpg) top center no-repeat;
+  background-size: 100%;
+  color: white;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.3733333333rem; }
+  header .title {
+    font-size: 0.48rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.2666666667rem; }
+  header .YourScore {
+    color: #9E94B3; }
+  header .nidefenshu {
+    margin-top: 0.2666666667rem;
+    color: #9E94B3; }
+  header h1 {
+    font-size: 1.3333333333rem;
+    line-height: 1.3333333333rem;
+    margin-bottom: 0.5333333333rem; }
+  header .grade {
+    color: #FFFFFF; }
+  header ul {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: 0.2666666667rem;
+    border-top: 0.0266666667rem solid #59487D; }
+  header ul li {
+    flex: 1;
+    color: #9E94B3;
+    padding-top: 0.2133333333rem;
+    border-right: 0.0266666667rem solid #59487D; }
+    header ul li h2 {
+      font-size: 0.48rem;
+      color: white;
+      margin-bottom: 0.2133333333rem; }
+  header ul li:last-child {
+    border-right: 0rem; }
+
+.hr {
+  height: 0.2666666667rem;
+  background-color: #E6E6E6; }
+
+section img {
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.box-one dl {
+  display: flex;
+  display: -webkit-flex; }
+.box-one dl dd {
+  flex: 1;
+  padding: 0.2133333333rem;
+  border-bottom: 0.0266666667rem solid #CCCCCC; }
+  .box-one dl dd span {
+    color: #6492FF;
+    float: right; }
+.box-one dl dd:first-child {
+  border-right: 0.0266666667rem solid #CCCCCC; }
+.box-one ul {
+  padding: 0.2666666667rem 0.2133333333rem;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  border-bottom: 0.0266666667rem solid #CCCCCC; }
+  .box-one ul li {
+    text-align: center;
+    flex: 1; }
+    .box-one ul li h2 {
+      color: #999999; }
+  .box-one ul li:first-child {
+    flex: 0.5;
+    padding-right: 0.2666666667rem;
+    border-right: 0.0266666667rem solid #CCCCCC; }
+
+.box-two {
+  margin: 0.4rem 0;
+  padding: 0.2133333333rem; }
+  .box-two dl dd ul {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between; }
+    .box-two dl dd ul li {
+      padding-bottom: 0.2666666667rem; }
+      .box-two dl dd ul li span {
+        display: inline-block;
+        height: 0.4266666667rem;
+        width: 100%;
+        background-color: #f7f7f7; }
+        .box-two dl dd ul li span i {
+          display: inline-block;
+          height: 0.4266666667rem;
+          background-color: #40C7E3; }
+    .box-two dl dd ul li:first-child {
+      width: 1.52rem; }
+    .box-two dl dd ul li:nth-child(2) {
+      width: 80%;
+      border-left: 1px solid #F2F2F2; }
+    .box-two dl dd ul li:last-child {
+      width: 0.8rem;
+      color: #6492FF;
+      text-align: right; }
+
+.box-Chart {
+  margin-top: 0.2666666667rem;
+  border-bottom: 0.0266666667rem solid #E6E6E6;
+  padding-bottom: 0.2666666667rem; }
+  .box-Chart h1 {
+    text-align: center;
+    font-size: 0.48rem;
+    font-weight: bold;
+    line-height: 1.3333333333rem; }
+  .box-Chart div {
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center; }
+    .box-Chart div span {
+      display: inline-block;
+      margin-right: 0.1333333333rem;
+      line-height: 0.2666666667rem; }
+      .box-Chart div span i {
+        display: inline-block;
+        width: 0.2666666667rem;
+        height: 0.2666666667rem;
+        margin-right: 0.1333333333rem; }
+      .box-Chart div span .orange {
+        background-color: #ECA934; }
+      .box-Chart div span .green {
+        background-color: #1ED537; }
+      .box-Chart div span .blue {
+        background-color: #6492ff; }
+  .box-Chart dl {
+    margin: 0.4rem 0.4rem;
+    border-left: 1px solid #F2F2F2; }
+    .box-Chart dl dd {
+      padding-top: 0.5333333333rem; }
+      .box-Chart dl dd h2 {
+        color: #666666;
+        padding-left: 0.4rem; }
+      .box-Chart dl dd li {
+        padding-top: 0.2133333333rem;
+        height: 0.32rem;
+        display: flex;
+        display: -webkit-flex; }
+        .box-Chart dl dd li .orange {
+          background-color: #ECA934; }
+        .box-Chart dl dd li .orange-ft {
+          color: #ECA934; }
+        .box-Chart dl dd li .green {
+          background-color: #1ED537; }
+        .box-Chart dl dd li .green-ft {
+          color: #1ED537; }
+        .box-Chart dl dd li .blue {
+          background-color: #6492ff; }
+        .box-Chart dl dd li .blue-ft {
+          color: #6492ff; }
+        .box-Chart dl dd li span {
+          display: inline-block;
+          height: 0.32rem;
+          overflow: hidden;
+          position: relative; }
+          .box-Chart dl dd li span i {
+            display: inline-block;
+            height: 0.32rem;
+            position: absolute;
+            left: 0px;
+            top: 0px; }
+        .box-Chart dl dd li span:first-child {
+          width: 100%;
+          background-color: #F7F7F7; }
+        .box-Chart dl dd li span:last-child {
+          width: 1.0666666667rem;
+          height: 0.32rem;
+          line-height: 0.32rem;
+          font-size: 0.32rem;
+          padding-left: 0.1333333333rem; }
+    .box-Chart dl dd:first-child {
+      padding-top: 0px; }
+
+.box-three {
+  margin-top: 0.4rem; }
+  .box-three h1 {
+    text-align: center;
+    font-size: 0.48rem;
+    font-weight: bold;
+    line-height: 1.3333333333rem; }
+  .box-three dl {
+    margin: 0.4rem 0.4rem; }
+    .box-three dl dd {
+      background-color: #F8F8FA;
+      padding: 0.3466666667rem;
+      margin-top: 0.2666666667rem; }
+      .box-three dl dd ul {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between; }
+        .box-three dl dd ul li {
+          flex: 1; }
+          .box-three dl dd ul li h2 {
+            font-size: 0.4266666667rem;
+            font-weight: bold; }
+          .box-three dl dd ul li h3 {
+            font-size: 0.4266666667rem;
+            color: #FF6666; }
+          .box-three dl dd ul li p {
+            color: #999; }
+        .box-three dl dd ul li:first-child {
+          flex: 0.8;
+          width: 1.2rem;
+          margin-right: 0.4rem;
+          border-right: 0.0266666667rem solid #EDEDED; }
+
+.box-four {
+  margin: 0.4rem 0rem; }
+  .box-four dl dd {
+    border-top: 0.0266666667rem solid #EDEDED;
+    padding: 0.5333333333rem 0.4266666667rem; }
+    .box-four dl dd h1 {
+      font-size: 0.4266666667rem;
+      line-height: 0.9333333333rem;
+      color: #333333; }
+    .box-four dl dd p {
+      color: #999999;
+      font-size: 0.3733333333rem; }
+    .box-four dl dd ul {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between; }
+    .box-four dl dd li {
+      flex: 1; }
+      .box-four dl dd li h2 {
+        font-size: 0.5333333333rem;
+        color: #FF6666; }
+
+.box-five {
+  margin: 0.2666666667rem 0.2666666667rem; }
+  .box-five dl dt {
+    margin-bottom: 0.2666666667rem;
+    background-color: #F2F9FF;
+    padding: 0.4rem 0.2133333333rem;
+    border: 0.0266666667rem solid #D8E4FF; }
+    .box-five dl dt h1 {
+      display: flex;
+      font-size: 0.4266666667rem;
+      color: #6492FF;
+      justify-content: space-between; }
+      .box-five dl dt h1 small {
+        color: #999999; }
+    .box-five dl dt ul {
+      display: flex;
+      display: -webkit-flex; }
+      .box-five dl dt ul li {
+        flex: 1; }
+        .box-five dl dt ul li h2 {
+          color: #6492FF;
+          font-size: 0.5333333333rem; }
+        .box-five dl dt ul li p {
+          color: #999999; }
+  .box-five dl dd {
+    padding: 0.4rem 0.2133333333rem;
+    border: 0.0266666667rem solid #E6E6E6;
+    border-top: none; }
+    .box-five dl dd h1 {
+      font-weight: normal;
+      display: flex;
+      font-size: 0.4266666667rem;
+      color: #333;
+      justify-content: space-between; }
+      .box-five dl dd h1 small {
+        color: #999999; }
+    .box-five dl dd ul {
+      display: flex;
+      display: -webkit-flex; }
+      .box-five dl dd ul li {
+        flex: 1; }
+        .box-five dl dd ul li h2 {
+          color: #FF6666;
+          font-size: 0.5333333333rem; }
+        .box-five dl dd ul li p {
+          color: #999999; }
+  .box-five dl .zhangjie {
+    border-top: 0.0266666667rem solid #E6E6E6;
+    background-color: #FAFAFA; }
+    .box-five dl .zhangjie h1 {
+      font-weight: bold; }
+      .box-five dl .zhangjie h1 small {
+        font-weight: normal; }
+
+.box-six {
+  padding: 0.2666666667rem 0.2666666667rem;
+  background-color: #F2F2F2; }
+  .box-six dl dd {
+    position: relative;
+    background-color: white;
+    padding: 0.2666666667rem;
+    margin-bottom: 0.2666666667rem;
+    padding-bottom: 0.4rem; }
+    .box-six dl dd i {
+      position: absolute;
+      top: 0.5866666667rem;
+      display: inline-block;
+      font-style: normal;
+      font-size: 0.3733333333rem;
+      color: #999999; }
+    .box-six dl dd em {
+      position: absolute;
+      right: 0.5333333333rem;
+      bottom: 0.16rem;
+      display: inline-block;
+      font-size: 1.0666666667rem;
+      color: #FF6666; }
+    .box-six dl dd ul li {
+      border-bottom: 0.0266666667rem solid #E6E6E6;
+      padding-left: 0.5333333333rem;
+      padding-bottom: 0.2666666667rem;
+      padding-top: 0.4rem; }
+
+.fix-btn {
+  right: 0.2666666667rem;
+  bottom: 0.2666666667rem;
+  position: fixed;
+  z-index: 1000;
+  width: 1.3333333333rem;
+  height: 1.3333333333rem;
+  border-radius: 50%;
+  box-shadow: 0.0625rem 0 0.9375rem #C9D9FF;
+  background: #6492FF url(../img/qianre.png) center center no-repeat; }

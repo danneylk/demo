@@ -1,0 +1,73 @@
+body {
+  background: url(../img/ckzy-bg.png) no-repeat;
+  background-size: 100%; }
+
+.content {
+  width: 9.6875rem;
+  height: 6.25rem;
+  background-color: #069;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+  border-radius: 0.125rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0.0625rem, 0, 0.46875rem, #6492FF; }
+  .content h3 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #6492FF;
+    text-align: center;
+    padding-top: 0.625rem; }
+  .content .user {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    border-bottom: 0.03125rem solid #cccccc;
+    width: 94%;
+    margin-left: 3%;
+    display: flex; }
+    .content .user img {
+      width: 0.6875rem;
+      height: 0.6875rem; }
+    .content .user h4 {
+      width: 7.5rem;
+      color: #6492FF;
+      font-size: 0.4375rem;
+      line-height: 0.75rem;
+      margin-left: 0.125rem; }
+    .content .user span {
+      width: 1.875rem;
+      color: #000000;
+      font-size: 0.4375rem;
+      line-height: 0.75rem;
+      background: url(../img/arrow.png) no-repeat 1.0625rem center;
+      background-size: 0.5rem; }
+  .content .answer {
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font-size: 0.4375rem;
+    border-bottom: 0.03125rem solid #cccccc; }
+    .content .answer img {
+      width: 100%;
+      height: 5.3125rem;
+      margin-top: 0.3125rem; }
+  .content .comment {
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 0.3125rem;
+    font-size: 0.4375rem; }
+  .content .btn {
+    width: 7.8125rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #6492FF;
+    border: 0.03125rem solid #6492FF;
+    border-radius: 3.90625rem;
+    margin: 0 auto;
+    margin-top: 0.625rem; }
+    .content .btn:active {
+      background-color: #B3CAFF; }
+
+/*# sourceMappingURL=ckzy-xq.css.map */

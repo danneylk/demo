@@ -1,0 +1,169 @@
+@import 'base';
+body {
+    background: url(../img/ckzy-bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    width: s(310);
+    height: s(200);
+    background-color: colors(blue);
+    margin: 0 auto;
+    margin-top: s(40);
+    border-radius: s(4);
+    background-color: rgba(colors(white), .8);
+    box-shadow: s(2), 0, s(15), colors(default);
+    .user {
+        position: relative;
+        padding-top: s(10);
+        padding-left: s(10);
+        padding-bottom: s(10);
+        display: flex;
+        h4 {
+            background: url(../img/user.png) no-repeat;
+            background-size: s(22);
+            padding-left: s(28);
+            color: colors(default);
+            font-size: s(14);
+            line-height: s(24);
+        }
+        p {
+            color: colors(dark-gray);
+            font-size: s(12);
+            line-height: s(24);
+            margin-left: s(10);
+        }
+        .change {
+            width: s(100);
+            background-color: colors(white);
+            position: absolute;
+            top: s(40);
+            left: 0;
+            z-index: 99999;
+            padding: s(10) 0;
+            box-shadow: s(2) 0 s(30) colors(defaulttwo);
+            border-radius: s(2);
+            display: none;
+            a {
+                display: block;
+                width: 100%;
+                height: s(30);
+                line-height: s(30);
+                text-align: center;
+                font-size: s(14);
+                margin: s(4) 0;
+                color: colors(default);
+                &:active {
+                    color: colors(white);
+                    background-color: colors(default);
+                }
+            }
+        }
+    }
+    .ui-tab {
+        .task-tab {
+            width: s(200);
+            margin: 0 auto;
+            height: s(30);
+        }
+        .ui-tab-nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(colors(white), .1);
+            background-image: none;
+            li {
+                width: s(100);
+                height: s(30);
+                border: s(1) solid colors(default);
+                font-size: s(14);
+                color: colors(default);
+                line-height: s(30);
+                text-align: center;
+                background-color: colors(white);
+                &:nth-child(1) {
+                    border-top-left-radius: s(24);
+                    border-bottom-left-radius: s(24);
+                }
+                &:nth-child(2) {
+                    border-top-right-radius: s(24);
+                    border-bottom-right-radius: s(24);
+                }
+            }
+            .current {
+                background-color: colors(default) !important;
+                color: colors(white) !important;
+            }
+        }
+        .ui-tab-content {
+            li {
+                .task-box {
+                    position: relative;
+                    margin: s(10) auto;
+                    width: s(260);
+                    height: s(60);
+                    background-color: rgba(colors(white), .57);
+                    border: s(1) solid colors(shadow);
+                    border-radius: s(8);
+                    padding: s(10);
+                    box-shadow: s(2) 0 s(30) colors(defaulttwo);
+                    &:active{
+                    background-color: colors(lightgray);
+                    }
+                    img{
+                        width: s(15);
+                        height: s(15);
+                        vertical-align: middle;
+                        
+                    } 
+                    h4 {
+                        display: inline-block;
+                        font-size: s(14);
+                        color: colors(date);
+                        background-size: s(15);
+                        padding-left: s(2);
+                    }
+                    p {
+                        font-size: s(14);
+                        color: colors(medium-grey);
+                        background: url(../img/time.png) no-repeat 0 center;
+                        background-size: s(15);
+                        padding-left: s(20);
+                        padding-top: s(2);
+                        margin-top: s(20);
+                    }
+                    .ypy {
+                        font-size: s(16);
+                        color: colors(green);
+                        font-weight: normal;
+                        position: absolute;
+                        bottom: s(26);
+                        right: s(10);
+                    }
+                    .blue {
+                        color: colors(default);
+                    }
+                    .wpy {
+                        font-size: s(16);
+                        color: colors(red);
+                        font-weight: normal;
+                        position: absolute;
+                        bottom: s(26);
+                        right: s(10);
+                    }
+                    span {
+                        position: absolute;
+                        bottom: s(20);
+                        right: s(10);
+                        font-size: s(28);
+                        color: colors(red);
+                        i {
+                            font-size: s(14);
+                            color: colors(date);
+                            margin-left: s(6);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

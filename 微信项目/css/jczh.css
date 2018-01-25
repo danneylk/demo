@@ -1,0 +1,95 @@
+.popup_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+  .popup_bg .popup {
+    position: absolute;
+    top: 0.625rem;
+    left: 50%;
+    margin-left: -4.6875rem;
+    width: 9.375rem;
+    height: 14.6875rem;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0.0625rem 0 0.9375rem #B3CAFF;
+    border-radius: 0.75rem; }
+    .popup_bg .popup span {
+      display: block;
+      font-size: 0.5rem;
+      text-align: center;
+      margin-top: 0.9375rem;
+      color: #666666; }
+    .popup_bg .popup .relation_box {
+      width: 9.375rem;
+      margin-top: 0.625rem;
+      display: flex;
+      justify-content: center; }
+      .popup_bg .popup .relation_box li {
+        width: 1.875rem;
+        height: 1.875rem;
+        border-radius: 50%;
+        border: 0.03125rem solid #cccccc;
+        margin: 0 0.3125rem;
+        text-align: center;
+        font-size: 0.4375rem;
+        line-height: 4.6875rem; }
+      .popup_bg .popup .relation_box .father {
+        background: url("../img/father.svg") no-repeat center center;
+        background-size: 50%; }
+      .popup_bg .popup .relation_box .father.ac {
+        background: url("../img/father-blue.svg") no-repeat center center;
+        background-size: 50%;
+        border: 1px solid #6492FF !important;
+        color: #6492FF; }
+      .popup_bg .popup .relation_box .mother {
+        background: url("../img/mother.svg") no-repeat center center;
+        background-size: 50%; }
+      .popup_bg .popup .relation_box .mother.ac {
+        background: url("../img/mother-blue.svg") no-repeat center center;
+        background-size: 50%;
+        border: 1px solid #6492FF !important;
+        color: #6492FF; }
+      .popup_bg .popup .relation_box .other {
+        background: url("../img/other.svg") no-repeat center center;
+        background-size: 50%; }
+      .popup_bg .popup .relation_box .other.ac {
+        background: url("../img/other-blue.svg") no-repeat center center;
+        background-size: 50%;
+        border: 1px solid #6492FF !important;
+        color: #6492FF; }
+    .popup_bg .popup a {
+      display: block;
+      color: #6492FF;
+      font-size: 0.4375rem;
+      text-align: center;
+      margin: 1.125rem 0 0.5rem 0; }
+    .popup_bg .popup .confirm_btn {
+      width: 7.1875rem;
+      height: 1.25rem;
+      margin: 0.3125rem auto;
+      line-height: 1.25rem;
+      border-radius: 2.03125rem;
+      text-align: center;
+      color: white;
+      font-size: 0.4375rem;
+      background-color: #6492FF;
+      box-shadow: 0.0625rem 0 0.9375rem #B3CAFF; }
+      .popup_bg .popup .confirm_btn:active {
+        background-color: #C9D9FF; }
+    .popup_bg .popup .skip {
+      width: 7.1875rem;
+      height: 1.25rem;
+      margin: 0 auto;
+      line-height: 1.25rem;
+      border-radius: 2.03125rem;
+      text-align: center;
+      color: #6492FF;
+      font-size: 0.4375rem;
+      background-color: white;
+      box-shadow: 0.0625rem 0 0.9375rem #B3CAFF; }
+      .popup_bg .popup .skip:active {
+        background-color: #B3CAFF; }
+
+/*# sourceMappingURL=jczh.css.map */

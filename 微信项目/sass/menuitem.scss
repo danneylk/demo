@@ -1,0 +1,266 @@
+@import 'base';
+.menuitem{
+    padding: s(15) !important;
+}
+.menuitem ul li i {
+    position: absolute;
+    left: 3px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 3px;
+    background-color: #CCCCCC;
+}
+
+.menuitem ul li span {
+    position: absolute;
+    left: -16px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 12px;
+    border: 1px solid #CCCCCC;
+}
+
+.menuitem .addimg {
+    background: url(../img/bg-book2.png) top left no-repeat;
+}
+
+.menuitem ul li {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: 14px;
+    background: url(../img/bg-book.png) top left no-repeat;
+    list-style: none;
+    overflow: visible;
+}
+
+.menuitem ul li a {
+    display: block;
+    height: s(5);
+    margin-top: 0px;
+    padding-top: s(5);
+    padding-left: 35px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    line-height: 10px;
+}
+
+.menuitem ul li .active {
+    background: url(../img/off.png) top right no-repeat;
+    border-bottom: 1px solid #D6EFFF;
+}
+
+.menuitem .active i {
+    background-color: #6492FF;
+}
+
+.menuitem .active {
+    color: #6492FF;
+}
+
+.menuitem ul li .inactive {
+    background: url(../img/on.png) top right no-repeat;
+}
+
+.menuitem ul li ul {
+    display: none;
+    margin-left:s(15);
+    padding-bottom: s(10);
+}
+
+.menuitem ul li ul {
+    border-left: 1px solid #D6EFFF;
+}
+
+.menuitem ul li ul li ul {
+    margin-bottom: 5px;
+}
+
+.menuitem ul li ul li {
+    display: block;
+    background: none;
+    font-size: 14px;
+    list-style: circle;
+    color: #6492FF;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1px;
+}
+
+.menuitem ul li ul li a {
+    background: none;
+    font-size: 14px;
+    color: #666;
+    
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.menuitem ul li ul li a:hover {
+    font-size: 14px;
+    color: #6492FF;
+    
+    padding-left: 10px;
+}
+
+.menuitem ul li ul li a:hover i {
+    background-color: #6492FF;
+}
+
+
+
+
+
+
+.menuitem_school{ position: relative; border-radius: s(5);  border: 1px solid #D6EFFF;}
+.menuitem_school ul li i {
+    position: absolute;
+    left: s(3.1);
+    display: inline-block;
+    width: s(10);
+    height: s(10);
+    border-radius: 50%;
+    top: s(3);
+    background-color: #D6EFFF;
+}
+.menuitem_school .upimg{border-top: 1px solid #D6EFFF; border-bottom: none;}
+.menuitem_school .upimg .crile{ left: -11px; background-color: white;} 
+/*.menuitem_school .upimg .crile i{ position: absolute; left: 18px; top: -3px; background:none; border-bottom: 1px solid #CCCCCC; width: 20px; border-radius:0px;}
+*/
+.menuitem_school .upimg a:hover{ color: #6492FF ;}
+.menuitem_school ul li span {
+    position: absolute;
+    left: s(-10);
+    display: inline-block;
+    width: s(16);
+    height: s(16);
+    border-radius: 50%;
+    top: s(13);
+    border: 1px solid #D6EFFF;
+}
+.menuitem_school .dingwei{ position:absolute; left: -16px; top: -28px;}
+
+.menuitem_school .addimg {
+    background: url(../img/bg-book2.png) top left no-repeat;
+}
+.menuitem_school ul li {
+    position: relative;
+    display: block;
+    width: 100%;
+    list-style: none;
+    overflow: visible;
+    margin-bottom: -1px;
+    
+}
+.menuitem_school ul li a {
+    display: block;
+    height: s(20);
+    line-height: s(18);
+    text-align: left;
+    margin-top: 0px;
+    padding-left: s(15);
+    padding-top: s(5);
+    padding-bottom: s(5);
+    font-size: 14px;
+    color: #6B6B6B;
+    outline: none;
+}
+/*E6EDFF*/
+.menuitem_school .school {
+    margin: s(5) s(10) ;
+    display:block;
+    background-color: #E6EDFF;
+    padding: s(3) s(8);
+    line-height: s(22);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.menuitem_school .schoolactvie {
+    background-color: #6492ff;
+    color: white;
+}
+
+.menuitem_school .school:hover {
+    color: white;
+    background-color: #6492ff;
+    color: white !important;
+    padding: 3px 8px;
+}
+.menuitem_school ul li{
+    border-bottom: 1px solid #D6EFFF;
+}
+.menuitem_school ul li ul li{ 
+border-bottom:none
+}
+
+.menuitem_school ul li .active {
+    background: url(../img/off.png) top right no-repeat;
+    border-bottom: 1px solid #D6EFFF;
+}
+
+.menuitem_school .active i {
+    background-color: #6492FF;
+}
+
+.menuitem_school .active {
+    color: #6492FF;
+}
+
+.menuitem_school ul li .inactive {
+    background: url(../img/on.png) top right no-repeat;
+    
+}
+
+.menuitem_school ul li ul {
+    display: none;
+/*  margin-bottom: 20px;*/
+    margin-left: s(20);
+}
+
+.menuitem_school ul li ul {
+    border-left: 1px solid #D6EFFF;
+}
+
+.menuitem_school ul li ul li ul {
+    margin-bottom: 5px;
+}
+
+.menuitem_school ul li ul li {
+    display: block;
+    background: none;
+    font-size: 14px;
+    list-style: circle;
+    color: #6492FF;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.menuitem_school ul li ul li a {
+    background: none;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.menuitem_school ul li ul li a:hover {
+    font-size: 14px;
+    color: #6492FF;
+    
+    padding-left: 10px;
+}
+
+.menuitem_school ul li ul li a:hover i {
+    background-color: #6492FF;
+}

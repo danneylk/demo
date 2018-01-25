@@ -1,0 +1,52 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #333;
+  background: #fff;
+  font: 400 16px/1.5 "Helvetica Neue", "Marmelad", "Lucida Grande", "Hiragino Sans GB", Georgia, "Microsoft YaHei", sans-serif;
+  -webkit-user-select: inherit;
+  background-size: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-size: 100%; }
+
+a {
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  outline: 0; }
+
+li {
+  list-style-type: none; }
+
+.section {
+  background-color: white;
+  display: flex; }
+
+.section-item {
+  flex: 1;
+  vertical-align: middle;
+  text-align: center; }
+
+.messagetipes {
+  width: 90%;
+  background-color: rgba(102, 102, 102, 0.9);
+  border-radius: 0.3125rem;
+  padding-bottom: 0.78125rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.46875rem; }
+  .messagetipes span {
+    display: block;
+    font-size: 0.5rem;
+    text-align: center;
+    margin-top: 0.625rem;
+    color: white; }
+  .messagetipes img {
+    margin: 0 auto;
+    margin-top: 0.625rem;
+    width: 1.1875rem; }
+
+/*# sourceMappingURL=reset.css.map */

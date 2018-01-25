@@ -1,0 +1,106 @@
+@import 'base';
+.phone-bg {
+    position: relative;
+    width: s(320);
+    height: s(140);
+    background: colors(white) url(../img/phone-bg.png) no-repeat s(94) center;
+    background-size: s(110);
+    border-bottom: s(1) solid colors(gray);
+    .phone-number {
+        position: absolute;
+        left: 50%;
+        bottom: s(-17);
+        margin-left: s(-100);
+        width: s(200);
+        height: s(34);
+        line-height: s(34);
+        font-size: s(24);
+        text-align: center;
+        color: colors(dark-gray);
+        background-color: colors(white);
+        border: s(1) solid colors(default);
+        border-radius: s(100);
+    }
+}
+
+.content {
+    display: flex;
+    width: s(260);
+    margin: 0 auto;
+    margin-top: s(50);
+    .phone_input {
+        width: s(150);
+        height: s(40);
+        border-radius: s(4);
+        border: s(1) solid colors(lightgray);
+        font-size: s(14);
+        padding-left: s(10);
+        appearance: button;
+        -moz-appearance: button;
+        -webkit-appearance: button;
+    }
+    .btn {
+        display: block;
+        width: s(90);
+        height: s(40);
+        text-align: center;
+        line-height: s(40);
+        font-size: s(14);
+        color: colors(dark-gray);
+        background-color: colors(white);
+        border: s(1) solid colors(lightgray);
+        border-radius: s(4);
+        margin-left: s(10);
+    }
+    .count {
+        background-color: colors(default);
+        border: s(1) solid colors(default);
+        color: colors(white);
+    }
+}
+
+.code-box {
+    display: none;
+    width: s(260);
+    margin: 0 auto;
+    margin-top: s(10);
+    label {
+        color: colors(dark-gray);
+        font-size: s(14);
+        span {
+            color: colors(default);
+        }
+    }
+    .input-box {
+        display: flex;
+        justify-content: space-between;
+        .code_input {
+            margin-top: s(10);
+            width: s(54);
+            height: s(54);
+            text-align: center;
+            color: colors(default);
+            border-radius: s(4);
+            border: s(1) solid colors(lightgray);
+            font-size: s(30);
+            appearance: button;
+            -moz-appearance: button;
+            -webkit-appearance: button;
+        }
+        .bbb {
+            border: s(1) solid colors(default);
+        }
+    }
+    .submit {
+        width: s(260);
+        height: s(40);
+        margin: s(30) auto;
+        line-height: s(40);
+        border-radius: s(65);
+        text-align: center;
+        color: colors(white);
+        font-size: s(14);
+        background-color: colors(default);
+        box-shadow: s(2) 0 s(30) colors(shadow);
+    }
+}

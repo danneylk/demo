@@ -1,0 +1,84 @@
+@import 'base';
+body {
+    background: url(../img/ckzy-bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    width: s(310);
+    height: s(200);
+    background-color: colors(blue);
+    margin: 0 auto;
+    margin-top: s(40);
+    border-radius: s(4);
+    background-color: rgba(colors(white), .8);
+    box-shadow: s(2), 0, s(15), colors(default);
+    h3 {
+        font-size: s(16);
+        font-weight: bold;
+        color: colors(default);
+        text-align: center;
+        padding-top: s(20);
+    }
+    .user {
+        padding-top: s(10);
+        padding-bottom: s(10);
+        border-bottom: s(1) solid colors(gray);
+        width: 94%;
+        margin-left: 3%;
+        display: flex;
+        img {
+            width: s(22);
+            height: s(22);
+        }
+        h4 {
+            width: s(240);
+            color: colors(default);
+            font-size: s(14);
+            line-height: s(24);
+            margin-left: s(4);
+        }
+        span {
+            width: s(60);
+            color: colors(date);
+            font-size: s(14);
+            line-height: s(24);
+            background: url(../img/arrow.png) no-repeat s(34) center;
+            background-size: s(16);
+        }
+    }
+    .answer {
+        width: 94%;
+        margin-left: 3%;
+        margin-top: s(10);
+        padding-bottom: s(10);
+        font-size: s(14);
+        border-bottom: s(1) solid colors(gray);
+        img {
+            width: 100%;
+            height: s(170);
+            margin-top: s(10);
+        }
+    }
+    .comment {
+        width: 94%;
+        margin-left: 3%;
+        margin-top: s(10);
+        font-size: s(14);
+    }
+    .btn{
+        width: s(250);
+        height: s(40);
+        line-height: s(40);
+        text-align: center;
+        font-size: s(16);
+        color: colors(default);
+        border: s(1) solid colors(default);
+        border-radius: s(125);
+        margin: 0 auto;
+        margin-top: s(20);
+        &:active{
+            background-color: colors(shadow);
+        }
+    }
+}

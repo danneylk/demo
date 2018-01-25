@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>常见问题</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/cjwt.css" />
+		<script type="text/javascript" src="../js/font.js"></script>
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="top">
+			<div class="return"></div>
+			<div class="title">常见问题答疑</div>
+			<div class="screen_btn"></div>
+			<div class="screen_mask"></div>
+			<div class="screen_content">
+					<h4>问题分类</h4>
+					<span class="selected">课程问题</span>
+					<span>错题本问题</span>
+					<span>课程播放问题</span>
+					<span>其他问题</span>
+					<button type="button" id="confirm">筛选</button>
+				</div>
+		</div>
+		<div class="title_list">
+			<li onclick="window.location.href='wtxq.html'">错题本相关问题</li>
+			<li>错题本相关问题</li>
+			<li>错题本相关问题</li>
+			<li>错题本相关问题</li>
+			<li>错题本相关问题</li>
+			<li>错题本相关问题</li>
+			<li>错题本相关问题</li>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$(".title_list a").tap(function() {
+				$(this).children("p").toggle()
+			});
+			$(".return").tap(function() {
+				history.back(-1)
+			});
+			$(".screen_content span").tap(function() {
+				$(this).addClass("selected").siblings().removeClass("selected")
+			});
+			$(".screen_btn").click(function() {
+				$(".screen_mask").show()
+				$(".screen_content").show()
+			});
+			$("#confirm").tap(function() {
+				$(".screen_mask").hide()
+				$(".screen_content").hide()
+			});
+		})
+	</script>
+</html>

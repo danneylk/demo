@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>查看作业</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/frozen.css" />
+		<link rel="stylesheet" href="../css/ckzy.css" />
+		<script type="text/javascript" src="../js/font.js"></script>
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/forz-tab.js"></script>
+	</head>
+
+	<body>
+
+		<div class="content">
+			<div class="user">
+				<h4 id="name">乐乐</h4>
+				
+				<p>点击切换学生</p>
+				<div class="change">
+					<a>刘小蕊</a>
+					<a>刘小悦</a>
+				</div>
+			</div>
+			<div class="ui-tab">
+				<ul class="ui-tab-nav ui-border-b task-tab">
+					<li class="">待完成</li>
+					<li class="">历史作业</li>
+				</ul>
+				<ul class="ui-tab-content" style="width: 300%; transition-property: transform; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(-828px, 0px) translateZ(0px);">
+					<li class="" style="height: auto;">
+						<div class="waitting">
+							<div class="task-box" onclick="window.location.href='ckzy-wj.html'">
+								<img src="../img/test-paper.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<span class="blue">12<i>题</i></span>
+				 			</div>
+							<div class="task-box" onclick="window.location.href='ckzy-st.html'">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+							</div>
+							<div class="task-box" onclick="window.location.href='ckzy-weipiyue.html'">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+							</div>
+							<div class="task-box" onclick="window.location.href='ckzy-weipiyue-2.html'">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+							</div>
+							<div class="task-box" onclick="window.location.href='ckzy-weipiyue-3.html'">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+							</div>
+						</div>
+					</li>
+					<li class="" style="height: auto;">
+						<div class="history">
+							<div class="task-box" onclick="window.location.href='ckzy-xq.html'">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<b class="ypy">已批阅</b>
+							</div>
+							<div class="task-box">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<b class="wpy">未批阅</b>
+							</div>
+							<div class="task-box">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<span>98<i>分</i></span>
+							</div>
+							<div class="task-box">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<span>98<i>分</i></span>
+							</div>
+							<div class="task-box">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<span>98<i>分</i></span>
+							</div>
+							<div class="task-box">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<span>98<i>分</i></span>
+							</div>
+							<div class="task-box">
+								<img src="../img/file.svg"/>
+								<h4>数学作业</h4>
+								<p>2017/5/30 20:00 截止</p>
+								<span>98<i>分</i></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script class="demo-script">
+			(function() {
+				var tab = new fz.Scroll('.ui-tab', {
+					role: 'tab',
+					autoplay: true,
+					interval: 3000000
+				});
+				/* 滑动开始前 */
+				tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+					console.log(fromIndex, toIndex); // from 为当前页，to 为下一页
+				})
+			})();
+			$(function() {
+				$("#name, .change a").tap(function() {
+				$(".change").toggle()
+			})
+		})
+	</script>
+
+</html>

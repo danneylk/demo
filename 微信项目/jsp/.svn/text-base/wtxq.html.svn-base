@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>常见问题</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/wtxq.css" />
+		<script type="text/javascript" src="../js/font.js"></script>
+		<script type="text/javascript" src="../js/zepto.min.js"></script>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="return"></div>
+			<div class="search">
+				<input type="text" class="phone" placeholder="" />
+			</div>
+				<a>搜索</a>
+		</div>
+		<div class="title_list">
+			<div class="no-data">
+				<p>暂无数据</p>
+			</div>
+			<h4>错题本相关问题</h4>
+			<li>
+				<a>如何使用错题本
+					<p class="hide">如何使用错题本如何使用错题本如何使用错题本如何使用错题本如何使用错题本如何使用错题本</p>
+				</a>
+			</li>
+			<li>
+				<a>如何使用错题本
+					<p class="hide">如何使用错题本如何使用错题本如何使用何使用错题本如何使用错题本</p>
+				</a>
+			</li>
+			<li>
+				<a>如何使用错题本
+					<p class="hide">如何使用错题本如何使用错题本如何使用错题本</p>
+				</a>
+			</li>
+			<li>
+				<a>如何使用错题本
+					<p class="hide">如何使用错题本如何使用错题本如何使用错题本</p>
+				</a>
+			</li>
+			<li>
+				<a class="border-no">如何使用错题本
+					<p class="hide">如何使用错题本如何使用错题本如何使用错题本</p>
+				</a>
+			</li>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			$(".title_list a").tap(function() {
+				$(this).children("p").toggle()
+			});
+			$(".return").tap(function() {
+				history.back(-1)
+			});
+			$(".screen_content span").tap(function() {
+				$(this).addClass("selected").siblings().removeClass("selected")
+			});
+		})
+	</script>
+
+</html>
